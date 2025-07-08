@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foguete com Fumaça</title>
+    <style>
+      body {
+        background: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .orbita {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        animation: girar 5s linear infinite;
+      }
+
+      .centro {
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+
+      .objeto-wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .objeto {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        transform-origin: center center;
+      }
+
+      .objeto img {
+        width: 100%;
+        height: auto;
+        transform: rotate(90deg);
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Fumaça */
+      .fumaça {
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        animation: fumaçaSubindo 0.5s infinite;
+        z-index: 1;
+      }
+
+      @keyframes fumaçaSubindo {
+        0% {
+          transform: translateX(-50%) scale(0.5);
+          opacity: 0.8;
+        }
+        100% {
+          transform: translateX(-50%) translateY(-20px) scale(1.5);
+          opacity: 0;
+        }
+      }
+
+      @keyframes girar {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="orbita">
+      <div class="centro"></div>
+      <div class="objeto-wrapper">
+        <div class="objeto">
+          
+          <img src="imaGENS/clipart-rocket.png" alt="Foguete" />
+       
+      </div>
+    </div>
+  </body>
+</html>

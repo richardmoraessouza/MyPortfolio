@@ -1,0 +1,235 @@
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  z-index: 1;
+  height: auto;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  flex-flow: row;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navegacao {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+  padding: 5px;
+  margin-bottom: 2rem;
+}
+
+.header a {
+  text-decoration: none;
+  padding-inline: 15px;
+  color: white;
+}
+
+.apresentacao {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.comeco {
+  text-align: center;
+  width: 100%;
+}
+
+.comeco h1 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comeco p {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  animation: fadeUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+.redes_socias {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 17px;
+  margin-bottom: 70px;
+}
+
+.navegacao,
+.apresentacao {
+  position: relative;
+  z-index: 2;
+}
+
+.orbita {
+  width: 100%;
+  height: 380px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.centro {
+  width: 85%;
+  height: 250px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.objeto_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: girar 5s linear infinite;
+  transform-origin: center center;
+}
+
+.objeto {
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.objeto img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  transform: rotate(200deg);
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+
+.btn::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0f0f0ff5;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(1px);
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 1;
+  animation: glowing 20s linear infinite;
+}
+
+.btn.github::before {
+  background-image: linear-gradient(
+    45deg,
+    #171515,
+    #444444,
+    #586069,
+    #171515,
+    blueviolet
+  );
+}
+
+.btn.linkedin::before {
+  background-image: linear-gradient(45deg, #0077b5, #00a0dc, #005983, #0077b5);
+}
+
+.btn:hover::after {
+  background: transparent;
+}
+
+.btn:active {
+  color: #000;
+  font-weight: bold;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 450px) {
+  .apresentacao {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .centro {
+    width: 50%;
+    height: 150px;
+  }
+}

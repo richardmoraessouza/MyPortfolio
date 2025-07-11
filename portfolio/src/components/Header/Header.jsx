@@ -25,19 +25,13 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <video
-        src="/video/video_1.mp4"
-        className={styles.videoBackground}
-        autoPlay
-        muted
-        playsInline
-        loop
-      ></video>
       <section className={styles.navegacao}>
         <nav>
-          <ul className="text-end">
+          <ul>
             <li>
-              <a href="#home">Home</a>
+              <a href="#home" className={styles.link}>
+                Home
+              </a>
             </li>
             <li>
               <a href="">sobre mim</a>
@@ -49,10 +43,12 @@ function Header() {
         </nav>
       </section>
 
+      <div className="p-3"></div>
+
       <div className={styles.apresentacao}>
         <section className={styles.comeco}>
           <div>
-            <h1>{nome}</h1>
+            <h1 className="m-2">{nome}</h1>
             <p>Desenvolvedor Front-end</p>
           </div>
           <div className={styles.redes_socias}>
@@ -64,7 +60,9 @@ function Header() {
         </section>
 
         <section className={styles.orbita}>
-          <div className={styles.centro}></div>
+          <div className={styles.centro}>
+            <img src="/image/absulute-cinema.jpg" alt="" />
+          </div>
           <div className={styles.objeto_wrapper}>
             <div className={styles.objeto}>
               <img src="/image/clipart-rocket.png" alt="Foguete em órbita" />
@@ -72,6 +70,14 @@ function Header() {
           </div>
         </section>
       </div>
+      <video
+        src="/video/video_4.mp4"
+        autoPlay
+        className={styles.video}
+        muted
+        loop
+        playsInline
+      ></video>
     </header>
   );
 }

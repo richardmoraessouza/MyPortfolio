@@ -34,10 +34,10 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="">sobre mim</a>
+              <a href="#sobre_mim">sobre mim</a>
             </li>
             <li>
-              <a href="">nada</a>
+              <a href="">Tecnologias</a>
             </li>
           </ul>
         </nav>
@@ -53,15 +53,25 @@ function Header() {
           </div>
           <div className={styles.redes_socias}>
             <button className={`${styles.btn} ${styles.linkedin}`}>
-              Linkedin
+              <a href="">
+                <i className="bi bi-linkedin me-2"></i>Linkedin
+              </a>
             </button>
-            <button className={`${styles.btn} ${styles.github}`}>GitHub</button>
+            <button className={`${styles.btn} ${styles.github}`}>
+              <a href="">
+                <i className="bi bi-github me-2"></i>GitHub
+              </a>
+            </button>
           </div>
         </section>
 
         <section className={styles.orbita}>
           <div className={styles.centro}>
-            <img src="/image/absulute-cinema.jpg" alt="" />
+            <img
+              src="/image/absulute-cinema.jpg"
+              alt=""
+              className={styles.eu}
+            />
           </div>
           <div className={styles.objeto_wrapper}>
             <div className={styles.objeto}>
@@ -70,14 +80,14 @@ function Header() {
           </div>
         </section>
       </div>
-      <video
+      {/* <video
         src="/video/video_4.mp4"
         autoPlay
         className={styles.video}
         muted
         loop
         playsInline
-      ></video>
+      ></video> */}
     </header>
   );
 }

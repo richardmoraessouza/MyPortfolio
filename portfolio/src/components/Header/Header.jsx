@@ -48,7 +48,7 @@ function Header() {
       <div className={styles.apresentacao}>
         <section className={styles.comeco}>
           <div>
-            <h1 className="m-2">{nome}</h1>
+            <h1 className="m-1">{nome}</h1>
             <p>Desenvolvedor Front-end</p>
           </div>
           <div className={styles.redes_socias}>

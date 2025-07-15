@@ -6,8 +6,6 @@
   height: auto;
   color: #ffffff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
 }
 
 .video {
@@ -94,13 +92,16 @@
 
 .comeco h1 {
   font-weight: bold;
+  margin: 9px;
 }
 
 .comeco p {
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
   animation: fadeUp 1s ease-out forwards;
   opacity: 0;
+  margin-bottom: 5px;
 }
 
 .redes_socias {

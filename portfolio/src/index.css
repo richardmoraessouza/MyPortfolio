@@ -1,0 +1,14 @@
+body {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  color: #dddddd;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+}

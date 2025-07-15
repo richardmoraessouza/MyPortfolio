@@ -13,15 +13,8 @@ function Sobre_mim() {
         </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At blanditiis
-          veritatis eligendi ipsa placeat tempore vitae, voluptates maxime
-          aspernatur voluptatem ea sint tenetur odit vero enim in esse sequi
-          cupiditate?
         </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis fuga
-          provident eos sapiente commodi at, molestiae doloribus sed corrupti
-          iste!
-        </p>
+        <p>Lorem ipsum dolor, sit amet consectetti iste!</p>
       </section>
     </section>
   );

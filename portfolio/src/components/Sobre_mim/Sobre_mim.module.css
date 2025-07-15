@@ -1,6 +1,4 @@
 .sobre_mim {
-  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
-
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -15,7 +13,6 @@
   border-radius: 10px;
   width: 80%;
   height: 100%;
-  /* box-shadow: 0px 0px 5px white; */
   object-fit: cover;
 }
 
@@ -26,10 +23,6 @@
 .textoSobreMim {
   padding-top: 10px;
   font-size: 1.1rem;
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  letter-spacing: 0.5px;
-  color: #dddddd;
 }
 
 .tituloTexto {
@@ -41,7 +34,6 @@
   position: relative;
   border-radius: 12px;
   z-index: 0;
-
   font-size: 1rem;
 }
 
@@ -69,7 +61,6 @@
   height: calc(100% + 4px);
   filter: blur(1px);
   border-radius: 10px;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .tituloTexto::before {

@@ -2,11 +2,11 @@
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 400px;
+  height: auto;
 }
 
 .sobre_mim section {
-  height: 65%;
+  height: auto;
 }
 
 .foto {
@@ -20,21 +20,21 @@
   width: 100%;
 }
 
-.textoSobreMim {
+.textoSobreMim p {
   padding-top: 10px;
-  font-size: 1.1rem;
+  font-size: clamp(0.6rem, 3vw, 1rem);
 }
 
 .tituloTexto {
   display: inline-block;
   text-align: center;
   color: #fff;
+  font-size: clamp(1rem, 2vw, 3rem);
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   position: relative;
   border-radius: 12px;
   z-index: 0;
-  font-size: 1rem;
 }
 
 .tituloTexto::after {

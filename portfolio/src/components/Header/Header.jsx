@@ -39,6 +39,12 @@ function Header() {
             <li>
               <a href="">Tecnologias</a>
             </li>
+            <li>
+              <a href="">Projetos</a>
+            </li>
+            <li>
+              <a href="">Contatos</a>
+            </li>
           </ul>
         </nav>
       </section>

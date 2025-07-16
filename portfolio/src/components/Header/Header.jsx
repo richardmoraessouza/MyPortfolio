@@ -74,26 +74,29 @@ function Header() {
         <section className={styles.orbita}>
           <div className={styles.centro}>
             <img
-              src="/image/absulute-cinema.jpg"
+              src="/Portf-lio/image/absulute-cinema.jpg"
               alt=""
               className={styles.eu}
             />
           </div>
           <div className={styles.objeto_wrapper}>
             <div className={styles.objeto}>
-              <img src="/image/clipart-rocket.png" alt="Foguete em órbita" />
+              <img
+                src="/Portf-lio/image/clipart-rocket.png"
+                alt="Foguete em órbita"
+              />
             </div>
           </div>
         </section>
       </div>
-      {/* <video
-        src="/video/video_4.mp4"
+      <video
+        src="/Portf-lio/video/video_4.mp4"
         autoPlay
         className={styles.video}
         muted
         loop
         playsInline
-      ></video> */}
+      ></video>
     </header>
   );
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 
 function Header() {
   const [nome, setNome] = useState("");
@@ -89,14 +89,14 @@ function Header() {
           </div>
         </section>
       </div>
-      <video
+      {/* <video
         src="/Portf-lio/video/video_4.mp4"
         autoPlay
         className={styles.video}
         muted
         loop
         playsInline
-      ></video>
+      ></video> */}
     </header>
   );
 }

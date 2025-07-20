@@ -1,0 +1,21 @@
+.redes_socias {
+  width: 100%;
+  text-align: center;
+
+  ul {
+    list-style: none;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  li:hover {
+    transform: translateY(-3px);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #dddddd;
+  }
+}

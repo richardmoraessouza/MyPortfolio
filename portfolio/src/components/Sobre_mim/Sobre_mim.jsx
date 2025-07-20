@@ -1,4 +1,4 @@
-import styles from "./Sobre_mim.module.css";
+import styles from "./Sobre_mim.module.scss";
 function Sobre_mim() {
   return (
     <section
@@ -28,10 +28,10 @@ function Sobre_mim() {
           estrutura de código modular e reutilizável.
         </p>
         <p>
-          Tenho experiência em projetos utilizando HTML, CSS, JSON, JavaScript e
-          React. Também possuo conhecimentos em backend com Python, utilizando
-          bibliotecas como mysql-connector para manipular bancos de dados MySQL,
-          criando tabelas, inserindo e consultando dados.
+          Tenho experiência em projetos utilizando HTML, CSS, JSON, Scss,
+          JavaScript e React. Também possuo conhecimentos em backend com Python,
+          utilizando bibliotecas como mysql-connector para manipular bancos de
+          dados MySQL, criando tabelas, inserindo e consultando dados.
         </p>
       </section>
     </section>

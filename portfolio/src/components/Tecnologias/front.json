@@ -1,0 +1,38 @@
+[
+  {
+    "icon": "devicon-css3-plain colored",
+    "titulo": "css",
+    "cor": "#1572B6",
+    "sobre": "Estilização visual das páginas"
+  },
+  {
+    "icon": "devicon-bootstrap-plain colored",
+    "titulo": "BOOTSTRAP",
+    "cor": "#7952B3",
+    "sobre": "Framework CSS responsivo"
+  },
+  {
+    "icon": "devicon-javascript-plain colored",
+    "titulo": "JAVASCRIPT",
+    "cor": "#F7DF1E",
+    "sobre": "Linguagem para interatividade"
+  },
+  {
+    "icon": "devicon-html5-plain colored",
+    "titulo": "HTML",
+    "cor": "#E34F26",
+    "sobre": "Estrutura de páginas web"
+  },
+  {
+    "icon": "devicon-sass-original colored",
+    "titulo": "sass",
+    "cor": "#CC6699",
+    "sobre": "Pré-processador CSS para estilos mais organizados"
+  },
+  {
+    "icon": "devicon-react-original colored",
+    "titulo": "REACT",
+    "cor": "#61dafb",
+    "sobre": "Biblioteca JavaScript para interfaces"
+  }
+]

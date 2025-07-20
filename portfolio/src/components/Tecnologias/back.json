@@ -1,0 +1,20 @@
+[
+  {
+    "icon": "devicon-python-plain colored",
+    "tecnologia": "PYTHON",
+    "cor": "#3776AB",
+    "sobre": "Linguagem versátil para back-end e automações"
+  },
+  {
+    "icon": "devicon-mysql-plain colored",
+    "tecnologia": "MYSQL",
+    "cor": "#4479A1",
+    "sobre": "Banco de dados relacional para armazenar informações"
+  },
+  {
+    "icon": "devicon-javascript-plain colored",
+    "tecnologia": "JSON",
+    "cor": "#F7DF1E",
+    "sobre": "Banco de dados relacional para armazenar informações"
+  }
+]

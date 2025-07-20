@@ -1,4 +1,4 @@
-import styles from "./Footer.module.css";
+import styles from "./Footer.module.scss";
 function Footer() {
   return (
     <section className={styles.redes_socias}>
@@ -17,7 +17,6 @@ function Footer() {
               alt="WhatsApp"
               width="32"
             />{" "}
-            47999326217
           </a>
         </li>
         <li>
@@ -32,7 +31,6 @@ function Footer() {
               alt="GitHub"
               width="32"
             />{" "}
-            richardmoraessouza
           </a>
         </li>
         <li>

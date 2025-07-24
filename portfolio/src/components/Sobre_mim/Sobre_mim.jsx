@@ -21,7 +21,7 @@ function Sobre_mim() {
           minhas habilidades e aprender novas tecnologias.
         </p>
         <p>
-          Desenvolvi um site institucional sob demanda para meu chefe, com o
+          Desenvolvi um site institucional sob demanda de um cliente, com o
           objetivo de apresentar os serviços de estética automotiva e atrair
           novos clientes. O projeto foi desenvolvido utilizando HTML, CSS e
           JavaScript, sendo totalmente responsivo e otimizado para SEO, com

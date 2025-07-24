@@ -1,3 +1,5 @@
+@import "../../styles/animations.scss";
+
 .tecnologias {
   display: flex;
   flex-flow: column nowrap;
@@ -7,7 +9,6 @@
   align-items: center;
   font-size: 1rem;
 }
-
 h2 {
   margin: 30px 0px;
 }
@@ -70,7 +71,7 @@ h2 {
 .tecnologia::before {
   content: "";
   position: absolute;
-  animation: glowing 20s linear infinite;
+  background-image: linear-gradient(45deg, #4e95ff, #a259ff, #ff6ec4, #4e95ff);
   top: -2px;
   left: -2px;
   z-index: -1;
@@ -78,14 +79,7 @@ h2 {
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   filter: blur(2px);
-  background-image: linear-gradient(
-    to right,
-    #ffffff,
-    #f5f5dc,
-    #ffffff,
-    #1a1a1a1a,
-    #0f0f0f
-  );
+  
 }
 
 .containerGit {
@@ -95,17 +89,6 @@ h2 {
 
   .git {
     color: #f05032;
-  }
-}
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
   }
 }
 

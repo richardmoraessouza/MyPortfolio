@@ -12,7 +12,7 @@ function Tecnologias({ front, back }) {
                 <i className={`${styles.icon} ${item.icon}`}></i>
                 <h3 style={{ color: item.cor }}>{item.titulo}</h3>
                 <p>{item.sobre}</p>
-                <Modal text="Sobre Tecnologia" className={styles.botao} />
+                <Modal text="Sobre Tecnologia" className={styles.botao} resumo={item.resumo} />
               </div>
             ))}
           </section>
@@ -26,7 +26,7 @@ function Tecnologias({ front, back }) {
                 <i className={`${styles.icon} ${item.icon}`}></i>
                 <h3 style={{ color: item.cor }}>{item.tecnologia}</h3>
                 <p>{item.sobre}</p>
-                <Modal text="Sobre Tecnologia" className={styles.botao} />
+                <Modal text="Sobre Tecnologia" className={styles.botao} resumo={item.resumo}/>
               </div>
             ))}
           </section>

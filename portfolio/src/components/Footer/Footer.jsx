@@ -3,7 +3,7 @@ function Footer() {
   return (
     <section className={styles.redes_socias}>
       <ul
-        className={`align-items-center justify-content-center d-sm-inline-flex gap-4`}
+        className={`align-items-center justify-content-center d-inline-flex gap-4`}
       >
         <li>
           <a
@@ -21,7 +21,7 @@ function Footer() {
         </li>
         <li>
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/richardmoraessouza"
             target="_blank"
             rel="noopener noreferrer"
             title="GitHub"
@@ -33,16 +33,7 @@ function Footer() {
             />{" "}
           </a>
         </li>
-        <li>
-          <a href="mailto:seu@email.com" title="Gmail">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Gmail_icon_(2020).svg"
-              alt="Gmail"
-              width="32"
-            />
-            {""}
-          </a>
-        </li>
+
         <li>
           <a
             href="https://linkedin.com/in/your-profile"
@@ -56,6 +47,16 @@ function Footer() {
               width="32"
             />
             {""}
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=richardmoraessouza2006@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Gmail"
+          >
+            <img src="/Portf-lio/image/Gmail.png" alt="Gmail" />
           </a>
         </li>
       </ul>

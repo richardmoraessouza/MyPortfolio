@@ -1,9 +1,11 @@
+@import '../../styles/animations.scss';
+
 .header {
   display: flex;
   flex-flow: column nowrap;
   position: relative;
   z-index: 1;
-  height: auto;
+  height: 100vh;
   color: #ffffff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 
@@ -110,7 +112,7 @@
     font-weight: 500;
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
-    opacity: 0;
+    animation: fadeUp 0.5s ease-in forwards;
     margin-bottom: 5px;
   }
 }
@@ -272,17 +274,19 @@
   }
 }
 
-@keyframes glowing {
+@keyframes fadeUp {
   0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
+    transform: translateY(30px);
+    filter: blur(4px);
+    opacity: 0;
   }
   100% {
-    background-position: 0 0;
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
   }
 }
+
 
 @media (min-width: 747px) {
   .apresentacao {

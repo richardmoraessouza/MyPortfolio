@@ -4,21 +4,11 @@ import Tecnologias from "./components/Tecnologias/Tecnologias.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import "./index.css";
 import Projetos from "./components/Projetos/Projetos.jsx";
+import Projeto from "./components/Projetos/Projetos.json";
 import Front from "./components/Tecnologias/front.json";
 import Back from "./components/Tecnologias/back.json";
 
 function App() {
-  const lista = [
-    {
-      nome: "richard",
-      idade: 18,
-    },
-    {
-      nome: "lucas",
-      idade: 20,
-    },
-  ];
-
   return (
     <>
       <Header />
@@ -28,7 +18,7 @@ function App() {
         <div className="p-5"></div>
         <Tecnologias front={Front} back={Back} />
         <div className="p-5"></div>
-        <Projetos pessoa={lista} />
+        <Projetos projeto={Projeto} />
       </main>
       <div className="p-5"></div>
       <footer>

@@ -1,0 +1,56 @@
+[
+  {
+    "imagem": "SerginhoEstetiCar.png",
+    "alt": "site SerginhoEstetiCar",
+    "titulo": "SerginhoEstetiCar",
+    "tecnologias": "",
+    "sobre": "Este projeto foi desenvolvido sob demanda para um cliente real, com o objetivo de criar um site institucional que apresentasse os serviços oferecidos pela estética automotiva Serginho estetiCar. A proposta foi entregar uma solução visualmente moderna, responsiva e funcional, ajudando a atrair novos clientes e fortalecer a presença online do negócio. O site exibe os principais serviços oferecidos, como lavagem detalhada, polimento e cristalização, além de contar com um formulário de agendamento que permite que os usuários entrem em contato de forma prática e direta.",
+    "site": "https://serginhoesteticar.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/SerginhoestetiCar?tab=readme-ov-file"
+  },
+  {
+    "imagem": "",
+    "alt": " site Calculadora",
+    "titulo": "Calculadora",
+    "tecnologias": "",
+    "sobre": "",
+    "site": "",
+    "repositorio": ""
+  },
+  {
+    "imagem": "Quiz.png",
+    "alt": "site Quiz",
+    "titulo": "Quiz",
+    "tecnologias": "",
+    "sobre": "Este projeto é um quiz interativo desenvolvido com HTML, CSS, Bootstrap e JavaScript puro, com o objetivo de testar conhecimentos do usuário de forma simples e dinâmica. As perguntas são carregadas dinamicamente, e ao final, o usuário recebe uma pontuação com base nas respostas corretas.",
+    "site": "https://perguntas-front-end.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/quiz"
+  },
+  {
+    "imagem": "",
+    "alt": "site Projeto web 1",
+    "titulo": "Projeto web 1",
+    "tecnologias": "",
+    "sobre": "Esse projeto foi um exercício de aprendizado, onde reproduzi o layout de um site já existente usando apenas HTML e CSS. O objetivo era entender melhor como organizar arquivos, trabalhar com estrutura de pastas e aplicar boas práticas de desenvolvimento front-end. Apesar de ser uma cópia, foi uma ótima oportunidade para treinar responsividade, atenção aos detalhes e reforçar meus conhecimentos em construção de páginas estáticas.",
+    "site": "https://projetotest.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/projeto-web-1"
+  },
+  {
+    "imagem": "Timer.png",
+    "alt": "site Timer Interativo",
+    "titulo": "Timer Interativo",
+    "tecnologias": "",
+    "sobre": "Nesse projeto, eu peguei a ideia de um timer simples e leve, mas fui além do básico. Vi um vídeo no Codecon que 3 dev back-end e 1 dev front-end tentavam fazer um timer, mas eles não conseguiram implementar tudo direito — aí decidi refazer do meu jeito e fazer funcionar 100%.\n\nO resultado foi um cronômetro que conta o tempo regressivamente, dá para pausar, resetar e até mudar o tempo enquanto tá rodando. Nos últimos segundos, o fundo da tela muda de cor para avisar que tá acabando, e ainda toca um som no fim, pra ninguém perder a hora.\n\nAlém de funcionar bem, ele é fácil de usar e pode ajudar em várias situações, tipo estudar, fazer exercício ou o que você precisar de um temporizador.\n\nEsse projeto mostra como eu gosto de aprender na prática, resolver os bugs que aparecem e entregar algo que realmente funciona.",
+    "site": "https://timer-interativo.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/timer-interativo"
+  },
+  {
+    "imagem": "projeto-web2.png",
+    "alt": "site Projeto web 2",
+    "titulo": "Projeto web 2",
+    "tecnologias": "",
+    "sobre": "O 'Projeto web 2' foi desenvolvido como parte do meu processo de evolução no front-end. Diferente do primeiro, busquei aplicar técnicas mais avançadas de responsividade e organização de código, além de experimentar novas abordagens de layout. O foco foi aprimorar a estrutura dos arquivos, melhorar a semântica do HTML e explorar ainda mais o uso do CSS para criar uma interface moderna e funcional. Esse projeto reforçou minha capacidade de transformar ideias em páginas web bem estruturadas e visualmente agradáveis.",
+    "site": "https://projetoeteste.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/projeto-web-2"
+  }
+]

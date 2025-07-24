@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 
 function Header() {
   const [nome, setNome] = useState("");
-  const nome_completo = "Richard Moras Souza";
+  const nome_completo = "Richard Moraes Souza";
   const typingSpeed = 100;
 
   useEffect(() => {
@@ -55,7 +55,7 @@ function Header() {
         <section className={styles.comeco}>
           <div>
             <h1 className="m-1">{nome}</h1>
-            <p>Desenvolvedor Front-end</p>
+            <p>&lt;Desenvolvedor Front-end/&gt;</p>
           </div>
           <div className={styles.redes_socias}>
             <button className={`${styles.btn} ${styles.linkedin}`}>
@@ -64,7 +64,7 @@ function Header() {
               </a>
             </button>
             <button className={`${styles.btn} ${styles.github}`}>
-              <a href="">
+              <a href="https://github.com/richardmoraessouza" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-github me-2"></i>GitHub
               </a>
             </button>
@@ -89,14 +89,14 @@ function Header() {
           </div>
         </section>
       </div>
-      {/* <video
+      <video
         src="/Portf-lio/video/video_4.mp4"
         autoPlay
         className={styles.video}
         muted
         loop
         playsInline
-      ></video> */}
+      ></video> 
     </header>
   );
 }

@@ -116,10 +116,6 @@ portfolio/
 - Foco em React, JavaScript, HTML, CSS e SCSS
 - Conhecimentos em Python e MySQL
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ## 🤝 Contribuições
 
 Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.

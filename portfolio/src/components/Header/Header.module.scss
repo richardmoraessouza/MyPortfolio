@@ -5,9 +5,10 @@
   flex-flow: column nowrap;
   position: relative;
   z-index: 1;
-  height: 100vh;
+  height: auto;
   color: #ffffff;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 8px rgba(221, 44, 44, 0.8);
+  overflow: hidden;
 
   ul {
     display: flex;
@@ -36,22 +37,65 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  filter: brightness(1.1) contrast(1.1) saturate(1.2) hue-rotate(5deg);
+  transform: scale(1.01);
+  transition: filter 0.3s ease;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+}
+
+.video:hover {
+  filter: brightness(1.2) contrast(1.2) saturate(1.3) hue-rotate(10deg);
+}
+
+.videoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.videoFallback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .navegacao {
   width: 100%;
-  background-color: #0b0c10;
+  background-color: var(--card-bg);
   padding: 5px;
   height: auto;
   position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  nav {
+    flex: 1;
+  }
 
   a {
     text-decoration: none;
     padding-inline: 15px;
     text-transform: uppercase;
     font-weight: bolder;
-    color: white;
+    color: var(--text-color);
     transition: color 0.3s ease;
     position: relative;
   }
@@ -79,13 +123,36 @@
   }
 
   a:hover {
-    color: #f0f0f0;
+    color: var(--accent-color);
   }
 
   a:hover::before {
     width: 100%;
     animation: glowing 20s linear infinite;
   }
+}
+
+.modal {
+  display: none;
+}
+
+.hamburguer {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 25px;
+}
+
+.hamburguer:hover {
+  color: #0d6efd;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .apresentacao {
@@ -161,6 +228,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .btn::before {
@@ -289,6 +357,9 @@
 
 
 @media (min-width: 747px) {
+  .header {
+     height: 100vh;
+  }
   .apresentacao {
     grid-template-columns: 1fr 1fr;
     padding: 10px;
@@ -327,4 +398,23 @@
   .orbita {
     height: 550px;
   }
+}
+
+@media (max-width: 450px) {
+  .navegacao ul {
+    flex-flow: column nowrap;
+  }
+
+  .navegacao .normal {
+    // display: none;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  .modal {
+    display: block;
+  }
+
 }

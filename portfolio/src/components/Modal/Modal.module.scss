@@ -10,13 +10,16 @@
   position: relative;
   z-index: 0;
 }
+
 .modal {
   display: flex;
   flex-flow: column nowrap;
   background-color: white;
   position: fixed;
+  font-size: 12px;
   top: 50%;
   left: 50%;
+  width: 90%;
   transform: translate(-50%, -50%);
   z-index: 9999;
   color: white;
@@ -29,36 +32,52 @@
     background-color: #4e95ff;
     color: white;
     border-radius: 5px;
-    margin-top: 20px;
     padding: 10px;
     cursor: pointer;
     
   }
 }
-.modal::after {
-  content: "";
-  background-color: #1a1a1a;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  border-radius: 10px;
-  top: 0;
-  left: 0;
-}
+
+
+
 .modal::before {
   content: "";
-  animation: glowing 20s linear infinite;
   position: absolute;
-  background-image: linear-gradient(45deg, #4e95ff, #a259ff, #ff6ec4, #4e95ff);
   top: -2px;
   left: -2px;
   z-index: -1;
+  scrollbar-width: none;
   background-size: 600%;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   filter: blur(4px);
 }
 
+.modal::after {
+    content: "";
+    background-color: #1a1a1a;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+  }
 
+@media (min-width: 335px) {
+  .modal {
+    overflow-x: visible;
+    font-size: 16px;
+  }
+  .modal::before {
+    animation: glowing 20s linear infinite;
+  background-image: linear-gradient(45deg, #4e95ff, #a259ff, #ff6ec4, #4e95ff);
+  }
+}
 
+@media (min-width: 800px) {
+  .modal {
+    width: 70%;
+  }
+}

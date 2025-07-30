@@ -1,21 +1,44 @@
 .redes_socias {
   width: 100%;
   text-align: center;
+  background-color: var(--section-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: var(--shadow);
 
   ul {
     list-style: none;
     width: 100%;
     flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
   }
 
-  li:hover {
-    transform: translateY(-3px);
-    transition: transform 0.2s ease-in-out;
+  li {
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 
   a {
     font-weight: bold;
     text-decoration: none;
-    color: #dddddd;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+  
+  p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 1rem;
   }
 }

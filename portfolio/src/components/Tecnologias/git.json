@@ -1,0 +1,16 @@
+[
+    {
+        "icon":"devicon-git-plain colored",
+        "tecnologia": "GIT",
+        "cor": "#f05032",
+        "sobre": "Sistema de controle de versão distribuído",
+        "resumo": " um sistema de controle de versão distribuído, criado por Linus Torvalds. Ele permite que você acompanhe as mudanças no código-fonte ao longo do tempo, trabalhe em diferentes ramificações (branches) e colabore com outras pessoas sem perder o histórico do projeto. O Git é utilizado localmente, no seu computador."
+    },
+    {
+        "icon":"devicon-github-original colored",
+        "tecnologia": "GITHUB",
+        "cor": "white",
+        "sobre": "Plataforma de hospedagem de código-fonte",
+        "resumo": "É uma plataforma online que hospeda repositórios Git. Ela facilita o compartilhamento de código, colaboração em projetos, revisão de código (pull requests), controle de permissões e integração com outras ferramentas. O GitHub é como uma “rede social” para desenvolvedores, onde você pode contribuir com projetos open source e mostrar seu portfólio."
+    }
+]

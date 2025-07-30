@@ -9,13 +9,13 @@
     "repositorio": "https://github.com/richardmoraessouza/SerginhoestetiCar?tab=readme-ov-file"
   },
   {
-    "imagem": "",
+    "imagem": "calculadora.png",
     "alt": " site Calculadora",
     "titulo": "Calculadora",
     "tecnologias": "",
-    "sobre": "",
-    "site": "",
-    "repositorio": ""
+    "sobre": "Calculadora desenvolvida com HTML, CSS e JavaScript puro, focando na responsividade e experiência do usuário. Possui interface limpa e intuitiva com operações básicas e avançadas, design totalmente responsivo e feedback visual claro. O projeto demonstra habilidades em manipulação do DOM, eventos JavaScript e design responsivo.",
+    "site": "https://calculadoraresponsiva.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/calculadora?tab=readme-ov-file"
   },
   {
     "imagem": "Quiz.png",
@@ -27,7 +27,7 @@
     "repositorio": "https://github.com/richardmoraessouza/quiz"
   },
   {
-    "imagem": "",
+    "imagem": "projeto-web1.png",
     "alt": "site Projeto web 1",
     "titulo": "Projeto web 1",
     "tecnologias": "",

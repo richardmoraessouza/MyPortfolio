@@ -1,7 +1,13 @@
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../translations/translations";
 import styles from "./Footer.module.scss";
+
 function Footer() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
-    <section className={styles.redes_socias}>
+    <section id="contatos" className={styles.redes_socias}>
       <ul
         className={`align-items-center justify-content-center d-inline-flex gap-4`}
       >
@@ -36,7 +42,7 @@ function Footer() {
 
         <li>
           <a
-            href="https://linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/richard-moraes-souza/"
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn"
@@ -60,8 +66,9 @@ function Footer() {
           </a>
         </li>
       </ul>
-      <p>&copy; 2025 Richard Moraes Souza. Todos os direitos reservados.</p>
+      <p>{t.footerText}</p>
     </section>
   );
 }
+
 export default Footer;

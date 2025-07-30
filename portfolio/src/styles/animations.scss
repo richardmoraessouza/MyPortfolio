@@ -1,3 +1,5 @@
+@import './variables';
+
 @keyframes glowing {
   0% {
     background-position: 0 0;
@@ -7,5 +9,27 @@
   }
   100% {
     background-position: 0 0;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(30px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }

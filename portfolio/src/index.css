@@ -1,9 +1,45 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #007bff;
+  --border-color: #e0e0e0;
+  --hover-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --text-muted: #666666;
+  --card-border: #e0e0e0;
+  --card-hover: #f8f9fa;
+  --section-bg: #f8f9fa;
+}
+
+[data-theme="dark"] {
+  --bg-color: #0f0f0f;
+  --text-color: #dddddd;
+  --accent-color: #007bff;
+  --border-color: #333333;
+  --hover-bg: #1a1a1a;
+  --card-bg: #1a1a1a;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --text-muted: #aaaaaa;
+  --card-border: #333333;
+  --card-hover: #2a2a2a;
+  --section-bg: #0f0f0f;
+}
+
+html {
+  overflow-x: hidden;
+}
+
 body {
-  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  background: linear-gradient(135deg, var(--bg-color) 0%, var(--section-bg) 100%);
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   letter-spacing: 0.5px;
-  color: #dddddd;
+  color: var(--text-color);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
 }
 
 h1,
@@ -11,5 +47,32 @@ h2,
 h3 {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
+  color: var(--text-color);
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section spacing */
+main > section {
+  margin-bottom: 3rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  main > section {
+    margin-bottom: 2rem;
+  }
 }
 

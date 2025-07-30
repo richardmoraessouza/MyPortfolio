@@ -1,10 +1,17 @@
 import { useState, useEffect } from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../translations/translations";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import LanguageToggle from "../LanguageToggle/LanguageToggle";
 import styles from "./Header.module.scss";
 
 function Header() {
   const [nome, setNome] = useState("");
+  const { language } = useLanguage();
+  const t = translations[language];
   const nome_completo = "Richard Moraes Souza";
   const typingSpeed = 100;
+
 
   useEffect(() => {
     let index = 0;
@@ -24,29 +31,35 @@ function Header() {
   }, []);
 
   return (
-    <header className={styles.header}>
+    <header id="home" className={styles.header}>
       <section className={styles.navegacao}>
-        <nav>
+        <nav className={styles.normal}>
           <ul>
             <li>
               <a href="#home" className={styles.link}>
-                Home
+                {t.home}
               </a>
             </li>
             <li>
-              <a href="#sobre_mim">sobre mim</a>
+              <a href="#sobre_mim">{t.about}</a>
             </li>
             <li>
-              <a href="">Tecnologias</a>
+              <a href="#tecnologias">{t.technologies}</a>
             </li>
             <li>
-              <a href="">Projetos</a>
+              <a href="#projetos">{t.projects}</a>
             </li>
             <li>
-              <a href="">Contatos</a>
+              <a href="#contatos">{t.contact}</a>
             </li>
           </ul>
         </nav>
+        <div>
+        </div>
+        <div className={styles.controls}>
+          <ThemeToggle />
+          <LanguageToggle />
+        </div>
       </section>
 
       <div className="p-3"></div>
@@ -59,7 +72,7 @@ function Header() {
           </div>
           <div className={styles.redes_socias}>
             <button className={`${styles.btn} ${styles.linkedin}`}>
-              <a href="">
+              <a href="https://www.linkedin.com/in/richard-moraes-souza/" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-linkedin me-2"></i>Linkedin
               </a>
             </button>
@@ -74,7 +87,7 @@ function Header() {
         <section className={styles.orbita}>
           <div className={styles.centro}>
             <img
-              src="/Portf-lio/image/absulute-cinema.jpg"
+              src="/Portf-lio/image/eu.jpg"
               alt=""
               className={styles.eu}
             />
@@ -90,7 +103,7 @@ function Header() {
         </section>
       </div>
       <video
-        src="/Portf-lio/video/video_4.mp4"
+        src="/Portf-lio/video/bolinhas.mp4"
         autoPlay
         className={styles.video}
         muted

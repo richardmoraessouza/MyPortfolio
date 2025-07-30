@@ -1,27 +1,38 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
 .projetos {
-  display: flex;
-  flex-flow: column nowrap;
+  @include flex(column, flex-start, stretch, nowrap);
   width: 100%;
 
   .containerProjetos {
     width: 100%;
     height: auto;
-    display: flex;
+    @include flex(column, center, center, nowrap);
+  }
+
+  @include respond-to('lg') {
+    .containerProjetos {
+      @include flex(row, stretch, stretch, nowrap);
+    }
   }
 
   .projeto {
-    width: 50%;
+    width: 80%;
     height: auto;
-    background-color: #1e1e1e;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.274);
   }
 
   h3 {
-    font-size: clamp(0.7rem, 2vw, 3rem);
-    margin-bottom: 10px;
+    font-size: $font-size-small;
+    margin-bottom: $spacing-md;
   }
 
   p {
-    font-size: clamp(0.8rem, 1.5vw, 3rem);
+    font-size: $font-size-medium;
   }
 }
 
@@ -32,29 +43,26 @@
 }
 
 .links {
-  display: flex;
-  flex-flow: column nowrap;
+  @include flex(column, flex-start, stretch, nowrap);
 
   a {
-    padding: 4px;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
+    @include button-style();
   }
 
   .repositorio {
-    color: white;
-    background-color: #1a1a1a;
+    @include button-style($secondary-color, $text-white, $border-radius-sm);
+    font-size: $font-size-large;
   }
 
   .site {
-    color: black;
-    background-color: white;
+    @include button-style($text-white, $text-black, $border-radius-sm);
+    font-size: $font-size-large;
   }
 }
 
-@media (min-width: 480px) {
+@include respond-to('md') {
   .links {
-    flex-flow: row nowrap;
+    @include flex(row, flex-start, stretch, nowrap);
   }
 }
+

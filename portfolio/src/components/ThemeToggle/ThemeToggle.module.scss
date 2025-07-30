@@ -1,0 +1,20 @@
+.themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+  
+  &:hover {
+    background-color: var(--hover-bg);
+    transform: scale(1.1);
+  }
+  
+  &:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
+} 

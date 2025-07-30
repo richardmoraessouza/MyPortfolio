@@ -1,0 +1,24 @@
+.languageToggle {
+  background: none;
+  border: 2px solid var(--border-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+  text-transform: uppercase;
+  
+  &:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--bg-color);
+    transform: scale(1.05);
+  }
+  
+  &:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
+} 

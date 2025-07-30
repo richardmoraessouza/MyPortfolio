@@ -1,0 +1,82 @@
+// Cores
+$primary-color: #1e1e1e;
+$secondary-color: #1a1a1a;
+$background-dark: #0b0c10;
+$text-white: #ffffff;
+$text-light: #f0f0f0;
+$text-black: #000000;
+
+// Gradientes
+$gradient-glow: linear-gradient(
+  to right,
+  #ffffff,
+  #f5f5dc,
+  #ffffff,
+  #1a1a1a1a,
+  #0f0f0f
+);
+
+$gradient-github: linear-gradient(
+  45deg,
+  #171515,
+  #444444,
+  #586069,
+  #171515,
+  blueviolet
+);
+
+$gradient-linkedin: linear-gradient(
+  45deg,
+  #0077b5,
+  #00a0dc,
+  #005983,
+  #0077b5
+);
+
+$gradient-purple: linear-gradient(105deg, #6a0dad, #3a0ca3);
+
+// Tipografia
+$font-family-primary: "Orbitron", sans-serif;
+$font-weight-bold: bold;
+$font-weight-bolder: bolder;
+$font-weight-light: 300;
+$font-weight-medium: 500;
+
+// Tamanhos de fonte responsivos
+$font-size-small: clamp(0.7rem, 2vw, 3rem);
+$font-size-medium: clamp(0.8rem, 1.5vw, 3rem);
+$font-size-large: clamp(0.8rem, 2vw, 1.1rem);
+
+// Espaçamentos
+$spacing-xs: 4px;
+$spacing-sm: 5px;
+$spacing-md: 10px;
+$spacing-lg: 15px;
+$spacing-xl: 17px;
+
+// Border radius
+$border-radius-sm: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 12px;
+
+// Transições
+$transition-fast: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Breakpoints
+$breakpoint-sm: 400px;
+$breakpoint-md: 480px;
+$breakpoint-lg: 500px;
+$breakpoint-xl: 600px;
+$breakpoint-xxl: 747px;
+
+// Z-index
+$z-index-base: 0;
+$z-index-nav: 1;
+$z-index-overlay: 2;
+
+// Sombras
+$text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+$box-shadow-blur: blur(1px);
+$box-shadow-blur-large: blur(10px);
+$box-shadow-blur-xl: blur(20px); 

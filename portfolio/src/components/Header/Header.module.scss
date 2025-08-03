@@ -9,22 +9,23 @@
   color: #ffffff;
   overflow: hidden;
 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 10px;
-  }
+}
 
-  nav {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 10px;
-  }
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .video {
@@ -85,65 +86,63 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  nav {
-    flex: 1;
-  }
+}
 
-  a {
-    text-decoration: none;
-    padding-inline: 15px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    color: var(--text-color);
-    transition: color 0.3s ease;
-    position: relative;
-  }
+nav {
+  flex: 1;
+}
 
-  a::before {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    background-color: white;
-    width: 0%;
-    left: 0;
-    height: 1px;
-    transition: width 0.3s ease-in-out;
-    background-size: 400%;
-    z-index: -1;
-    transition: opacity 0.3s ease-in-out;
-    background-image: linear-gradient(
-      to right,
-      #ffffff,
-      #f5f5dc,
-      #ffffff,
-      #1a1a1a1a,
-      #0f0f0f
-    );
-  }
+a {
+  text-decoration: none;
+  padding-inline: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+  position: relative;
+}
 
-  a:hover {
-    color: var(--accent-color);
-  }
+a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  background-color: white;
+  width: 0%;
+  left: 0;
+  height: 1px;
+  transition: width 0.3s ease-in-out;
+  background-size: 400%;
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #f5f5dc,
+    #ffffff,
+    #1a1a1a1a,
+    #0f0f0f
+  );
+}
 
-  a:hover::before {
-    width: 100%;
-    animation: glowing 20s linear infinite;
-  }
+a:hover {
+  color: var(--accent-color);
+}
+
+a:hover::before {
+  width: 100%;
+  animation: glowing 20s linear infinite;
 }
 
 .modal {
-  display: none;
-}
-
-.hamburguer {
   display: none;
   background-color: transparent;
   border: none;
   color: white;
   font-size: 25px;
+  color: var(--text-color);
 }
 
-.hamburguer:hover {
+.modal:hover {
   color: #0d6efd;
 }
 
@@ -407,15 +406,11 @@
   }
 
   .navegacao .normal {
-    display: block;
-  }
-
-  .hamburguer {
-    display: block;
+    display: none;
   }
 
   .modal {
     display: block;
   }
-
 }
+

@@ -1,19 +1,19 @@
 export const translations = {
   pt: {
-    // Header
+    
     home: "Início",
     about: "Sobre mim",
     technologies: "Tecnologias",
     projects: "Projetos",
     contact: "Contato",
     
-    // Sobre mim
+    
     aboutMe: "Sobre mim",
     aboutMeText1: "Sou desenvolvedor front-end autodidata, apaixonado por criar experiências digitais envolventes. Busco constantemente aprimorar minhas habilidades e aprender novas tecnologias.",
     aboutMeText2: "Desenvolvi um site institucional sob demanda de um cliente, com o objetivo de apresentar os serviços de estética automotiva e atrair novos clientes. O projeto foi desenvolvido utilizando HTML, CSS e JavaScript, sendo totalmente responsivo e otimizado para SEO, com estrutura de código modular e reutilizável.",
     aboutMeText3: "Tenho experiência em projetos utilizando HTML, CSS, JSON, Scss, JavaScript e React. Também possuo conhecimentos em backend com Python, utilizando bibliotecas como mysql-connector para manipular bancos de dados MySQL, criando tabelas, inserindo e consultando dados.",
     
-    // Tecnologias
+   
     frontend: "Frontend",
     backend: "Backend",
     tools: "Ferramentas",
@@ -24,17 +24,16 @@ export const translations = {
     viewProject: "Ver projeto",
     viewRepository: "Ver repositório",
     
-    // Modal
+   
     close: "Fechar",
     
-    // Footer
+    
     footerText: "Desenvolvido com ❤️ por Richard",
     
-    // Botões
+   
     toggleTheme: "Alternar tema",
     toggleLanguage: "Alternar idioma",
     
-    // Projetos específicos
     serginhoEstetiCar: {
       title: "SerginhoEstetiCar",
       description: "Este projeto foi desenvolvido sob demanda para um cliente real, com o objetivo de criar um site institucional que apresentasse os serviços oferecidos pela estética automotiva Serginho estetiCar. A proposta foi entregar uma solução visualmente moderna, responsiva e funcional, ajudando a atrair novos clientes e fortalecer a presença online do negócio. O site exibe os principais serviços oferecidos, como lavagem detalhada, polimento e cristalização, além de contar com um formulário de agendamento que permite que os usuários entrem em contato de forma prática e direta."

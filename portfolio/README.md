@@ -1,18 +1,21 @@
 # 🚀 Portfólio - Richard Moraes Souza
 
-Um portfólio moderno e responsivo desenvolvido com React, demonstrando projetos e habilidades em desenvolvimento front-end.
+Um portfólio moderno e responsivo desenvolvido com React, demonstrando projetos e habilidades em desenvolvimento front-end com suporte a múltiplos idiomas.
 
 ## 📋 Sobre
 
-Este portfólio apresenta minha jornada como desenvolvedor front-end autodidata, destacando projetos desenvolvidos e tecnologias que domino. O site é totalmente responsivo e oferece uma experiência de usuário intuitiva e moderna.
+Este portfólio apresenta minha jornada como desenvolvedor front-end autodidata, destacando projetos desenvolvidos e tecnologias que domino. O site é totalmente responsivo, oferece uma experiência de usuário intuitiva e moderna, e suporta múltiplos idiomas (Português e Inglês).
 
 ## ✨ Funcionalidades
 
-- **Seção Sobre Mim**: Apresentação pessoal e experiência profissional
-- **Tecnologias**: Exibição das tecnologias front-end, back-end e ferramentas de versionamento
-- **Projetos**: Galeria de projetos desenvolvidos com links para demonstração e repositório
-- **Design Responsivo**: Interface adaptável para diferentes dispositivos
-- **Animações**: Transições suaves e elementos interativos
+- **🌍 Suporte Multi-idioma**: Tradução completa em Português e Inglês
+- **🎨 Tema Escuro/Claro**: Alternância entre temas com persistência local
+- **📱 Design Responsivo**: Interface adaptável para diferentes dispositivos
+- **⚡ Performance Otimizada**: Carregamento rápido com Vite
+- **🎯 Seção Sobre Mim**: Apresentação pessoal e experiência profissional
+- **🛠️ Tecnologias**: Exibição das tecnologias com modais informativos
+- **📂 Projetos**: Galeria de projetos com links para demonstração e repositório
+- **🎭 Animações**: Transições suaves e elementos interativos
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -21,6 +24,11 @@ Este portfólio apresenta minha jornada como desenvolvedor front-end autodidata,
 - **SCSS/Sass** - Pré-processador CSS para estilos avançados
 - **Vite** - Build tool rápida e moderna
 - **ESLint** - Linter para qualidade de código
+
+### Funcionalidades
+- **Context API** - Gerenciamento de estado para tema e idioma
+- **LocalStorage** - Persistência de preferências do usuário
+- **CSS Modules** - Estilos modulares e organizados
 
 ### Deploy
 - **GitHub Pages** - Hospedagem gratuita
@@ -60,27 +68,94 @@ npm run dev
 - `npm run lint` - Executa o linter
 - `npm run deploy` - Faz deploy para GitHub Pages
 
+## 🌍 Sistema de Idiomas
+
+O portfólio suporta dois idiomas:
+
+### Português (Padrão)
+- Interface completa em português
+- Descrições detalhadas dos projetos
+- Informações sobre tecnologias
+
+### Inglês
+- Tradução completa da interface
+- Projetos e tecnologias traduzidos
+- Manutenção da qualidade do conteúdo
+
+### Como Usar
+- Clique no botão de alternar idioma no cabeçalho
+- As preferências são salvas automaticamente
+- O idioma é mantido entre sessões
+
+## 🎨 Sistema de Temas
+
+### Tema Claro
+- Design limpo e moderno
+- Cores suaves e legíveis
+- Ideal para uso diurno
+
+### Tema Escuro
+- Reduz fadiga visual
+- Cores contrastantes
+- Ideal para uso noturno
+
+### Persistência
+- As preferências são salvas no navegador
+- O tema é mantido entre sessões
+- Alternância instantânea
+
 ## 🎯 Projetos Destacados
 
 ### SerginhoEstetiCar
 Site institucional desenvolvido sob demanda para estética automotiva, com formulário de agendamento e design responsivo.
 
+**Tecnologias**: HTML, CSS, JavaScript
+**Link**: [Ver projeto](https://serginhoesteticar.netlify.app/)
+
 ### Calculadora
 Calculadora responsiva desenvolvida com HTML, CSS e JavaScript puro, com operações básicas e avançadas.
+
+**Tecnologias**: HTML, CSS, JavaScript
+**Link**: [Ver projeto](https://calculadoraresponsiva.netlify.app/)
 
 ### Timer Interativo
 Cronômetro regressivo com funcionalidades avançadas como pausa, reset e alertas visuais.
 
+**Tecnologias**: HTML, CSS, JavaScript
+**Link**: [Ver projeto](https://timer-interativo.netlify.app/)
+
 ### Quiz
 Quiz interativo desenvolvido com HTML, CSS, Bootstrap e JavaScript, com perguntas dinâmicas e sistema de pontuação.
+
+**Tecnologias**: HTML, CSS, Bootstrap, JavaScript
+**Link**: [Ver projeto](https://perguntas-front-end.netlify.app/)
+
+## 🛠️ Tecnologias Demonstradas
+
+### Front-end
+- **HTML5** - Estrutura semântica e acessível
+- **CSS3** - Estilos modernos e responsivos
+- **JavaScript** - Interatividade e dinamismo
+- **React** - Componentes reutilizáveis
+- **Sass/SCSS** - Estilos organizados e modulares
+- **Bootstrap** - Framework CSS responsivo
+
+### Back-end
+- **Python** - Automação e processamento de dados
+- **MySQL** - Gerenciamento de banco de dados
+- **JSON** - Troca de dados entre sistemas
+
+### Ferramentas
+- **Git** - Controle de versão
+- **GitHub** - Hospedagem de código e colaboração
 
 ## 📱 Responsividade
 
 O portfólio é totalmente responsivo e otimizado para:
-- Dispositivos móveis
-- Tablets
-- Desktops
-- Diferentes resoluções de tela
+- 📱 Dispositivos móveis (320px+)
+- 📱 Tablets (768px+)
+- 💻 Desktops (1024px+)
+- 🖥️ Telas grandes (1440px+)
 
 ## 🚀 Deploy
 
@@ -97,24 +172,50 @@ portfolio/
 ├── src/
 │   ├── components/     # Componentes React
 │   │   ├── Footer/     # Rodapé
-│   │   ├── Header/     # Cabeçalho
+│   │   ├── Header/     # Cabeçalho com navegação
+│   │   ├── LanguageToggle/ # Alternador de idioma
 │   │   ├── Modal/      # Modal de projetos
+│   │   ├── Navegacao/  # Menu de navegação
 │   │   ├── Projetos/   # Seção de projetos
 │   │   ├── Sobre_mim/  # Seção sobre mim
-│   │   └── Tecnologias/ # Seção de tecnologias
+│   │   ├── Tecnologias/ # Seção de tecnologias
+│   │   └── ThemeToggle/ # Alternador de tema
+│   ├── contexts/       # Contextos React
+│   │   ├── LanguageContext.jsx # Gerenciamento de idioma
+│   │   └── ThemeContext.jsx    # Gerenciamento de tema
+│   ├── translations/   # Arquivos de tradução
+│   │   └── translations.js     # Traduções PT/EN
 │   ├── styles/         # Arquivos SCSS
 │   ├── App.jsx         # Componente principal
 │   └── main.jsx        # Ponto de entrada
 └── package.json        # Dependências e scripts
 ```
 
+## 🎨 Características do Design
+
+### Cores
+- **Tema Claro**: Cores suaves e contrastantes
+- **Tema Escuro**: Cores escuras com destaque
+- **Acessibilidade**: Contraste adequado para leitura
+
+### Tipografia
+- **Fonte Principal**: Sistema de fontes do navegador
+- **Hierarquia**: Tamanhos bem definidos
+- **Legibilidade**: Espaçamento otimizado
+
+### Animações
+- **Transições Suaves**: 0.3s ease-in-out
+- **Hover Effects**: Feedback visual interativo
+- **Loading States**: Indicadores de carregamento
+
 ## 👨‍💻 Desenvolvedor
 
 **Richard Moraes Souza**
-- Desenvolvedor Front-end autodidata
-- Apaixonado por criar experiências digitais envolventes
-- Foco em React, JavaScript, HTML, CSS e SCSS
-- Conhecimentos em Python e MySQL
+- 🎯 Desenvolvedor Front-end autodidata
+- 💡 Apaixonado por criar experiências digitais envolventes
+- 🛠️ Foco em React, JavaScript, HTML, CSS e SCSS
+- 🔧 Conhecimentos em Python e MySQL
+- 🌍 Experiência com projetos multi-idioma
 
 ## 📄 Licença
 
@@ -122,8 +223,29 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 🤝 Contribuições
 
-Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
+Contribuições são sempre bem-vindas! Sinta-se à vontade para:
+
+- 🐛 Reportar bugs
+- 💡 Sugerir novas funcionalidades
+- 📝 Melhorar a documentação
+- 🔧 Corrigir problemas de código
+
+### Como Contribuir
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📞 Contato
+
+- **Email**: [Seu email]
+- **LinkedIn**: [Seu LinkedIn]
+- **GitHub**: [richardmoraessouza](https://github.com/richardmoraessouza)
 
 ---
 
 ⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
+
+**Desenvolvido com ❤️ por Richard Moraes Souza**

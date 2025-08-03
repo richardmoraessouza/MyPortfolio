@@ -60,12 +60,10 @@ h3 {
   margin: 0 auto;
 }
 
-/* Section spacing */
 main > section {
   margin-bottom: 3rem;
 }
 
-/* Responsive improvements */
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
@@ -75,4 +73,3 @@ main > section {
     margin-bottom: 2rem;
   }
 }
-

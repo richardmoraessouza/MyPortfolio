@@ -4,6 +4,7 @@ import { translations } from "../../translations/translations";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import LanguageToggle from "../LanguageToggle/LanguageToggle";
 import styles from "./Header.module.scss";
+import Navegacao from "../Navegacao/Navegacao";
 
 function Header() {
   const [nome, setNome] = useState("");
@@ -11,6 +12,11 @@ function Header() {
   const t = translations[language];
   const nome_completo = "Richard Moraes Souza";
   const typingSpeed = 100;
+  const [modal, setModal] = useState(false);
+
+  const abrirModal = () => {
+    setModal(prev => !prev);
+  }
 
 
   useEffect(() => {
@@ -24,14 +30,15 @@ function Header() {
         clearInterval(interval);
       }
     };
-
+    
     const interval = setInterval(typing, typingSpeed);
-
+    
     return () => clearInterval(interval);
   }, []);
-
+  
   return (
     <header id="home" className={styles.header}>
+      { modal && <Navegacao/>}
       <section className={styles.navegacao}>
         <nav className={styles.normal}>
           <ul>
@@ -55,6 +62,10 @@ function Header() {
           </ul>
         </nav>
         <div>
+          <div className={styles.modal}>     
+              <button onClick={abrirModal} className={styles.modal}>☰</button>
+          </div>
+
         </div>
         <div className={styles.controls}>
           <ThemeToggle />

@@ -93,7 +93,6 @@ function Header() {
               </a>
             </button>
           </div>
-          <h1>1</h1>
         </section>
 
         <section className={styles.orbita}>

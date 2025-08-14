@@ -20,7 +20,7 @@ function Navegacao() {
                 <nav>
                     <ul>
                         <li>
-                        <a href="#contatos">{t.home}</a>
+                        <a href="#home">{t.home}</a>
                         </li>
                         <li>
                             <a href="#sobre_mim">{t.about}</a>
@@ -30,6 +30,9 @@ function Navegacao() {
                         </li>
                         <li>
                             <a href="#projetos">{t.projects}</a>
+                        </li>
+                        <li>
+                            <a href="#contatos">{t.contact}</a>
                         </li>
                     </ul>
                 </nav>

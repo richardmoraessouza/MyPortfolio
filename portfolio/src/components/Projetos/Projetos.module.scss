@@ -47,6 +47,11 @@
 
   a {
     @include button-style();
+    // Removendo animação de hover
+    &:hover {
+      opacity: 1;
+      transform: none;
+    }
   }
 
   .repositorio {

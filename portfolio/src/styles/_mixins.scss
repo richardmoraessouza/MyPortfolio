@@ -1,6 +1,6 @@
 @import './variables';
 
-// Mixin para flexbox
+
 @mixin flex($direction: row, $justify: flex-start, $align: stretch, $wrap: nowrap) {
   display: flex;
   flex-flow: $direction $wrap;
@@ -8,14 +8,14 @@
   align-items: $align;
 }
 
-// Mixin para grid
+
 @mixin grid($columns: 1fr, $gap: 0) {
   display: grid;
   grid-template-columns: $columns;
   gap: $gap;
 }
 
-// Mixin para posicionamento absoluto
+
 @mixin absolute($top: auto, $right: auto, $bottom: auto, $left: auto) {
   position: absolute;
   top: $top;
@@ -24,7 +24,7 @@
   left: $left;
 }
 
-// Mixin para centralizar elementos
+
 @mixin center($type: 'both') {
   @if $type == 'both' {
     position: absolute;
@@ -42,7 +42,7 @@
   }
 }
 
-// Mixin para responsividade
+
 @mixin respond-to($breakpoint) {
   @if $breakpoint == 'sm' {
     @media (min-width: $breakpoint-sm) { @content; }
@@ -57,7 +57,7 @@
   }
 }
 
-// Mixin para botões
+
 @mixin button-style($bg-color: $primary-color, $text-color: $text-white, $border-radius: $border-radius-sm) {
   padding: $spacing-xs;
   border-radius: $border-radius;
@@ -68,11 +68,6 @@
   color: $text-color;
   background-color: $bg-color;
   transition: all $transition-fast;
-  
-  &:hover {
-    opacity: 0.8;
-    transform: translateY(-2px);
-  }
 }
 
 // Mixin para animações
@@ -80,33 +75,26 @@
   animation: $name $duration $timing $iteration;
 }
 
-// Mixin para gradientes animados
+
 @mixin glowing-gradient($gradient, $size: 400%) {
   background-image: $gradient;
   background-size: $size;
   animation: glowing 20s linear infinite;
 }
 
-// Mixin para sombras de texto
+
 @mixin text-shadow($shadow: $text-shadow) {
   text-shadow: $shadow;
 }
 
-// Mixin para transições
+
 @mixin transition($properties...) {
   transition: $properties;
 }
 
-// Mixin para hover effects
-@mixin hover-lift {
-  transition: transform $transition-fast;
-  
-  &:hover {
-    transform: translateY(-2px);
-  }
-}
 
-// Mixin para links de navegação
+
+
 @mixin nav-link {
   text-decoration: none;
   padding-inline: $spacing-lg;
@@ -114,26 +102,4 @@
   font-weight: $font-weight-bolder;
   color: $text-white;
   @include transition(color $transition-fast);
-  position: relative;
-  
-  &::before {
-    content: "";
-    @include absolute(auto, auto, -2px, 0);
-    background-color: $text-white;
-    width: 0%;
-    height: 1px;
-    @include transition(width $transition-fast);
-    background-size: 400%;
-    z-index: -1;
-    background-image: $gradient-glow;
-  }
-  
-  &:hover {
-    color: $text-light;
-    
-    &::before {
-      width: 100%;
-      @include animation(glowing, 20s, linear, infinite);
-    }
-  }
 } 

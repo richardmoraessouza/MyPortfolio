@@ -12,7 +12,7 @@ export const translations = {
     aboutMeText1: "Sou desenvolvedor front-end autodidata, apaixonado por criar experiências digitais envolventes. Busco constantemente aprimorar minhas habilidades e aprender novas tecnologias.",
     aboutMeText2: "Desenvolvi um site institucional sob demanda de um cliente, com o objetivo de apresentar os serviços de estética automotiva e atrair novos clientes. O projeto foi desenvolvido utilizando HTML, CSS e JavaScript, sendo totalmente responsivo e otimizado para SEO, com estrutura de código modular e reutilizável.",
     aboutMeText3: "Tenho experiência em projetos utilizando HTML, CSS, JSON, Scss, JavaScript e React. Também possuo conhecimentos em backend com Python, utilizando bibliotecas como mysql-connector para manipular bancos de dados MySQL, criando tabelas, inserindo e consultando dados.",
-    
+    curriculum: "Currículo",
    
     frontend: "Frontend",
     backend: "Backend",
@@ -24,7 +24,6 @@ export const translations = {
     viewProject: "Ver projeto",
     viewRepository: "Ver repositório",
     
-   
     close: "Fechar",
     
     
@@ -57,6 +56,10 @@ export const translations = {
     projectWeb2: {
       title: "Projeto web 2",
       description: "O 'Projeto web 2' foi desenvolvido como parte do meu processo de evolução no front-end. Diferente do primeiro, busquei aplicar técnicas mais avançadas de responsividade e organização de código, além de experimentar novas abordagens de layout. O foco foi aprimorar a estrutura dos arquivos, melhorar a semântica do HTML e explorar ainda mais o uso do CSS para criar uma interface moderna e funcional. Esse projeto reforçou minha capacidade de transformar ideias em páginas web bem estruturadas e visualmente agradáveis."
+    },
+    youtubeClone: {
+      title: "Youtube Clone",
+      description: "Este projeto é uma réplica funcional da interface do YouTube, desenvolvida com React, Bootstrap e Sass. O clone reproduz fielmente o layout e a experiência do usuário da plataforma original, incluindo a barra de navegação, sidebar com categorias, grid de vídeos e player de vídeo. O projeto demonstra habilidades avançadas em desenvolvimento front-end com React, como gerenciamento de estado, criação de componentes reutilizáveis, hooks personalizados, A interface é totalmente responsiva e oferece uma experiência de usuário fluida, simulando o comportamento real do YouTube com navegação entre vídeos, busca e reprodução de conteúdo, utilizando as melhores práticas do ecossistema React."
     }
   },
   en: {
@@ -72,7 +75,7 @@ export const translations = {
     aboutMeText1: "I am a self-taught front-end developer, passionate about creating engaging digital experiences. I constantly seek to improve my skills and learn new technologies.",
     aboutMeText2: "I developed an institutional website on demand for a client, with the goal of presenting automotive detailing services and attracting new customers. The project was developed using HTML, CSS and JavaScript, being fully responsive and SEO optimized, with modular and reusable code structure.",
     aboutMeText3: "I have experience in projects using HTML, CSS, JSON, Scss, JavaScript and React. I also have backend knowledge with Python, using libraries like mysql-connector to manipulate MySQL databases, creating tables, inserting and querying data.",
-    
+    curriculum: "Curriculum",
     // Tecnologias
     frontend: "Frontend",
     backend: "Backend",
@@ -118,6 +121,11 @@ export const translations = {
     projectWeb2: {
       title: "Web project 2",
       description: "The 'Web project 2' was developed as part of my evolution process in front-end. Unlike the first one, I sought to apply more advanced responsiveness techniques and code organization, in addition to experimenting with new layout approaches. The focus was on improving file structure, improving HTML semantics and exploring even more the use of CSS to create a modern and functional interface. This project reinforced my ability to transform ideas into well-structured and visually appealing web pages."
+    },
+    youtubeClone: {
+      title: "Youtube Clone",
+      description: "This project is a functional replica of the YouTube interface, developed with React, Bootstrap and Sass. The clone faithfully reproduces the layout and user experience of the original platform, including the navigation bar, sidebar with categories, video grid and video player. The project demonstrates advanced front-end development skills with React, such as state management, creation of reusable components, custom hooks. The interface is fully responsive and offers a fluid user experience, simulating the real YouTube behavior with video navigation, search and content playback, using React ecosystem best practices."
     }
+    
   }
 }; 

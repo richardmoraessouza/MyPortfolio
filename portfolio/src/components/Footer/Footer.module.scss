@@ -24,8 +24,35 @@
     position: relative;
     display: inline-block;
     
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      background-color: white;
+      width: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 2px;
+      transition: width 0.3s ease-in-out;
+      background-size: 400%;
+      z-index: -1;
+      background-image: linear-gradient(
+        to right,
+        #25d366,
+        #128c7e,
+        #075e54,
+        #25d366,
+        #128c7e
+      );
+    }
+    
     &:hover {
       transform: translateY(-5px) !important;
+    }
+    
+    &:hover::before {
+      width: 100%;
+      animation: glowing 20s linear infinite;
     }
     
     img {

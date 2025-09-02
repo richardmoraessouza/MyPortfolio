@@ -7,6 +7,8 @@
   z-index: 1;
   height: auto;
   color: #ffffff;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 
 }
@@ -78,8 +80,10 @@ nav {
   background-color: var(--card-bg);
   padding: 5px;
   height: auto;
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,7 +96,7 @@ nav {
   flex: 1;
 }
 
-a {
+.navLink {
   text-decoration: none;
   padding-inline: 15px;
   text-transform: uppercase;
@@ -102,7 +106,7 @@ a {
   position: relative;
 }
 
-a::before {
+.navLink::before {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -124,11 +128,11 @@ a::before {
   );
 }
 
-a:hover {
+.navLink:hover {
   color: var(--accent-color);
 }
 
-a:hover::before {
+.navLink:hover::before {
   width: 100%;
   animation: glowing 20s linear infinite;
 }
@@ -376,7 +380,6 @@ a:hover::before {
   .orbita {
     height: 420px !important;
     width: 420px !important;
-    border: 1px solid black;
   }
 }
 

@@ -52,5 +52,14 @@
     "sobre": "O 'Projeto web 2' foi desenvolvido como parte do meu processo de evolução no front-end. Diferente do primeiro, busquei aplicar técnicas mais avançadas de responsividade e organização de código, além de experimentar novas abordagens de layout. O foco foi aprimorar a estrutura dos arquivos, melhorar a semântica do HTML e explorar ainda mais o uso do CSS para criar uma interface moderna e funcional. Esse projeto reforçou minha capacidade de transformar ideias em páginas web bem estruturadas e visualmente agradáveis.",
     "site": "https://projetoeteste.netlify.app/",
     "repositorio": "https://github.com/richardmoraessouza/projeto-web-2"
+  },
+  {
+    "imagem": "Youtube Clone.jpg",
+    "alt": "Youtube Clone",
+    "titulo": "Youtube Clone",
+    "tecnologias": "",
+    "sobre": "Este projeto é uma réplica funcional da interface do YouTube, desenvolvida com React, Bootstrap e Sass. O clone reproduz fielmente o layout e a experiência do usuário da plataforma original, incluindo a barra de navegação, sidebar com categorias, grid de vídeos e player de vídeo. O projeto demonstra habilidades avançadas em desenvolvimento front-end com React, como gerenciamento de estado, criação de componentes reutilizáveis, hooks personalizados, A interface é totalmente responsiva e oferece uma experiência de usuário fluida, simulando o comportamento real do YouTube com navegação entre vídeos, busca e reprodução de conteúdo, utilizando as melhores práticas do ecossistema React.",
+    "site": "https://richardmoraessouza.github.io/youtube-clone/",
+    "repositorio": "https://github.com/richardmoraessouza/youtube-clone"
   }
 ]

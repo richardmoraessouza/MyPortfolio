@@ -43,21 +43,21 @@ function Header() {
         <nav className={styles.normal}>
           <ul>
             <li>
-              <a href="#home" className={styles.link}>
+              <a href="#home" className={styles.navLink}>
                 {t.home}
               </a>
             </li>
             <li>
-              <a href="#sobre_mim">{t.about}</a>
+              <a href="#sobre_mim" className={styles.navLink}>{t.about}</a>
             </li>
             <li>
-              <a href="#tecnologias">{t.technologies}</a>
+              <a href="#tecnologias" className={styles.navLink}>{t.technologies}</a>
             </li>
             <li>
-              <a href="#projetos">{t.projects}</a>
+              <a href="#projetos" className={styles.navLink}>{t.projects}</a>
             </li>
             <li>
-              <a href="#contatos">{t.contact}</a>
+              <a href="#contatos" className={styles.navLink}>{t.contact}</a>
             </li>
           </ul>
         </nav>

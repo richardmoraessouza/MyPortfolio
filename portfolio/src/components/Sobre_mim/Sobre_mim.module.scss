@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: auto;
-  overflow: hidden;
+  margin: 10px 0px 50px 0px;
 
   .foto {
     border-radius: 10px;
@@ -22,6 +22,54 @@
 .textoSobreMim p {
   padding-top: 10px;
   font-size: clamp(0.6rem, 3vw, 1rem);
+}
+
+.curriculo {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  z-index: 0;
+}
+
+.curriculo::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-image: linear-gradient(45deg, #0077b5, #00a0dc, #005983, #0077b5);
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(1px);
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 1;
+  animation: glowing 20s linear infinite;
+}
+
+.curriculo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.curriculo:hover {
+  color: var(--accent-color);
 }
 
 .tituloTexto {

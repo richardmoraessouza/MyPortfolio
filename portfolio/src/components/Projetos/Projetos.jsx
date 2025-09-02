@@ -6,7 +6,6 @@ function Projetos({ projeto, index }) {
   const { language } = useLanguage();
   const t = translations[language];
 
-  // Função para obter a tradução do projeto baseada no título
   const getProjectTranslation = (projectTitle) => {
     const projectKey = projectTitle.toLowerCase().replace(/\s+/g, '');
     
@@ -23,6 +22,8 @@ function Projetos({ projeto, index }) {
         return t.timer;
       case 'projetoweb2':
         return t.projectWeb2;
+      case 'youtubeclone':
+        return t.youtubeClone;
       default:
         return { title: projectTitle, description: projeto.sobre };
     }

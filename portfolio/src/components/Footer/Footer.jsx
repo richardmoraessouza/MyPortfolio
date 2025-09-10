@@ -9,10 +9,6 @@ function Footer() {
   return (
     
     <section id="contatos" className={styles.redes_socias}>
-      <div className="p-5"></div>
-      <div className="p-5"></div>
-      <div className="p-5"></div>
-      <div className="p-5"></div>
       <ul
         className={`align-items-center justify-content-center d-inline-flex gap-4`}
       >
@@ -76,9 +72,6 @@ function Footer() {
         </li>
       </ul>
       <p>{t.footerText}</p>
-      <section  className={styles.teste}>
-        <spline-viewer url="https://prod.spline.design/KkBy97y5ZuxQcfLJ/scene.splinecode"></spline-viewer>
-      </section>
     </section>
   );
 }

@@ -11,7 +11,7 @@ function Sobre_mim() {
       id="sobre_mim"
       className={`align-items-center justify-content-center ${styles.sobre_mim}`}
     >
-      <section className={`${styles.robo}`}> 
+      <section className={`${styles.foguete}`}> 
       <spline-viewer url="https://prod.spline.design/CCEqHGxP14bc69Xo/scene.splinecode"></spline-viewer>
       </section>
       <section className={`${styles.textoSobreMim}`}>
@@ -22,7 +22,6 @@ function Sobre_mim() {
         <p>{t.aboutMeText2}</p>
         <p>{t.aboutMeText3}</p>
         <a href="public/RichardMoraesSouza_DevFrontEnd.pdf" target="_blank" className={styles.curriculo}>{t.curriculum}</a>
-
       </section>
     </section>
   );

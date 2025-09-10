@@ -7,7 +7,12 @@ function Footer() {
   const t = translations[language];
 
   return (
+    
     <section id="contatos" className={styles.redes_socias}>
+      <div className="p-5"></div>
+      <div className="p-5"></div>
+      <div className="p-5"></div>
+      <div className="p-5"></div>
       <ul
         className={`align-items-center justify-content-center d-inline-flex gap-4`}
       >
@@ -22,6 +27,7 @@ function Footer() {
               src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
               alt="WhatsApp"
               width="32"
+              className={styles.app_social}
             />{" "}
           </a>
         </li>
@@ -36,6 +42,7 @@ function Footer() {
               src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
               alt="GitHub"
               width="32"
+              className={styles.app_social}
             />{" "}
           </a>
         </li>
@@ -46,11 +53,13 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn"
+            className={styles.app_social}
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
               alt="LinkedIn"
               width="32"
+              className={styles.app_social}
             />
             {""}
           </a>
@@ -62,11 +71,14 @@ function Footer() {
             rel="noopener noreferrer"
             title="Gmail"
           >
-            <img src="/Portf-lio/image/Gmail.png" alt="Gmail" />
+            <img src="/Portf-lio/image/Gmail.png" alt="Gmail"  className={styles.app_social}/>
           </a>
         </li>
       </ul>
       <p>{t.footerText}</p>
+      <section  className={styles.teste}>
+        <spline-viewer url="https://prod.spline.design/KkBy97y5ZuxQcfLJ/scene.splinecode"></spline-viewer>
+      </section>
     </section>
   );
 }

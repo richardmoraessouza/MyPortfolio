@@ -12,30 +12,124 @@
     border: none;
     font-size: 25px;
     z-index: 999;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .map {
+    margin-bottom: 30px;
+    
     a {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: var(--text-color);
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: var(--accent-color);
+        }
     }
 
     ul {
         display: flex;
-        flex-flow: column;
-      }
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+    }
+}
+
+.redes_socias {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: color 0.3s ease, transform 0.3s ease;
+            position: relative;
+            display: inline-block;
+            
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: -8px;
+              background-color: white;
+              width: 0%;
+              left: 50%;
+              transform: translateX(-50%);
+              height: 2px;
+              transition: width 0.3s ease-in-out;
+              background-size: 400%;
+              z-index: -1;
+              background-image: linear-gradient(
+                to right,
+                #25d366,
+                #128c7e,
+                #075e54,
+                #25d366,
+                #128c7e
+              );
+            }
+            
+            &:hover {
+              transform: translateY(-5px) !important;
+            }
+            
+            &:hover::before {
+              width: 100%;
+              animation: glowing 20s linear infinite;
+            }
+            
+            img {
+              transition: transform 0.3s ease;
+            }
+            
+            &:hover img {
+              transform: translateY(-5px) !important;
+            }
+          }
+        
+        li {
+            a {
+                display: block;
+                transition: transform 0.3s ease;
+                
+                &:hover {
+                    transform: scale(1.1);
+                }
+                
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
 }
 
 .fechar {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     z-index: 9999;
     border: none;
     background-color: transparent;
     color: var(--text-color);
     font-size: 2rem;
-
-    // Sem animação de hover
+    cursor: pointer;
 }
 
 
@@ -44,3 +138,4 @@
         display: none;
     }
 }
+

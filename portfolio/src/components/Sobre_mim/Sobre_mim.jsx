@@ -9,14 +9,10 @@ function Sobre_mim() {
   return (
     <section
       id="sobre_mim"
-      className={`justify-content-center align-items-center ${styles.sobre_mim}`}
+      className={`align-items-center justify-content-center ${styles.sobre_mim}`}
     >
-      <section className={`p-3 ${styles.img}`}>
-        <img
-          src="/Portf-lio/image/programacao.png"
-          alt=""
-          className={styles.foto}
-        />
+      <section className={`${styles.robo}`}> 
+      <spline-viewer url="https://prod.spline.design/CCEqHGxP14bc69Xo/scene.splinecode"></spline-viewer>
       </section>
       <section className={`${styles.textoSobreMim}`}>
         <h2 className={`p-1 ${styles.tituloTexto}`}>

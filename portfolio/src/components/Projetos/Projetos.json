@@ -9,13 +9,13 @@
     "repositorio": "https://github.com/richardmoraessouza/SerginhoestetiCar?tab=readme-ov-file"
   },
   {
-    "imagem": "calculadora.png",
-    "alt": " site Calculadora",
-    "titulo": "Calculadora",
+    "imagem": "Youtube Clone.jpg",
+    "alt": "Youtube Clone",
+    "titulo": "Youtube Clone",
     "tecnologias": "",
-    "sobre": "Calculadora desenvolvida com HTML, CSS e JavaScript puro, focando na responsividade e experiência do usuário. Possui interface limpa e intuitiva com operações básicas e avançadas, design totalmente responsivo e feedback visual claro. O projeto demonstra habilidades em manipulação do DOM, eventos JavaScript e design responsivo.",
-    "site": "https://calculadoraresponsiva.netlify.app/",
-    "repositorio": "https://github.com/richardmoraessouza/calculadora?tab=readme-ov-file"
+    "sobre": "Este projeto é uma réplica funcional da interface do YouTube, desenvolvida com React, Bootstrap e Sass. O clone reproduz fielmente o layout e a experiência do usuário da plataforma original, incluindo a barra de navegação, sidebar com categorias, grid de vídeos e player de vídeo. O projeto demonstra habilidades avançadas em desenvolvimento front-end com React, como gerenciamento de estado, criação de componentes reutilizáveis, hooks personalizados, A interface é totalmente responsiva e oferece uma experiência de usuário fluida, simulando o comportamento real do YouTube com navegação entre vídeos, busca e reprodução de conteúdo, utilizando as melhores práticas do ecossistema React.",
+    "site": "https://richardmoraessouza.github.io/youtube-clone/",
+    "repositorio": "https://github.com/richardmoraessouza/youtube-clone"
   },
   {
     "imagem": "Quiz.png",
@@ -25,15 +25,6 @@
     "sobre": "Este projeto é um quiz interativo desenvolvido com HTML, CSS, Bootstrap e JavaScript puro, com o objetivo de testar conhecimentos do usuário de forma simples e dinâmica. As perguntas são carregadas dinamicamente, e ao final, o usuário recebe uma pontuação com base nas respostas corretas.",
     "site": "https://perguntas-front-end.netlify.app/",
     "repositorio": "https://github.com/richardmoraessouza/quiz"
-  },
-  {
-    "imagem": "projeto-web1.png",
-    "alt": "site Projeto web 1",
-    "titulo": "Projeto web 1",
-    "tecnologias": "",
-    "sobre": "Esse projeto foi um exercício de aprendizado, onde reproduzi o layout de um site já existente usando apenas HTML e CSS. O objetivo era entender melhor como organizar arquivos, trabalhar com estrutura de pastas e aplicar boas práticas de desenvolvimento front-end. Apesar de ser uma cópia, foi uma ótima oportunidade para treinar responsividade, atenção aos detalhes e reforçar meus conhecimentos em construção de páginas estáticas.",
-    "site": "https://projetotest.netlify.app/",
-    "repositorio": "https://github.com/richardmoraessouza/projeto-web-1"
   },
   {
     "imagem": "Timer.png",
@@ -54,12 +45,21 @@
     "repositorio": "https://github.com/richardmoraessouza/projeto-web-2"
   },
   {
-    "imagem": "Youtube Clone.jpg",
-    "alt": "Youtube Clone",
-    "titulo": "Youtube Clone",
+    "imagem": "projeto-web1.png",
+    "alt": "site Projeto web 1",
+    "titulo": "Projeto web 1",
     "tecnologias": "",
-    "sobre": "Este projeto é uma réplica funcional da interface do YouTube, desenvolvida com React, Bootstrap e Sass. O clone reproduz fielmente o layout e a experiência do usuário da plataforma original, incluindo a barra de navegação, sidebar com categorias, grid de vídeos e player de vídeo. O projeto demonstra habilidades avançadas em desenvolvimento front-end com React, como gerenciamento de estado, criação de componentes reutilizáveis, hooks personalizados, A interface é totalmente responsiva e oferece uma experiência de usuário fluida, simulando o comportamento real do YouTube com navegação entre vídeos, busca e reprodução de conteúdo, utilizando as melhores práticas do ecossistema React.",
-    "site": "https://richardmoraessouza.github.io/youtube-clone/",
-    "repositorio": "https://github.com/richardmoraessouza/youtube-clone"
+    "sobre": "Esse projeto foi um exercício de aprendizado, onde reproduzi o layout de um site já existente usando apenas HTML e CSS. O objetivo era entender melhor como organizar arquivos, trabalhar com estrutura de pastas e aplicar boas práticas de desenvolvimento front-end. Apesar de ser uma cópia, foi uma ótima oportunidade para treinar responsividade, atenção aos detalhes e reforçar meus conhecimentos em construção de páginas estáticas.",
+    "site": "https://projetotest.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/projeto-web-1"
+  },
+  {
+    "imagem": "calculadora.png",
+    "alt": " site Calculadora",
+    "titulo": "Calculadora",
+    "tecnologias": "",
+    "sobre": "Calculadora desenvolvida com HTML, CSS e JavaScript puro, focando na responsividade e experiência do usuário. Possui interface limpa e intuitiva com operações básicas e avançadas, design totalmente responsivo e feedback visual claro. O projeto demonstra habilidades em manipulação do DOM, eventos JavaScript e design responsivo.",
+    "site": "https://calculadoraresponsiva.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/calculadora?tab=readme-ov-file"
   }
 ]

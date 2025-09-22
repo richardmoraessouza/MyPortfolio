@@ -108,12 +108,15 @@ Consulte: [portfolio/README.md](portfolio/README.md)
 - 💡 Apaixonado por criar experiências digitais envolventes
 - 🛠️ Foco em React, JavaScript, HTML, CSS e SCSS
 - 🔧 Conhecimentos em Python e MySQL
-- 🌍 Experiência com projetos multi-idioma
 
-## 📞 Contato
+## 🌍 Contato
 
-- **GitHub**: [richardmoraessouza](https://github.com/richardmoraessouza)
-- **Portfólio**: [https://richardmoraessouza.github.io/Portf-lio](https://richardmoraessouza.github.io/Portf-lio)
+- 💼 [LinkedIn](https://www.linkedin.com/in/richard-moraes-souza-998539338/)
+- 🌐 [Portfólio](https://richardmoraessouza.github.io/Portf-lio/)
+- 📱 [WhatsApp](https://wa.me/5547999326217?text=Olá%20Richard%2C%20encontrei%20seu%20perfil%20no%20GitHub!)
+- 📧 richardmoraessouza2006@gmail.com
+
+---
 
 ## 📄 Licença
 

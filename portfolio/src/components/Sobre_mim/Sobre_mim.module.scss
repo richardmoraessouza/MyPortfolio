@@ -9,6 +9,16 @@
   gap: 20px;
   max-height: 910px;
   overflow: hidden;
+  .linkImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   img {
+    width: 50%;
+    height: auto;
+   }
+  }
+
 }
 @media (max-width: 1025px) {
   .sobre_mim {
@@ -16,15 +26,12 @@
   }
 }
 
-spline-viewer {
-  height: 1200px;
-  width: 100%;
-}
-
 
 .textoSobreMim p {
   padding-top: 10px;
   font-size: clamp(0.6rem, 3vw, 1rem);
+
+
 }
 
 .curriculo {
@@ -177,3 +184,22 @@ spline-viewer {
   }
 }
 
+@media (max-width: 800px) {
+  .sobre_mim {
+    grid-template-columns: 1fr;
+
+    .linkImg {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .textoSobreMim {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .containerTitulo {
+     display: flex;
+     justify-content: center;
+    }
+  }
+}

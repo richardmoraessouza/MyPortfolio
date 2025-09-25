@@ -13,7 +13,7 @@
     "alt": "Youtube Clone",
     "titulo": "Youtube Clone",
     "tecnologias": "",
-    "sobre": "Este projeto é uma réplica funcional da interface do YouTube, desenvolvida com React, Bootstrap e Sass. O clone reproduz fielmente o layout e a experiência do usuário da plataforma original, incluindo a barra de navegação, sidebar com categorias, grid de vídeos e player de vídeo. O projeto demonstra habilidades avançadas em desenvolvimento front-end com React, como gerenciamento de estado, criação de componentes reutilizáveis, hooks personalizados, A interface é totalmente responsiva e oferece uma experiência de usuário fluida, simulando o comportamento real do YouTube com navegação entre vídeos, busca e reprodução de conteúdo, utilizando as melhores práticas do ecossistema React.",
+    "sobre": "Clone funcional da interface do YouTube, desenvolvido com React, Bootstrap e Sass. Reproduz layout, navegação, busca e player de vídeo, simulando a experiência da plataforma original. Projeto responsivo com componentes reutilizáveis, gerenciamento de estado e boas práticas do ecossistema React.",
     "site": "https://richardmoraessouza.github.io/youtube-clone/",
     "repositorio": "https://github.com/richardmoraessouza/youtube-clone"
   },

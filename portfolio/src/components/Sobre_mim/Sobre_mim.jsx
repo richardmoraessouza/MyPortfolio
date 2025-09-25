@@ -11,13 +11,15 @@ function Sobre_mim() {
       id="sobre_mim"
       className={`align-items-center justify-content-center ${styles.sobre_mim}`}
     >
-      <section className={`${styles.foguete}`}> 
-      <spline-viewer url="https://prod.spline.design/CCEqHGxP14bc69Xo/scene.splinecode"></spline-viewer>
+      <section className={`${styles.linkImg}`}> 
+      <img src="/Portf-lio/image/programacao.png" alt="imagem de uma pessoa programando" />
       </section>
       <section className={`${styles.textoSobreMim}`}>
-        <h2 className={`p-1 ${styles.tituloTexto}`}>
-          <i className="bi bi-star-fill"></i> {t.aboutMe}
-        </h2>
+        <div className={styles.containerTitulo}>
+          <h2 className={`p-1 ${styles.tituloTexto}`}>
+            <i className="bi bi-star-fill"></i> {t.aboutMe}
+          </h2>
+        </div>
         <p>{t.aboutMeText1}</p>
         <p>{t.aboutMeText2}</p>
         <p>{t.aboutMeText3}</p>

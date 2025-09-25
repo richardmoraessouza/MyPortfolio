@@ -51,7 +51,9 @@ export const translations = {
     },
     timer: {
       title: "Timer Interativo",
-      description: "Nesse projeto, eu peguei a ideia de um timer simples e leve, mas fui além do básico. Vi um vídeo no Codecon que 3 dev back-end e 1 dev front-end tentavam fazer um timer, mas eles não conseguiram implementar tudo direito — aí decidi refazer do meu jeito e fazer funcionar 100%. O resultado foi um cronômetro que conta o tempo regressivamente, dá para pausar, resetar e até mudar o tempo enquanto tá rodando. Nos últimos segundos, o fundo da tela muda de cor para avisar que tá acabando, e ainda toca um som no fim, pra ninguém perder a hora. Além de funcionar bem, ele é fácil de usar e pode ajudar em várias situações, tipo estudar, fazer exercício ou o que você precisar de um temporizador. Esse projeto mostra como eu gosto de aprender na prática, resolver os bugs que aparecem e entregar algo que realmente funciona."
+      description: "Criei este timer interativo inspirado em um desafio do Codecon. Ele é regressivo, permite pausar, resetar e ajustar o tempo em tempo real. Nos últimos segundos, a tela muda de cor e um som alerta o fim. Ideal para estudos, treinos ou outras tarefas. Um projeto prático que mostra minha habilidade em resolver problemas e entregar soluções funcionais."
+
+
     },
     projectWeb2: {
       title: "Projeto web 2",
@@ -59,7 +61,8 @@ export const translations = {
     },
     youtubeClone: {
       title: "Youtube Clone",
-      description: "Este projeto é uma réplica funcional da interface do YouTube, desenvolvida com React, Bootstrap e Sass. O clone reproduz fielmente o layout e a experiência do usuário da plataforma original, incluindo a barra de navegação, sidebar com categorias, grid de vídeos e player de vídeo. O projeto demonstra habilidades avançadas em desenvolvimento front-end com React, como gerenciamento de estado, criação de componentes reutilizáveis, hooks personalizados, A interface é totalmente responsiva e oferece uma experiência de usuário fluida, simulando o comportamento real do YouTube com navegação entre vídeos, busca e reprodução de conteúdo, utilizando as melhores práticas do ecossistema React."
+      description: "Clone funcional da interface do YouTube, desenvolvido com React, Bootstrap e Sass. Reproduz layout, navegação, busca e player de vídeo, simulando a experiência da plataforma original. Projeto responsivo com componentes reutilizáveis, gerenciamento de estado e boas práticas do ecossistema React."
+
     }
   },
   en: {

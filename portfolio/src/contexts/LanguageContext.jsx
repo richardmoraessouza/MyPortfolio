@@ -11,22 +11,31 @@ export const useLanguage = () => {
 };
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(() => {
-    const savedLanguage = localStorage.getItem('language');
-    return savedLanguage || 'pt';
-  });
+  const [language, setLanguage] = useState('pt'); // Default to 'pt' for SSR
+  const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
-    localStorage.setItem('language', language);
-    document.documentElement.setAttribute('lang', language);
-  }, [language]);
+    // Only access localStorage after component mounts (client-side)
+    const savedLanguage = localStorage.getItem('language');
+    const initialLanguage = savedLanguage || 'pt';
+    
+    setLanguage(initialLanguage);
+    setIsInitialized(true);
+  }, []);
+
+  useEffect(() => {
+    if (isInitialized) {
+      localStorage.setItem('language', language);
+      document.documentElement.setAttribute('lang', language);
+    }
+  }, [language, isInitialized]);
 
   const toggleLanguage = () => {
     setLanguage(language === 'pt' ? 'en' : 'pt');
   };
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage }}>
+    <LanguageContext.Provider value={{ language, toggleLanguage, isInitialized }}>
       {children}
     </LanguageContext.Provider>
   );

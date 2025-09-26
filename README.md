@@ -26,7 +26,7 @@ Este portfólio foi desenvolvido para apresentar minha jornada como desenvolvedo
 
 ## 🚀 Acesso Rápido
 
-- **🌐 Site Online**: [https://richardmoraessouza.github.io/Portf-lio](https://richardmoraessouza.github.io/Portf-lio)
+- **🌐 Site Online**: [https://richardmoraessouza.netlify.app/](https://richardmoraessouza.netlify.app/)
 - **📁 Código Fonte**: [portfolio/](portfolio/)
 - **📖 Documentação Detalhada**: [portfolio/README.md](portfolio/README.md)
 

@@ -67,7 +67,7 @@ function Footer() {
             rel="noopener noreferrer"
             title="Gmail"
           >
-            <img src="/Portf-lio/image/Gmail.png" alt="Gmail"  className={styles.app_social}/>
+            <img src="/image/Gmail.png" alt="Gmail"  className={styles.app_social}/>
           </a>
         </li>
       </ul>

@@ -99,7 +99,7 @@ function Header() {
         <section className={styles.orbita}>
           <div className={styles.centro}>
             <img
-              src="/Portf-lio/image/eu.jpg"
+              src="/image/eu.jpg"
               alt=""
               className={styles.eu}
             />
@@ -107,7 +107,7 @@ function Header() {
           <div className={styles.objeto_wrapper}>
             <div className={styles.objeto}>
               <img
-                src="/Portf-lio/image/clipart-rocket.png"
+                src="/image/clipart-rocket.png"
                 alt="Foguete em órbita"
               />
             </div>
@@ -115,7 +115,7 @@ function Header() {
         </section>
       </div>
       <video
-        src="/Portf-lio/video/bolinhas.mp4"
+        src="/video/bolinhas.mp4"
         autoPlay
         className={styles.video}
         muted

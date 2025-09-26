@@ -94,7 +94,7 @@ function Navegacao() {
                                     rel="noopener noreferrer"
                                     title="Gmail"
                                   >
-                                    <img src="/Portf-lio/image/Gmail.png" alt="Gmail" />
+                                    <img src="/image/Gmail.png" alt="Gmail" />
                                   </a>
                                 </li>
                               </ul>

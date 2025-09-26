@@ -37,7 +37,7 @@ function Projetos({ projeto, index }) {
         return (
           <div className={`p-2 ${styles.containerProjetos}`} key={index}>
             <div className={`${styles.img_projeto} ${styles.projeto}`}>
-              <img src={`/Portf-lio/image/${projeto.imagem}`} alt={projeto.alt} />
+              <img src={`/image/${projeto.imagem}`} alt={projeto.alt} />
             </div>
             <div className={`${styles.sobre_projeto} ${styles.projeto} p-3`}>
               <h3>{projectTranslation.title}</h3>

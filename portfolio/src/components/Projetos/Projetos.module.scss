@@ -31,8 +31,18 @@
     margin-bottom: $spacing-md;
   }
 
+  i {
+    font-size: 2rem;
+    margin: 60px 0px;
+  }
+
+  .container_tecnologia {
+    margin: 10px 0px;
+  }
+  
   p {
     font-size: 1.1rem;
+
   }
 }
 
@@ -47,7 +57,6 @@
 
   a {
     @include button-style();
-    // Removendo animação de hover
     &:hover {
       opacity: 1;
       transform: none;

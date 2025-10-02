@@ -10,12 +10,14 @@ import Back from "./components/Tecnologias/back.json";
 import Git from "./components/Tecnologias/git.json";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import MouseTrail from "./components/MouseTrail/MouseTrail.jsx";
 
 function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
         <>
+          <MouseTrail/>
           <Header />
           <div className="container mx-auto px-4 py-8">
             <main>

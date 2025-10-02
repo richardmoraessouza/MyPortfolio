@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mouse Trail - Animação Melhorada</title>
+  <style>
+    html, body { 
+      height: 100%; 
+      margin: 0; 
+      padding: 0; 
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      overflow: hidden;
+    }
+    
+    canvas { 
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 9999;
+      display: block;
+      will-change: transform;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+    }
+    
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding: 50px;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  
+  <div class="content">
+    <h1>✨ Mouse Trail Animado ✨</h1>
+    <p>Mova o mouse para ver a animação colorida!</p>
+  </div>
+
+  <script>
+    (function() {
+      'use strict';
+      
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+      
+      let animationId = null;
+      let trail = [];
+      let fading = false;
+      let fadeTimer = null;
+      
+      const maxTrail = 50;
+      const minDistance = 1.5;
+      const fadeDelay = 150;
+      const fadeSpeed = 0.03;
+      
+      // Redimensiona o canvas com suporte a alta resolução
+      function resizeCanvas() {
+        const dpr = window.devicePixelRatio || 1;
+        const rect = canvas.getBoundingClientRect();
+        
+        canvas.width = rect.width * dpr;
+        canvas.height = rect.height * dpr;
+        
+        ctx.scale(dpr, dpr);
+        
+        canvas.style.width = rect.width + 'px';
+        canvas.style.height = rect.height + 'px';
+      }
+      
+      // Adiciona ponto ao trail com propriedades melhoradas
+      function addPoint(x, y) {
+        const last = trail[trail.length - 1];
+        if (!last || Math.hypot(last.x - x, last.y - y) > minDistance) {
+          trail.push({ 
+            x, 
+            y, 
+            alpha: 1,
+            size: Math.random() * 3 + 2,
+            hue: (Date.now() * 0.1) % 360
+          });
+          if (trail.length > maxTrail) trail.shift();
+        }
+      }
+      
+      // Animação principal com efeitos visuais aprimorados
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        if (trail.length > 1) {
+          for (let i = 0; i < trail.length - 1; i++) {
+            const current = trail[i];
+            const next = trail[i + 1];
+            const progress = i / (trail.length - 1);
+            
+            const alpha = current.alpha !== undefined ? current.alpha : (1 - progress);
+            const size = current.size * (1 - progress * 0.5);
+            
+            // Gradiente de cor baseado no tempo
+            const hue = (current.hue + progress * 60) % 360;
+            
+            // Desenha a linha do trail
+            ctx.beginPath();
+            ctx.moveTo(current.x, current.y);
+            ctx.lineTo(next.x, next.y);
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+            ctx.lineWidth = size;
+            ctx.strokeStyle = `hsla(${hue}, 70%, 60%, ${alpha})`;
+            ctx.stroke();
+            
+            // Adiciona um ponto brilhante no final
+            if (i === trail.length - 2) {
+              ctx.beginPath();
+              ctx.arc(next.x, next.y, size * 0.8, 0, Math.PI * 2);
+              ctx.fillStyle = `hsla(${hue}, 80%, 70%, ${alpha * 0.8})`;
+              ctx.fill();
+            }
+            
+            // Aplica fade se necessário
+            if (fading) {
+              current.alpha = Math.max(0, alpha - fadeSpeed);
+            }
+          }
+        }
+        
+        // Remove pontos invisíveis
+        if (fading) {
+          for (let i = trail.length - 1; i >= 0; i--) {
+            if (trail[i].alpha <= 0.01) {
+              trail.splice(i, 1);
+            }
+          }
+        }
+        
+        // Continua a animação se necessário
+        if (trail.length > 0 || !fading) {
+          animationId = requestAnimationFrame(animate);
+        } else {
+          animationId = null;
+        }
+      }
+      
+      // Event listeners
+      function handleMouseMove(e) {
+        addPoint(e.clientX, e.clientY);
+        fading = false;
+        
+        if (!animationId) {
+          animate();
+        }
+        
+        if (fadeTimer) clearTimeout(fadeTimer);
+        fadeTimer = setTimeout(() => {
+          fading = true;
+        }, fadeDelay);
+      }
+      
+      function handleMouseLeave() {
+        fading = true;
+      }
+      
+      function handleMouseEnter() {
+        fading = false;
+      }
+      
+      // Inicialização
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseleave', handleMouseLeave);
+      window.addEventListener('mouseenter', handleMouseEnter);
+      
+      // Cleanup (opcional, para casos de navegação SPA)
+      window.addEventListener('beforeunload', () => {
+        if (animationId) cancelAnimationFrame(animationId);
+        if (fadeTimer) clearTimeout(fadeTimer);
+      });
+      
+    })();
+  </script>
+</body>
+</html>

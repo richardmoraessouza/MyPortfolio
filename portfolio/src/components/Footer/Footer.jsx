@@ -1,6 +1,6 @@
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations/translations";
-import styles from "./Footer.module.scss";
+import styles from "./Footer.module.css";
 
 function Footer() {
   const { language } = useLanguage();

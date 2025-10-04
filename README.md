@@ -59,7 +59,7 @@ Este portfólio foi desenvolvido para apresentar minha jornada como desenvolvedo
 
 ### Front-end
 - HTML5, CSS3, JavaScript
-- React, Sass/SCSS, Bootstrap
+- React, TypeScript Bootstrap
 
 ### Back-end
 - Python, MySQL, JSON
@@ -106,7 +106,7 @@ Consulte: [portfolio/README.md](portfolio/README.md)
 **Richard Moraes Souza**
 - 🎯 Desenvolvedor Front-end autodidata
 - 💡 Apaixonado por criar experiências digitais envolventes
-- 🛠️ Foco em React, JavaScript, HTML, CSS e SCSS
+- 🛠️ Foco em React, JavaScript, HTML, CSS e TypeScript
 - 🔧 Conhecimentos em Python e MySQL
 
 ## 🌍 Contato

@@ -1,4 +1,4 @@
-@import "../../styles/animations.scss";
+@import "../../styles/animations.css";
 
 .botao {
   border: none;
@@ -76,7 +76,7 @@ a {
     font-size: 16px;
   }
   .modal::before {
-    animation: glowing 20s linear infinite;
+  animation: glowing 20s linear infinite;
   background-image: linear-gradient(45deg, #4e95ff, #a259ff, #ff6ec4, #4e95ff);
   }
 }

@@ -18,6 +18,16 @@
   --scrollbar-thumb-hover-end: #2b8cff;
   --scrollbar-border: rgba(0, 0, 0, 0.08);
   --scrollbar-glow: rgba(0, 198, 255, 0.6);
+  
+  /* Button variables to reduce CSS duplication */
+  --btn-primary-bg: #007bff;
+  --btn-primary-hover: #0056b3;
+  --btn-secondary-bg: #6c757d;
+  --btn-secondary-hover: #545b62;
+  --btn-border-radius: 6px;
+  --btn-padding: 0.5rem 1rem;
+  --btn-font-size: 0.9rem;
+  --btn-transition: all 0.3s ease;
 }
 
 [data-theme="dark"] {

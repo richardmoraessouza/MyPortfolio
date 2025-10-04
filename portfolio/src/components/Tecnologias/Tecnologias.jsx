@@ -1,6 +1,6 @@
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations/translations";
-import styles from "./Tecnologias.module.scss";
+import styles from "./Tecnologias.module.css";
 import Modal from "../Modal/Modal";
 
 function Tecnologias({ front, back, git }) {
@@ -44,6 +44,11 @@ function Tecnologias({ front, back, git }) {
             title: 'React',
             description: language === 'pt' ? 'Biblioteca JavaScript para interfaces' : 'JavaScript library for interfaces'
           };
+        case 'typescript':
+          return {
+            title: "TypeScript",
+            description: language === 'pt' ? 'Superset do JavaScript com tipagem estática' : "Superset of JavaScript with static typing"
+          }
         default:
           return { title: techName, description: '' };
       }
@@ -80,6 +85,11 @@ function Tecnologias({ front, back, git }) {
             title: 'GitHub',
             description: language === 'pt' ? 'Plataforma de hospedagem de código' : 'Code hosting platform'
           };
+          case 'netlify':
+            return {
+              title: "Netlify",
+              description: language === 'pt' ? 'Plataforma de hospedagem e deploy contínuo' : "Hosting platform with continuous deployment"
+            }
         default:
           return { title: techName, description: '' };
       }

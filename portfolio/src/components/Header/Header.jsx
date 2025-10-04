@@ -3,7 +3,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations/translations";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import LanguageToggle from "../LanguageToggle/LanguageToggle";
-import styles from "./Header.module.scss";
+import styles from "./Header.module.css";
 import Navegacao from "../Navegacao/Navegacao";
 
 function Header() {
@@ -99,8 +99,8 @@ function Header() {
         <section className={styles.orbita}>
           <div className={styles.centro}>
             <img
-              src="/image/e.jpg"
-              alt=""
+              src="/image/eu.jpg"
+              alt="Richard Moraes Souza - Foto profissional do desenvolvedor front-end especializado em React e JavaScript"
               className={styles.eu}
             />
           </div>

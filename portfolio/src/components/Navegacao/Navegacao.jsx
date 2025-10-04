@@ -1,8 +1,7 @@
 import { useState } from "react";
-import styles from "./Navegacao.module.scss"
+import styles from "./Navegacao.module.css"
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations/translations";
-import Footer from "../Footer/Footer";
 
 function Navegacao() {
     const [fecha, setFechar] = useState(false)

@@ -1,7 +1,7 @@
 import { useTheme } from '../../contexts/ThemeContext';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { translations } from '../../translations/translations';
-import styles from './ThemeToggle.module.scss';
+import styles from './ThemeToggle.module.css';
 
 const ThemeToggle = () => {
   const { isDark, toggleTheme } = useTheme();

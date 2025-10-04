@@ -1,6 +1,6 @@
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations/translations";
-import styles from "./Projetos.module.scss";
+import styles from "./Projetos.module.css";
 
 function Projetos({ projeto, index }) {
   const { language } = useLanguage();
@@ -24,6 +24,12 @@ function Projetos({ projeto, index }) {
         return t.projectWeb2;
       case 'youtubeclone':
         return t.youtubeClone;
+      case 'mariojump':
+        return t.MarioJump;
+      case 'githubfinder':
+        return t.githubFinder;
+      case 'instagramclone':
+        return t.instagramClone;
       default:
         return { title: projectTitle, description: projeto.sobre };
     }

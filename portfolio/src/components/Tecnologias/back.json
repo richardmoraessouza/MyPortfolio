@@ -12,12 +12,5 @@
     "cor": "#4479A1",
     "sobre": "Banco de dados relacional para armazenar informações",
     "resumo": "MySQL é um sistema de gerenciamento de banco de dados relacional (SGBD) de código aberto, muito utilizado em aplicações web para armazenar, consultar e gerenciar grandes volumes de dados de forma eficiente e segura. Ele suporta transações, integridade referencial, replicação, backup e escalabilidade. O MySQL é compatível com diversas linguagens de programação e integra-se facilmente a frameworks populares, sendo uma escolha confiável para projetos de todos os portes."
-  },
-  {
-    "icon": "devicon-javascript-plain colored",
-    "tecnologia": "JSON",
-    "cor": "#F7DF1E",
-    "sobre": "Banco de dados relacional para armazenar informações",
-    "resumo": "JSON (JavaScript Object Notation) é um formato leve e de fácil leitura para troca de dados entre sistemas. Muito utilizado em APIs REST, o JSON permite estruturar informações de forma hierárquica, facilitando a comunicação entre front-end e back-end. Sua sintaxe simples é suportada por praticamente todas as linguagens de programação, tornando-o padrão para integração de sistemas, armazenamento de configurações e persistência de dados em aplicações modernas."
   }
 ]

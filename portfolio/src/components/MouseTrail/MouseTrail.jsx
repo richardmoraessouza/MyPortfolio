@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import styles from './Teste.module.scss';
+import styles from './Teste.module.css';
 
 const MouseTrail = () => {
   const canvasRef = useRef(null);

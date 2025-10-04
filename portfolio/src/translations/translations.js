@@ -1,3 +1,5 @@
+// transição do português para o inglês
+
 export const translations = {
   pt: {
     
@@ -11,7 +13,7 @@ export const translations = {
     aboutMe: "Sobre mim",
     aboutMeText1: "Sou desenvolvedor front-end autodidata, apaixonado por criar experiências digitais envolventes. Busco constantemente aprimorar minhas habilidades e aprender novas tecnologias.",
     aboutMeText2: "Desenvolvi um site institucional sob demanda de um cliente, com o objetivo de apresentar os serviços de estética automotiva e atrair novos clientes. O projeto foi desenvolvido utilizando HTML, CSS e JavaScript, sendo totalmente responsivo e otimizado para SEO, com estrutura de código modular e reutilizável.",
-    aboutMeText3: "Tenho experiência em projetos utilizando HTML, CSS, JSON, Scss, JavaScript e React. Também possuo conhecimentos em backend com Python, utilizando bibliotecas como mysql-connector para manipular bancos de dados MySQL, criando tabelas, inserindo e consultando dados.",
+    aboutMeText3: "Tenho experiência em projetos utilizando HTML, CSS, JSON, Bootstrap, TypeScript JavaScript e React. Também possuo conhecimentos em backend com Python, utilizando bibliotecas como mysql-connector para manipular bancos de dados MySQL, criando tabelas, inserindo e consultando dados.",
     curriculum: "Currículo",
    
     frontend: "Frontend",
@@ -61,8 +63,19 @@ export const translations = {
     },
     youtubeClone: {
       title: "Youtube Clone",
-      description: "Clone funcional da interface do YouTube, desenvolvido com React, Bootstrap e Sass. Reproduz layout, navegação, busca e player de vídeo, simulando a experiência da plataforma original. Projeto responsivo com componentes reutilizáveis, gerenciamento de estado e boas práticas do ecossistema React."
-
+      description: "Clone funcional da interface do YouTube, desenvolvido com React, Bootstrap e Sass. O projeto replica o layout e a navegação da plataforma, proporcionando uma experiência de uso realista. Totalmente responsivo, conta com componentes reutilizáveis, gerenciamento de estado eficiente e segue as boas práticas do ecossistema React, garantindo escalabilidade, organização e fácil manutenção do código."
+    },
+    MarioJump: {
+      title: "Mario Jump",
+      description: "Jogo estilo endless runner inspirado no universo do Mario, onde o objetivo é pular obstáculos e alcançar a maior pontuação possível. Desenvolvido com HTML, CSS, TypeScript e React, o projeto inclui física simples de salto, detecção de colisão, sistemas de pontuação e aumento gradual de dificuldade. O layout é responsivo e otimizado para Web, com foco em performance e uma experiência fluida no desktop e mobile."
+    },
+    githubFinder: {
+      title: "GitHub Finder",
+      description: "Aplicação desenvolvida em React e TypeScript que permite buscar usuários do GitHub através da sua API oficial. O projeto oferece uma interface moderna e responsiva para visualizar perfis públicos de desenvolvedores, exibindo informações como fotos do avatar, número de seguidores, repositórios públicos e estatísticas detalhadas. Implementa tratamento de erros, estados de loading e uma experiência fluida de busca, demonstrando conhecimentos em consumo de APIs REST, gerenciamento de estado e componentes funcionais."
+    },
+    instagramClone: {
+      title: "Instagram Clone",
+      description: "Clone da interface do Instagram desenvolvido com React, HTML e CSS puro. O projeto replica o layout principal da rede social, incluindo o feed de posts, stories, barras de navegação e elementos visuais característicos da plataforma. Focado em responsividade e design pixel-perfect, demonstra habilidades em criação de interfaces modernas, organização de componentes React e aplicação de conhecimentos avançados em CSS para recriar com fidelidade um design complexo e reconhecido mundialmente."
     }
   },
   en: {
@@ -77,7 +90,7 @@ export const translations = {
     aboutMe: "About me",
     aboutMeText1: "I am a self-taught front-end developer, passionate about creating engaging digital experiences. I constantly seek to improve my skills and learn new technologies.",
     aboutMeText2: "I developed an institutional website on demand for a client, with the goal of presenting automotive detailing services and attracting new customers. The project was developed using HTML, CSS and JavaScript, being fully responsive and SEO optimized, with modular and reusable code structure.",
-    aboutMeText3: "I have experience in projects using HTML, CSS, JSON, Scss, JavaScript and React. I also have backend knowledge with Python, using libraries like mysql-connector to manipulate MySQL databases, creating tables, inserting and querying data.",
+    aboutMeText3: "I have experience in projects using HTML, CSS, JSON, Bootstrap, TypeScript, JavaScript and React. I also have backend knowledge with Python, using libraries like mysql-connector to manipulate MySQL databases, creating tables, inserting and querying data.",
     curriculum: "Curriculum",
     // Tecnologias
     frontend: "Frontend",
@@ -127,8 +140,20 @@ export const translations = {
     },
     youtubeClone: {
       title: "Youtube Clone",
-      description: "This project is a functional replica of the YouTube interface, developed with React, Bootstrap and Sass. The clone faithfully reproduces the layout and user experience of the original platform, including the navigation bar, sidebar with categories, video grid and video player. The project demonstrates advanced front-end development skills with React, such as state management, creation of reusable components, custom hooks. The interface is fully responsive and offers a fluid user experience, simulating the real YouTube behavior with video navigation, search and content playback, using React ecosystem best practices."
+      description: "Fully functional YouTube interface clone, built with React, Bootstrap, and Sass. The project replicates the platform’s layout and navigation, delivering a realistic user experience. Fully responsive, it features reusable components, efficient state management, and follows React ecosystem best practices, ensuring scalability, clean architecture, and easy code maintenance."
     }
-    
-  }
+    ,
+    MarioJump: {
+      title: "Mario Jump",
+      description: "Endless runner-style game inspired by the Mario universe, where the goal is to jump over obstacles and reach the highest possible score. Built with HTML, CSS, TypeScript and React, it features simple jump physics, collision detection, scoring system and progressive difficulty. The layout is responsive and optimized for the web, focusing on performance and a smooth experience on both desktop and mobile."
+    },
+    githubFinder: {
+      title: "GitHub Finder",
+      description: "Application developed with React and TypeScript that allows searching GitHub users through their official API. The project offers a modern and responsive interface for viewing public developer profiles, displaying information such as avatar photos, follower count, public repositories and detailed statistics. This implements error handling, loading states and a smooth search experience, demonstrating knowledge in REST API consumption, state management and functional components."
+    },
+    instagramClone: {
+      title: "Instagram Clone",
+      description: "Instagram interface clone developed with React, HTML and pure CSS. The project replicates the main layout of the social network, including the posts feed, stories, navigation bars and visual elements characteristic of the platform. Focused on responsiveness and pixel-perfect design, it demonstrates skills in creating modern interfaces, organizing React components and applying advanced CSS knowledge to faithfully recreate a complex and globally recognized design."
+    }
+  },
 }; 

@@ -1,13 +1,12 @@
 import { useLanguage } from '../../contexts/LanguageContext';
 import { useTheme } from '../../contexts/ThemeContext';
 import { translations } from '../../translations/translations';
-import styles from './LanguageToggle.module.scss';
+import styles from './LanguageToggle.module.css';
 
 const LanguageToggle = () => {
   const { language, toggleLanguage } = useLanguage();
   const { isDark } = useTheme();
   const t = translations[language];
-
   return (
     <button
       onClick={toggleLanguage}

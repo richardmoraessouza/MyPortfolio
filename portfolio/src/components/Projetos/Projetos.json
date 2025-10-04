@@ -16,6 +16,30 @@
     "repositorio": "https://github.com/richardmoraessouza/youtube-clone"
   },
   {
+    "imagem": "jump.png",
+    "alt": "Mario jump",
+    "titulo": "Mario jump",
+    "tecnologias": ["devicon-typescript-plain colored", "devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-react-original colored"],
+    "site": "https://jumpgameproject.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/jump-mario-game?tab=readme-ov-file"
+  },
+  {
+    "imagem": "github_finder.png",
+    "alt": "site Gihub Finder",
+    "titulo": "Github Finder",
+    "tecnologias": ["devicon-typescript-plain colored",  "devicon-react-original colored", "devicon-bootstrap-plain colored", "devicon-html5-plain colored", "devicon-css3-plain colored"],
+    "site": "https://findergithubproject.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/githubFinder"
+  },
+  {
+    "imagem": "instagram_clone.png",
+    "alt": "site Instagram clone",
+    "titulo": "Instagram clone",
+    "tecnologias": ["devicon-react-original colored", "devicon-html5-plain colored", "devicon-css3-plain colored"],
+    "site": "https://cloneinstaproject.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/InstaClone"
+  },
+  {
     "imagem": "Quiz.png",
     "alt": "site Quiz",
     "titulo": "Quiz",

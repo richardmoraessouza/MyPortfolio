@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations/translations";
-import styles from "./Modal.module.scss";
+import styles from "./Modal.module.css";
 
 function Modal({ text , resumo}) {
   const [modal, setModal] = useState(false);

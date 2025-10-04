@@ -1,18 +1,18 @@
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations/translations";
-import styles from "./Sobre_mim.module.scss";
+import styles from "./Sobre_mim.module.css";
 
 function Sobre_mim() {
   const { language } = useLanguage();
   const t = translations[language];
-
+  
   return (
     <section
       id="sobre_mim"
       className={`align-items-center justify-content-center ${styles.sobre_mim}`}
     >
       <section className={`${styles.linkImg}`}> 
-      <img src="/image/programacao.png" alt="imagem de uma pessoa programando" />
+      <img src="/image/programacao.png" alt="Richard Moraes Souza programando - desenvolvedor front-end trabalhando com React e JavaScript" />
       </section>
       <section className={`${styles.textoSobreMim}`}>
         <div className={styles.containerTitulo}>

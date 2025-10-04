@@ -1,5 +1,4 @@
-@import './variables';
-
+/* animações globais */
 @keyframes glowing {
   0% {
     background-position: 0 0;

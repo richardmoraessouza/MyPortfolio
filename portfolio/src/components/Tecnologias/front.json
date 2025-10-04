@@ -3,42 +3,38 @@
     "icon": "devicon-css3-plain colored",
     "titulo": "css",
     "cor": "#1572B6",
-    "sobre": "Estilização visual das páginas",
     "resumo": "CSS (Cascading Style Sheets) é a linguagem responsável por definir toda a aparência visual de páginas web. Com CSS, é possível criar layouts responsivos, animações, transições, efeitos visuais e personalizar cada elemento da interface. Ele permite separar o conteúdo da apresentação, facilitando a manutenção e escalabilidade dos projetos. O CSS moderno suporta variáveis, funções, media queries e recursos avançados para garantir acessibilidade e performance em diferentes dispositivos."
   },
   {
     "icon": "devicon-bootstrap-plain colored",
     "titulo": "BOOTSTRAP",
     "cor": "#7952B3",
-    "sobre": "Framework CSS responsivo",
     "resumo": "Bootstrap é um dos frameworks front-end mais populares do mundo, oferecendo uma vasta coleção de componentes prontos, como botões, cards, menus, grids e formulários. Ele utiliza um sistema de grid flexível que facilita a criação de layouts responsivos, adaptando o site para diferentes tamanhos de tela. Além disso, o Bootstrap possui integração com JavaScript para funcionalidades dinâmicas e uma documentação completa, acelerando o desenvolvimento e garantindo consistência visual."
   },
   {
     "icon": "devicon-javascript-plain colored",
     "titulo": "JAVASCRIPT",
     "cor": "#F7DF1E",
-    "sobre": "Linguagem para interatividade",
     "resumo": "JavaScript é a principal linguagem de programação para web, responsável por adicionar interatividade, manipular elementos do DOM, validar formulários, consumir APIs e criar experiências dinâmicas. Com JavaScript, é possível desenvolver desde simples animações até aplicações web completas (SPAs), além de ser a base de frameworks modernos como React, Angular e Vue. Sua versatilidade permite integração com back-end (Node.js) e desenvolvimento multiplataforma."
   },
   {
     "icon": "devicon-html5-plain colored",
     "titulo": "HTML",
     "cor": "#E34F26",
-    "sobre": "Estrutura de páginas web",
     "resumo": "HTML (HyperText Markup Language) é a linguagem fundamental da web, utilizada para estruturar o conteúdo das páginas. Com HTML, definimos títulos, parágrafos, listas, imagens, links, tabelas e formulários. O HTML5 trouxe novos elementos semânticos, suporte a multimídia (áudio e vídeo), APIs nativas e maior acessibilidade. Ele serve como esqueleto para o CSS estilizar e o JavaScript dinamizar, sendo indispensável para qualquer projeto web."
-  },
-  {
-    "icon": "devicon-sass-original colored",
-    "titulo": "sass",
-    "cor": "#CC6699",
-    "sobre": "Pré-processador CSS para estilos mais organizados",
-    "resumo": "Sass (Syntactically Awesome Style Sheets) é um pré-processador CSS que adiciona funcionalidades avançadas à escrita de estilos, como variáveis, aninhamento, mixins, funções e herança. Com Sass, o código CSS se torna mais organizado, reutilizável e fácil de manter, especialmente em projetos grandes. Ele permite criar temas, automatizar padrões de design e reduzir repetição, sendo compilado para CSS puro antes de ser utilizado no navegador."
   },
   {
     "icon": "devicon-react-original colored",
     "titulo": "REACT",
     "cor": "#61dafb",
-    "sobre": "Biblioteca JavaScript para interfaces",
     "resumo": "React é uma biblioteca JavaScript desenvolvida pelo Facebook para a construção de interfaces de usuário modernas e reativas. Utilizando o conceito de componentes, o React permite criar aplicações escaláveis, reutilizáveis e de fácil manutenção. Ele utiliza o Virtual DOM para otimizar atualizações na tela, possui um ecossistema robusto (Redux, React Router, Hooks) e é amplamente adotado para o desenvolvimento de Single Page Applications (SPAs) e projetos mobile com React Native."
+  },
+  {
+    "icon": "devicon-typescript-plain colored",
+    "titulo": "TYPESCRIPT",
+    "cor": "#3178c6",
+    "sobre": "Superset do JavaScript com tipagem estática",
+    "resumo": "TypeScript é um superset do JavaScript desenvolvido pela Microsoft que adiciona tipagem estática ao código. Ele permite identificar erros em tempo de desenvolvimento, oferecendo maior segurança, legibilidade e manutenção em aplicações de médio e grande porte. Compatível com bibliotecas JavaScript e ferramentas modernas, o TypeScript é amplamente adotado em projetos profissionais por facilitar refatorações, melhorar a experiência em IDEs e colaborar com equipes em escala. Seu código é transpilado para JavaScript, garantindo compatibilidade total com navegadores e ambientes de execução."
   }
+  
 ]

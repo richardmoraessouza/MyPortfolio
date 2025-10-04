@@ -1,0 +1,107 @@
+.navegacao {
+    background-color: var(--card-bg);
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 25px;
+    z-index: 999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.map { margin-bottom: 30px; }
+
+.map a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.map a:hover { color: var(--accent-color); }
+
+.map ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.redes_socias ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes_socias a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.redes_socias a::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    background-color: white;
+    width: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    transition: width 0.3s ease-in-out;
+    background-size: 400%;
+    z-index: -1;
+    background-image: linear-gradient(to right, #25d366, #128c7e, #075e54, #25d366, #128c7e);
+}
+
+.redes_socias a:hover { transform: translateY(-5px) !important; }
+.redes_socias a:hover::before { width: 100%; animation: glowing 20s linear infinite; }
+
+.redes_socias a img { transition: transform 0.3s ease; }
+.redes_socias a:hover img { transform: translateY(-5px) !important; }
+
+.redes_socias li a { display: block; transition: transform 0.3s ease; }
+.redes_socias li a:hover { transform: scale(1.1); }
+.redes_socias li a img { width: 32px; height: 32px; }
+
+.fechar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (min-width: 450px) {
+    .navegacao { display: none; }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# SEO Friendly URLs
+Disallow: /node_modules/
+Disallow: /src/
+
+# Sitemap
+Sitemap: https://richardmoraessouza.netlify.app/sitemap.xml

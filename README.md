@@ -33,7 +33,6 @@ Este portfólio foi desenvolvido para apresentar minha jornada como desenvolvedo
 ## 🛠️ Tecnologias Principais
 
 - **React 19.1.0** - Interface moderna e interativa
-- **SCSS/Sass** - Estilos organizados e modulares
 - **Vite** - Build tool rápida e eficiente
 - **Context API** - Gerenciamento de estado
 - **LocalStorage** - Persistência de preferências

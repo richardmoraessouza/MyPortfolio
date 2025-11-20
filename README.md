@@ -26,7 +26,7 @@ Este portfólio foi desenvolvido para apresentar minha jornada como desenvolvedo
 
 ## 🚀 Acesso Rápido
 
-- **🌐 Site Online**: [https://richardmoraessouza.netlify.app/](https://richardmoraessouza.netlify.app/)
+- **🌐 Site Online**: [https://richardmoraessouza.netlify.app/](https://richardmoraes.netlify.app/)
 - **📁 Código Fonte**: [portfolio/](portfolio/)
 - **📖 Documentação Detalhada**: [portfolio/README.md](portfolio/README.md)
 
@@ -106,12 +106,12 @@ Consulte: [portfolio/README.md](portfolio/README.md)
 - 🎯 Desenvolvedor Front-end autodidata
 - 💡 Apaixonado por criar experiências digitais envolventes
 - 🛠️ Foco em React, JavaScript, HTML, CSS e TypeScript
-- 🔧 Conhecimentos em Python e MySQL
+- 🔧 Conhecimentos em Node.js, PostgreSQL e MySQL
 
 ## 🌍 Contato
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/richard-moraes-souza-998539338/)
-- 🌐 [Portfólio](https://richardmoraessouza.github.io/Portf-lio/)
+- 🌐 [Portfólio](https://richardmoraes.netlify.app/)
 - 📱 [WhatsApp](https://wa.me/5547999326217?text=Olá%20Richard%2C%20encontrei%20seu%20perfil%20no%20GitHub!)
 - 📧 richardmoraessouza2006@gmail.com
 

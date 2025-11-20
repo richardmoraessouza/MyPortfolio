@@ -30,6 +30,11 @@ function Projetos({ projeto, index }) {
         return t.githubFinder;
       case 'instagramclone':
         return t.instagramClone;
+      case 'shoppinglife':
+        return t.shoppingLife;
+        case 'personia':
+          return t.PersonIA;
+        
       default:
         return { title: projectTitle, description: projeto.sobre };
     }

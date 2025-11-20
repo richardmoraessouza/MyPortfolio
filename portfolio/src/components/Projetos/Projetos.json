@@ -7,11 +7,27 @@
     "site": "https://serginhoesteticar.netlify.app/",
     "repositorio": "https://github.com/richardmoraessouza/SerginhoestetiCar?tab=readme-ov-file"
   },
+   {
+    "imagem": "PersonIA.jpg",
+    "alt": " site PersonIA",
+    "titulo": "PersonIA",
+    "tecnologias": ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored", "devicon-typescript-plain", "devicon-react-original colored", "devicon-tailwindcss-plain colored", "devicon-nodejs-plain colored", "devicon-postgresql-plain colored", "devicon-express-original colored" ],
+    "site": "https://personia.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/PersonIA"
+  },
+  {
+    "imagem": "shopping_life.jpg",
+    "alt": "site Shopping Life",
+    "titulo": "Shopping Life",
+    "tecnologias": ["devicon-nodejs-plain colored", "devicon-postgresql-plain colored", "devicon-express-original colored", "devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-react-original colored", "devicon-typescript-plain colored","devicon-bootstrap-plain colored","devicon-javascript-plain colored"],
+    "site": "https://projectshoppinglife.netlify.app/",
+    "repositorio": "https://github.com/richardmoraessouza/shoppingLife"
+  },
   {
     "imagem": "Youtube Clone.jpg",
     "alt": "Youtube Clone",
     "titulo": "Youtube Clone",
-    "tecnologias": ["devicon-sass-original colored", "devicon-react-original colored", "devicon-bootstrap-plain colored", "devicon-html5-plain colored", "devicon-css3-plain colored"],
+    "tecnologias": ["devicon-react-original colored", "devicon-bootstrap-plain colored", "devicon-html5-plain colored", "devicon-css3-plain colored"],
     "site": "https://tubeliteclone.netlify.app/",
     "repositorio": "https://github.com/richardmoraessouza/youtube-clone"
   },
@@ -70,13 +86,5 @@
     "tecnologias": ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored"],
     "site": "https://calculadoraresponsiva.netlify.app/",
     "repositorio": "https://github.com/richardmoraessouza/calculadora?tab=readme-ov-file"
-  },
-  {
-    "imagem": "projeto-web1.png",
-    "alt": "site Projeto web 1",
-    "titulo": "Projeto web 1",
-    "tecnologias": ["devicon-html5-plain colored", "devicon-css3-plain colored"],
-    "site": "https://projetotest.netlify.app/",
-    "repositorio": "https://github.com/richardmoraessouza/projeto-web-1"
   }
 ]

@@ -56,10 +56,13 @@ h2 {
 
 .tecnologia {
   width: 100%;
-  height: auto;
+  height: 200px;
   border-radius: 12px;
-  padding: 1.5rem;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
   z-index: 0;
   background-color: var(--card-bg);
   border: 2px solid var(--card-border);
@@ -73,7 +76,7 @@ h2 {
   }
 
   .icon {
-    font-size: 3rem;
+    font-size: 4rem;
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
@@ -86,15 +89,6 @@ h2 {
     color: var(--text-color);
     text-align: center;
     font-weight: 600;
-  }
-
-  p {
-    font-size: 14px;
-    padding: 10px 0;
-    margin: 5px 0;
-    color: var(--text-muted);
-    line-height: 1.6;
-    text-align: center;
   }
 }
 

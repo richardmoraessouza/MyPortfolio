@@ -284,7 +284,7 @@ nav {
   background-size: 400%;
   border-radius: 50%;
   filter: blur(10px);
-  background: linear-gradient(105deg, #6a0dad, #3a0ca3);
+  background: linear-gradient(105deg, #1E3C72, #2A5298, #4A90E2);
   animation: glowing 6s linear infinite;
 }
 

@@ -1,10 +1,10 @@
 [
   {
-    "icon": "devicon-python-plain colored",
-    "tecnologia": "PYTHON",
-    "cor": "#3776AB",
-    "sobre": "Linguagem versátil para back-end e automações",
-    "resumo": "Python é uma linguagem de programação poderosa, de sintaxe simples e legível, amplamente utilizada no back-end para desenvolvimento de APIs, automação de tarefas, análise de dados, inteligência artificial, machine learning e web scraping. Sua vasta biblioteca padrão e comunidade ativa facilitam a integração com bancos de dados, serviços web e outras tecnologias. Python é conhecido pela produtividade, portabilidade e facilidade de aprendizado, sendo uma escolha popular em startups e grandes empresas."
+    "icon": "devicon-nodejs-plain colored",
+    "tecnologia": "NODE.JS",
+    "cor": "#339933",
+    "sobre": "Ambiente de execução para JavaScript no servidor",
+    "resumo": "Node.js é um ambiente de execução JavaScript construído sobre o motor V8 do Chrome, permitindo criar aplicações de back-end escaláveis e de alta performance. Ele utiliza um modelo de I/O assíncrono e orientado a eventos, ideal para aplicações em tempo real, APIs e microserviços. Node.js possui um ecossistema rico com o npm, tornando fácil integrar bibliotecas e frameworks, e é amplamente adotado em startups e grandes empresas."
   },
   {
     "icon": "devicon-mysql-plain colored",
@@ -12,5 +12,19 @@
     "cor": "#4479A1",
     "sobre": "Banco de dados relacional para armazenar informações",
     "resumo": "MySQL é um sistema de gerenciamento de banco de dados relacional (SGBD) de código aberto, muito utilizado em aplicações web para armazenar, consultar e gerenciar grandes volumes de dados de forma eficiente e segura. Ele suporta transações, integridade referencial, replicação, backup e escalabilidade. O MySQL é compatível com diversas linguagens de programação e integra-se facilmente a frameworks populares, sendo uma escolha confiável para projetos de todos os portes."
+  },
+  {
+    "icon": "devicon-express-original colored",
+    "tecnologia": "EXPRESS.JS",
+    "cor": "#000000",
+    "sobre": "Framework minimalista para Node.js",
+    "resumo": "Express.js é um framework web para Node.js que simplifica o desenvolvimento de aplicações e APIs. Ele fornece ferramentas robustas para roteamento, middlewares, gerenciamento de requisições e respostas, tornando o desenvolvimento rápido e organizado. Express é altamente flexível, compatível com diversos bancos de dados e facilmente extensível, sendo um dos frameworks mais populares para desenvolvimento backend em JavaScript."
+  },
+  {
+    "icon": "devicon-postgresql-plain colored",
+    "tecnologia": "POSTGRESQL",
+    "cor": "#336791",
+    "sobre": "Banco de dados relacional avançado e open-source",
+    "resumo": "PostgreSQL é um sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua robustez, confiabilidade e conformidade com padrões SQL. Ele suporta consultas complexas, integridade referencial, transações, replicação e extensões avançadas. É altamente escalável e compatível com diversas linguagens de programação, sendo ideal para aplicações críticas, sistemas corporativos e projetos que exigem consistência e performance."
   }
 ]

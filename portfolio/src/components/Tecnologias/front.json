@@ -35,6 +35,11 @@
     "cor": "#3178c6",
     "sobre": "Superset do JavaScript com tipagem estática",
     "resumo": "TypeScript é um superset do JavaScript desenvolvido pela Microsoft que adiciona tipagem estática ao código. Ele permite identificar erros em tempo de desenvolvimento, oferecendo maior segurança, legibilidade e manutenção em aplicações de médio e grande porte. Compatível com bibliotecas JavaScript e ferramentas modernas, o TypeScript é amplamente adotado em projetos profissionais por facilitar refatorações, melhorar a experiência em IDEs e colaborar com equipes em escala. Seu código é transpilado para JavaScript, garantindo compatibilidade total com navegadores e ambientes de execução."
+  },
+  {
+    "icon": "devicon-tailwindcss-plain colored",
+    "titulo": "TAILWIND CSS",
+    "cor": "#06B6D4",
+    "resumo": "Tailwind CSS é um framework CSS utilitário que permite construir layouts rapidamente usando classes pré-definidas diretamente no HTML. Diferente de frameworks baseados em componentes, o Tailwind promove a criação de designs altamente personalizados sem escrever CSS customizado. Ele facilita a manutenção, otimiza a performance e oferece suporte a responsividade, dark mode e customização completa de estilos com configurações centralizadas, sendo muito popular em projetos modernos de front-end."
   }
-  
 ]

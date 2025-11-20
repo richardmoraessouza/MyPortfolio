@@ -12,11 +12,5 @@
         "cor": "white",
         "sobre": "Plataforma de hospedagem de código-fonte",
         "resumo": "É uma plataforma online que hospeda repositórios Git. Ela facilita o compartilhamento de código, colaboração em projetos, revisão de código (pull requests), controle de permissões e integração com outras ferramentas. O GitHub é como uma “rede social” para desenvolvedores, onde você pode contribuir com projetos open source e mostrar seu portfólio."
-    },
-    {
-        "icon":"devicon-netlify-plain colored",
-        "tecnologia": "NETLIFY",
-        "cor": "#00C7B7",
-        "resumo": "Netlify é uma plataforma que facilita o deploy de sites estáticos e frontends modernos. Com integração contínua, ele permite que você conecte seu repositório Git e faça deploy automático a cada novo commit. Também oferece recursos como CDN, SSL gratuito e formulários serverless, tornando o processo de publicar sites rápido e prático."
     }
 ]

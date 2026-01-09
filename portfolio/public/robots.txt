@@ -6,4 +6,4 @@ Disallow: /node_modules/
 Disallow: /src/
 
 # Sitemap
-Sitemap: https://richardmoraessouza.netlify.app/sitemap.xml
+Sitemap: https://richardmoraes.netlify.app/sitemap.xml

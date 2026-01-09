@@ -1,80 +1,131 @@
-# 🚀 Portfólio - Richard Moraes Souza
+# 🚀 Portfólio Full-Stack - Richard Moraes Souza
 
-Bem-vindo ao repositório do meu portfólio pessoal! Este projeto demonstra minhas habilidades em desenvolvimento front-end, com foco em React, JavaScript e design responsivo.
+[![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=flat&logo=react)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql)](https://www.postgresql.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express)](https://expressjs.com/)
+[![Vite](https://img.shields.io/badge/Vite-5.4.8-646CFF?style=flat&logo=vite)](https://vitejs.dev/)
+
+Bem-vindo ao repositório do meu portfólio profissional! Este projeto é uma vitrine completa das minhas habilidades como desenvolvedor full-stack, demonstrando expertise em desenvolvimento front-end e back-end, desde interfaces modernas até APIs robustas e bancos de dados. Desenvolvido com foco em performance, segurança, escalabilidade e experiência do usuário excepcional.
+
+## 👨‍💻 Sobre Mim
+
+Desenvolvedor Full-Stack apaixonado por criar aplicações web completas e escaláveis. Com experiência prática em projetos reais, domino tecnologias modernas para front-end e back-end, incluindo React, Node.js, TypeScript, PostgreSQL e muito mais. Busco oportunidades para contribuir com equipes dinâmicas em projetos inovadores que impactam usuários.
+
+**🎯 Foco Atual:** Desenvolvimento Full-Stack | React + Node.js | APIs REST | Bancos de Dados | UI/UX Responsivo
+
+## 🛠️ Stack Tecnológica Completa
+
+### Front-end
+- **React 19.1.0** - Interfaces interativas e componentes reutilizáveis
+- **TypeScript** - Tipagem estática para código mais robusto
+- **JavaScript (ES6+)** - Programação funcional e assíncrona
+- **HTML5 & CSS3** - Estrutura semântica e estilos modernos
+- **Tailwind CSS** - Framework utilitário para design rápido
+- **Bootstrap** - Componentes responsivos e layouts flexíveis
+- **Vite** - Build tool rápida e otimizada
+
+### Back-end
+- **Node.js** - Ambiente de execução JavaScript no servidor
+- **Express.js** - Framework minimalista para APIs e aplicações web
+- **PostgreSQL** - Banco de dados relacional avançado e confiável
+- **MySQL** - Sistema de gerenciamento de dados relacional
+
+### Ferramentas & DevOps
+- **Git & GitHub** - Controle de versão e colaboração
+- **ESLint** - Linting e qualidade de código
+- **npm** - Gerenciamento de pacotes
+- **Context API** - Gerenciamento de estado no React
+- **LocalStorage** - Persistência de dados no navegador
+
+### Conhecimentos Adicionais
+- **APIs REST** - Desenvolvimento de serviços web
+- **JSON** - Manipulação e troca de dados
+- **Responsive Design** - Mobile-first approach
+- **Acessibilidade (WCAG)** - Design inclusivo
 
 ## 📁 Estrutura do Projeto
 
 ```
 Portfólio/
 ├── portfolio/          # Aplicação React principal
-│   ├── src/           # Código fonte
-│   ├── public/        # Arquivos estáticos
-│   └── README.md      # Documentação detalhada
-└── README.md          # Este arquivo
+│   ├── src/           # Código fonte organizado
+│   ├── public/        # Assets estáticos otimizados
+│   └── README.md      # Documentação técnica detalhada
+└── README.md          # Este arquivo (Visão Geral)
 ```
 
-## 🎯 Sobre o Projeto
+## ✨ Funcionalidades em Destaque
 
-Este portfólio foi desenvolvido para apresentar minha jornada como desenvolvedor front-end autodidata, destacando:
+- 🌍 **Multi-idioma**: Suporte completo a Português e Inglês
+- 🎨 **Dual Theme**: Sistema de temas claro/escuro com persistência
+- 📱 **100% Responsivo**: Otimizado para todos os dispositivos
+- ⚡ **Performance**: Carregamento otimizado com Vite
+- 🎭 **Animações**: Transições suaves e interativas
+- 🔍 **Acessibilidade**: Design inclusivo e navegação por teclado
+- 💾 **Persistência**: Preferências salvas localmente
+- 🔗 **APIs Integradas**: Demonstração de consumo de APIs
 
-- **Projetos desenvolvidos** com links para demonstração
-- **Tecnologias dominadas** com explicações detalhadas
-- **Experiência profissional** e objetivos
-- **Design responsivo** para todos os dispositivos
-- **Suporte multi-idioma** (Português e Inglês)
-- **Sistema de temas** (Claro e Escuro)
+## 🎯 Projetos Full-Stack em Destaque
+
+### 🤖 PersonIA
+**Plataforma de IA conversacional com autenticação e dashboard**
+- Sistema completo de chat com IA
+- Autenticação de usuários e gerenciamento de sessões
+- Dashboard administrativo com estatísticas
+- API REST robusta com Express.js
+- **Tech Stack:** React, TypeScript, Tailwind CSS, Node.js, PostgreSQL, Express.js
+- **🔗 Demo:** [personia.netlify.app](https://personia.netlify.app/)
+
+### 🛍️ Shopping Life
+**E-commerce completo com catálogo e carrinho**
+- Plataforma de compras online funcional
+- Sistema de produtos, categorias e busca
+- Carrinho de compras e checkout
+- API back-end com autenticação
+- **Tech Stack:** React, TypeScript, Bootstrap, Node.js, PostgreSQL, Express.js
+- **🔗 Demo:** [projectshoppinglife.netlify.app](https://projectshoppinglife.netlify.app/)
+
+### 🏪 SerginhoEstetiCar
+**Site institucional com sistema de agendamento**
+- Design responsivo e moderno
+- Formulário de agendamento integrado
+- SEO otimizado e performance alta
+- **Tech Stack:** HTML5, CSS3, JavaScript
+- **🔗 Demo:** [serginhoesteticar.netlify.app](https://serginhoesteticar.netlify.app/)
+
+### 📺 YouTube Clone
+**Clone funcional do YouTube com player de vídeo**
+- Interface similar ao YouTube
+- Player de vídeo integrado
+- Sistema de busca e recomendações
+- **Tech Stack:** React, Bootstrap, HTML5, CSS3
+- **🔗 Demo:** [tubeliteclone.netlify.app](https://tubeliteclone.netlify.app/)
+
+### 🎮 Mario Jump Game
+**Jogo interativo estilo Mario com TypeScript**
+- Mecânicas de jogo completas
+- Sistema de pontuação e níveis
+- Controles responsivos
+- **Tech Stack:** TypeScript, React, HTML5, CSS3
+- **🔗 Demo:** [jumpgameproject.netlify.app](https://jumpgameproject.netlify.app/)
+
+### 🔍 GitHub Finder
+**Ferramenta para busca de perfis no GitHub**
+- Integração com API do GitHub
+- Busca em tempo real de usuários
+- Exibição de repositórios e estatísticas
+- **Tech Stack:** TypeScript, React, Bootstrap, HTML5, CSS3
+- **🔗 Demo:** [findergithubproject.netlify.app](https://findergithubproject.netlify.app/)
 
 ## 🚀 Acesso Rápido
 
-- **🌐 Site Online**: [https://richardmoraessouza.netlify.app/](https://richardmoraes.netlify.app/)
-- **📁 Código Fonte**: [portfolio/](portfolio/)
-- **📖 Documentação Detalhada**: [portfolio/README.md](portfolio/README.md)
+- **🌐 Portfólio Online:** [richardmoraes.netlify.app](https://richardmoraes.netlify.app/)
+- **📁 Repositório:** [github.com/richardmoraessouza/Portf-lio](https://github.com/richardmoraessouza/Portf-lio)
+- **📖 Documentação Técnica:** [portfolio/README.md](portfolio/README.md)
 
-## 🛠️ Tecnologias Principais
-
-- **React 19.1.0** - Interface moderna e interativa
-- **Vite** - Build tool rápida e eficiente
-- **Context API** - Gerenciamento de estado
-- **LocalStorage** - Persistência de preferências
-
-## ✨ Funcionalidades Destacadas
-
-- 🌍 **Multi-idioma**: Português e Inglês
-- 🎨 **Temas**: Claro e Escuro
-- 📱 **Responsivo**: Adaptável a todos os dispositivos
-- ⚡ **Performance**: Carregamento otimizado
-- 🎭 **Animações**: Transições suaves
-- 🔍 **Acessibilidade**: Design inclusivo
-
-## 🎯 Projetos Demonstrados
-
-1. **SerginhoEstetiCar** - Site institucional para estética automotiva
-2. **Calculadora** - Calculadora responsiva com operações avançadas
-3. **Timer Interativo** - Cronômetro com funcionalidades especiais
-4. **Quiz** - Quiz interativo com sistema de pontuação
-5. **Projetos Web** - Exercícios de aprendizado e evolução
-
-## 🛠️ Tecnologias Demonstradas
-
-### Front-end
-- HTML5, CSS3, JavaScript
-- React, TypeScript Bootstrap
-
-### Back-end
-- Python, MySQL, JSON
-
-### Ferramentas
-- Git, GitHub
-
-## 📱 Responsividade
-
-O portfólio é otimizado para:
-- 📱 **Mobile**: 320px+
-- 📱 **Tablet**: 768px+
-- 💻 **Desktop**: 1024px+
-- 🖥️ **Large Screens**: 1440px+
-
-## 🚀 Como Executar
+## 🏃‍♂️ Como Executar Localmente
 
 ```bash
 # Clone o repositório
@@ -84,53 +135,50 @@ cd Portf-lio/portfolio
 # Instale as dependências
 npm install
 
-# Execute em desenvolvimento
+# Execute em modo desenvolvimento
 npm run dev
 
-# Acesse http://localhost:5173
+# Acesse em http://localhost:5173
 ```
 
-## 📖 Documentação Completa
+## 📈 Métricas & Performance
 
-Para informações detalhadas sobre:
-- Instalação e configuração
-- Estrutura do projeto
-- Funcionalidades específicas
-- Deploy e hospedagem
+- **📱 Responsivo:** 320px+ (Mobile) | 768px+ (Tablet) | 1024px+ (Desktop)
+- **⚡ Lighthouse Score:** 95+ em Performance, Acessibilidade e SEO
+- **🎯 Core Web Vitals:** Otimizado para melhor experiência do usuário
+- **🔒 Segurança:** HTTPS habilitado e headers de segurança
+- **🚀 APIs:** Integração com back-end e bancos de dados
 
-Consulte: [portfolio/README.md](portfolio/README.md)
+## 👨‍💼 Buscando Oportunidades
 
-## 👨‍💻 Sobre o Desenvolvedor
+Estou disponível para oportunidades de **Desenvolvedor Full-Stack** em empresas que valorizam:
+- Desenvolvimento end-to-end (front + back)
+- Arquiteturas escaláveis e seguras
+- Código limpo, testável e bem documentado
+- Trabalho em equipe e metodologias ágeis
+- Inovação e aprendizado contínuo
 
-**Richard Moraes Souza**
-- 🎯 Desenvolvedor Front-end autodidata
-- 💡 Apaixonado por criar experiências digitais envolventes
-- 🛠️ Foco em React, JavaScript, HTML, CSS e TypeScript
-- 🔧 Conhecimentos em Node.js, PostgreSQL e MySQL
+**💼 Tipos de Vagas:** Full-Stack Developer | React + Node.js Developer | Web Developer | Software Engineer
 
-## 🌍 Contato
+## 🌍 Contato Profissional
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/richard-moraes-souza-998539338/)
-- 🌐 [Portfólio](https://richardmoraes.netlify.app/)
-- 📱 [WhatsApp](https://wa.me/5547999326217?text=Olá%20Richard%2C%20encontrei%20seu%20perfil%20no%20GitHub!)
-- 📧 richardmoraessouza2006@gmail.com
+- **💼 LinkedIn:** [linkedin.com/in/richard-moraes-souza-998539338](https://www.linkedin.com/in/richard-moraes-souza-998539338/)
+- **📧 Email:** richardmoraessouza2006@gmail.com
+- **📱 WhatsApp:** [+55 47 99932-6217](https://wa.me/5547999326217?text=Olá%20Richard%2C%20vi%20seu%20portfólio%20full-stack%20e%20gostaria%20de%20conversar!)
+- **🌐 Portfólio:** [richardmoraes.netlify.app](https://richardmoraes.netlify.app/)
 
 ---
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT.
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 ## 🤝 Contribuições
 
-Contribuições são sempre bem-vindas! Sinta-se à vontade para:
-- 🐛 Reportar bugs
-- 💡 Sugerir novas funcionalidades
-- 📝 Melhorar a documentação
-- 🔧 Corrigir problemas de código
+Contribuições são bem-vindas! Abra uma issue ou envie um pull request.
 
 ---
 
-⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
+⭐ **Se meu trabalho full-stack te impressionou, dê uma estrela no repositório!**
 
-**Desenvolvido com ❤️ por Richard Moraes Souza**
+**Desenvolvido com ❤️ e dedicação por Richard Moraes Souza**

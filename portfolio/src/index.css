@@ -1,37 +1,5 @@
 :root {
-  --bg-color: #ffffff;
-  --text-color: #333333;
-  --accent-color: #007bff;
-  --border-color: #e0e0e0;
-  --hover-bg: #f8f9fa;
-  --card-bg: #ffffff;
-  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  --text-muted: #666666;
-  --card-border: #e0e0e0;
-  --card-hover: #f8f9fa;
-  --section-bg: #f8f9fa;
-  /* Scrollbar theme vars (light) */
-  --scrollbar-track: rgba(0, 0, 0, 0.06);
-  --scrollbar-thumb-start: #00c6ff;
-  --scrollbar-thumb-end: #0072ff;
-  --scrollbar-thumb-hover-start: #29d3ff;
-  --scrollbar-thumb-hover-end: #2b8cff;
-  --scrollbar-border: rgba(0, 0, 0, 0.08);
-  --scrollbar-glow: rgba(0, 198, 255, 0.6);
-  
-  /* Button variables to reduce CSS duplication */
-  --btn-primary-bg: #007bff;
-  --btn-primary-hover: #0056b3;
-  --btn-secondary-bg: #6c757d;
-  --btn-secondary-hover: #545b62;
-  --btn-border-radius: 6px;
-  --btn-padding: 0.5rem 1rem;
-  --btn-font-size: 0.9rem;
-  --btn-transition: all 0.3s ease;
-}
-
-[data-theme="dark"] {
-  --bg-color: #0f0f0f;
+   --bg-color: #0f0f0f;
   --text-color: #dddddd;
   --accent-color: #007bff;
   --border-color: #333333;
@@ -48,20 +16,45 @@
   --scrollbar-glow: rgba(0, 198, 255, 0.85);
 }
 
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #1a1a2e;
+  --accent-color: #6366f1;
+  --accent-secondary: #ec4899;
+  --border-color: #e5e7eb;
+  --hover-bg: #f3f4f6;
+  --card-bg: #ffffff;
+  --shadow: 0 10px 40px rgba(99, 102, 241, 0.12);
+  --shadow-lg: 0 20px 60px rgba(99, 102, 241, 0.15);
+  --text-muted: #6b7280;
+  --card-border: #e5e7eb;
+  --card-hover: #f9fafb;
+  --section-bg: #f9fafb;
+  /* Scrollbar theme vars (light) */
+  --scrollbar-track: rgba(0, 0, 0, 0.04);
+  --scrollbar-thumb-start: #6366f1;
+  --scrollbar-thumb-end: #ec4899;
+  --scrollbar-thumb-hover-start: #818cf8;
+  --scrollbar-thumb-hover-end: #f472b6;
+  --scrollbar-border: rgba(0, 0, 0, 0.08);
+  --scrollbar-glow: rgba(99, 102, 241, 0.6);
+}
+
 html {
   overflow-x: hidden;
 }
 
 body {
   background: linear-gradient(135deg, var(--bg-color) 0%, var(--section-bg) 100%);
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  letter-spacing: 0.5px;
+  font-family: "Inter", "Poppins", sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
   color: var(--text-color);
   scroll-behavior: smooth;
   overflow-x: hidden;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 100vh;
+  font-weight: 500;
 }
 
 
@@ -103,7 +96,7 @@ h3 {
 }
 
 * {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 

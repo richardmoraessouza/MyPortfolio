@@ -1,24 +1,25 @@
 .languageToggle {
-  background: none;
-  border: 2px solid var(--border-color);
-  font-size: 0.9rem;
-  font-weight: 600;
+  background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 700;
   cursor: pointer;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  color: var(--text-color);
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
   text-transform: uppercase;
-  
-  &:hover {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    color: var(--bg-color);
-    transform: scale(1.05);
-  }
-  
-  &:focus {
-    outline: 2px solid var(--accent-color);
-    outline-offset: 2px;
-  }
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.languageToggle:hover {
+  background: linear-gradient(135deg, #818cf8 0%, #f472b6 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}
+
+.languageToggle:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
 } 

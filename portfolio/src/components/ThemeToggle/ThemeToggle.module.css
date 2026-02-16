@@ -1,20 +1,24 @@
 .themeToggle {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
+  border: 1px solid var(--border-color);
+  font-size: 1.3rem;
   cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 50%;
-  transition: all 0.3s ease;
+  padding: 0.7rem;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--text-color);
-  
-  &:hover {
-    background-color: var(--hover-bg);
-    transform: scale(1.1);
-  }
-  
-  &:focus {
-    outline: 2px solid var(--accent-color);
-    outline-offset: 2px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.themeToggle:hover {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(236, 72, 153, 0.2));
+  transform: scale(1.15) rotate(20deg);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.2);
+}
+
+.themeToggle:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
 } 

@@ -23,7 +23,7 @@ function Sobre_mim() {
         <p>{t.aboutMeText1}</p>
         <p>{t.aboutMeText2}</p>
         <p>{t.aboutMeText3}</p>
-        <a href="/RichardMoraesSouza_DevFullStack.pdf" target="_blank" className={styles.curriculo}>{t.curriculum}</a>
+        <a href="/Richard Moraes Souza - Desenvolvedor Full Stack Júnior.pdf" target="_blank" className={styles.curriculo}>{t.curriculum}</a>
       </section>
     </section>
   );

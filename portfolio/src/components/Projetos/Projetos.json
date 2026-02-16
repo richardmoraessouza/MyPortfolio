@@ -8,7 +8,7 @@
     "repositorio": "https://github.com/richardmoraessouza/SerginhoestetiCar?tab=readme-ov-file"
   },
    {
-    "imagem": "PersonIA.jpg",
+    "imagem": "PersonIA.png",
     "alt": " site PersonIA",
     "titulo": "PersonIA",
     "tecnologias": ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored", "devicon-typescript-plain", "devicon-react-original colored", "devicon-tailwindcss-plain colored", "devicon-nodejs-plain colored", "devicon-postgresql-plain colored", "devicon-express-original colored" ],
@@ -16,7 +16,7 @@
     "repositorio": "https://github.com/richardmoraessouza/PersonIA"
   },
   {
-    "imagem": "shopping_life.jpg",
+    "imagem": "shopping_life.jpeg",
     "alt": "site Shopping Life",
     "titulo": "Shopping Life",
     "tecnologias": ["devicon-nodejs-plain colored", "devicon-postgresql-plain colored", "devicon-express-original colored", "devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-react-original colored", "devicon-typescript-plain colored","devicon-bootstrap-plain colored","devicon-javascript-plain colored"],

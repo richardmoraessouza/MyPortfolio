@@ -12,5 +12,13 @@
         "cor": "white",
         "sobre": "Plataforma de hospedagem de código-fonte",
         "resumo": "É uma plataforma online que hospeda repositórios Git. Ela facilita o compartilhamento de código, colaboração em projetos, revisão de código (pull requests), controle de permissões e integração com outras ferramentas. O GitHub é como uma “rede social” para desenvolvedores, onde você pode contribuir com projetos open source e mostrar seu portfólio."
+    },
+    {
+        "icon": "devicon-docker-plain colored",
+        "tecnologia": "DOCKER",
+        "cor": "#2496ED",
+        "sobre": "Plataforma para automação de desenvolvimento de aplicações em containers",
+        "resumo": "Docker é uma plataforma de código aberto que automatiza o processo de empacotar, distribuir e rodar aplicações dentro de containers. Containers são ambientes isolados que permitem que as aplicações rodem de maneira consistente em diferentes ambientes, facilitando o desenvolvimento, teste e produção. Docker é amplamente utilizado em ambientes de DevOps e microserviços, tornando o processo de deploy mais rápido e eficiente."
     }
+
 ]

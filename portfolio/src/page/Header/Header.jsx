@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations/translations";
-import ThemeToggle from "../ThemeToggle/ThemeToggle";
-import LanguageToggle from "../LanguageToggle/LanguageToggle";
+import ThemeToggle from "../../components/ThemeToggle/ThemeToggle";
+import LanguageToggle from "../../components/LanguageToggle/LanguageToggle";
 import styles from "./Header.module.css";
-import Navegacao from "../Navegacao/Navegacao";
+import Navegacao from "../../components/Navegacao/Navegacao";
 
 function Header() {
   const [nome, setNome] = useState("");

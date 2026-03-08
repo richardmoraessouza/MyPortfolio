@@ -16,6 +16,14 @@
     "repositorio": "https://github.com/richardmoraessouza/PersonIA"
   },
   {
+    "imagem": "WhatsApp Image 2026-03-08 at 17.03.42.jpeg",
+    "alt": "back-end portfólio",
+    "titulo": "Chat para portfólio",
+    "tecnologias": ["devicon-java-plain colored", "devicon-spring-plain colored", "devicon-postgresql-plain colored"],
+    "site": "https://richardmoraessouza.netlify.app ",
+    "repositorio": "https://github.com/richardmoraessouza/portf-lio-api"
+  },
+  {
     "imagem": "shopping_life.jpeg",
     "alt": "site Shopping Life",
     "titulo": "Shopping Life",

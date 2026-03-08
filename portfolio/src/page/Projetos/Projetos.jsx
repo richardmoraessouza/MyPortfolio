@@ -1,13 +1,18 @@
-import { useLanguage } from "../../contexts/LanguageContext";
-import { translations } from "../../translations/translations";
+import { useLanguage } from "../../hooks/LanguageContext";
+import { translations } from "../../hooks/translations";
 import styles from "./Projetos.module.css";
 
-function Projetos({ projeto, index }) {
+function Projetos({ projeto }) {
   const { language } = useLanguage();
   const t = translations[language];
 
   const getProjectTranslation = (projectTitle) => {
-    const projectKey = projectTitle.toLowerCase().replace(/\s+/g, '');
+    // Normaliza o título: "Chat para portfólio" vira "chatparaportfólio"
+    const projectKey = projectTitle
+      .toLowerCase()
+      .normalize("NFD") // Remove acentos
+      .replace(/[\u0300-\u036f]/g, "") 
+      .replace(/\s+/g, "");
     
     switch (projectKey) {
       case 'serginhoesteticar':
@@ -32,41 +37,45 @@ function Projetos({ projeto, index }) {
         return t.instagramClone;
       case 'shoppinglife':
         return t.shoppingLife;
-        case 'personia':
-          return t.PersonIA;
-        
+      case 'personia':
+        return t.PersonIA;
+      case 'chatparaportfolio': // Agora combina com o título do seu array
+        return t.portfolioBackend;
       default:
-        return { title: projectTitle, description: projeto.sobre };
+        // Fallback caso não encontre a tradução
+        return { title: projectTitle, description: "Description not found" };
     }
   };
 
   return (
     <section id="projetos" className={`gap-5 ${styles.projetos}`}>
-      {projeto.map((projeto, index) => {
-        const projectTranslation = getProjectTranslation(projeto.titulo);
+      {projeto.map((proj, index) => {
+        const projectTranslation = getProjectTranslation(proj.titulo);
 
-        let tecnologias = []
-        for(let contador = 0; contador < projeto.tecnologias.length; contador++) {
-          tecnologias.push(<i key={contador} className={`p-1 ${projeto.tecnologias[contador]}`}></i>)
-        }
-        
         return (
           <div className={`p-2 ${styles.containerProjetos}`} key={index}>
             <div className={`${styles.img_projeto} ${styles.projeto}`}>
-              <img src={`/image/${projeto.imagem}`} alt={projeto.alt} />
+              <img src={`/image/${proj.imagem}`} alt={proj.alt} />
             </div>
             <div className={`${styles.sobre_projeto} ${styles.projeto} p-3`}>
               <h3>{projectTranslation.title}</h3>
               <p>{projectTranslation.description}</p>
-              <div className={styles.container_tecnologia}>{tecnologias}</div>
+              
+              <div className={styles.container_tecnologia}>
+                {proj.tecnologias.map((tech, idx) => (
+                  <i key={idx} className={`p-1 ${tech}`}></i>
+                ))}
+              </div>
+
               <div className={`gap-2 ${styles.links}`}>
-                <a href={projeto.site} className={styles.site} target="_blank">
+                <a href={proj.site} className={styles.site} target="_blank" rel="noreferrer">
                   {t.viewProject}
                 </a>
                 <a
-                  href={projeto.repositorio}
+                  href={proj.repositorio}
                   className={styles.repositorio}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   &lt;{t.viewRepository}/&gt;
                 </a>

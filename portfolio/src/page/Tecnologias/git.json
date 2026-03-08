@@ -9,7 +9,7 @@
     {
         "icon":"devicon-github-original colored",
         "tecnologia": "GITHUB",
-        "cor": "white",
+        "cor": "black",
         "sobre": "Plataforma de hospedagem de código-fonte",
         "resumo": "É uma plataforma online que hospeda repositórios Git. Ela facilita o compartilhamento de código, colaboração em projetos, revisão de código (pull requests), controle de permissões e integração com outras ferramentas. O GitHub é como uma “rede social” para desenvolvedores, onde você pode contribuir com projetos open source e mostrar seu portfólio."
     },

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Navegacao.module.css"
-import { useLanguage } from "../../contexts/LanguageContext";
-import { translations } from "../../translations/translations";
+import { useLanguage } from "../../hooks/LanguageContext";
+import { translations } from "../../hooks/translations";
 
 function Navegacao() {
     const [fecha, setFechar] = useState(false)

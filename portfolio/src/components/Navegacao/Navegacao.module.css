@@ -11,7 +11,7 @@
     justify-content: center;
     border: none;
     font-size: 25px;
-    z-index: 999;
+    z-index: 10000;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -87,7 +87,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 9999;
+    z-index: 999;
     border: none;
     background-color: transparent;
     color: var(--text-color);
@@ -98,10 +98,3 @@
 @media (min-width: 450px) {
     .navegacao { display: none; }
 }
-
-
-
-
-
-
-

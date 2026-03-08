@@ -1,30 +1,51 @@
 [
   {
+    "icon": "devicon-java-plain colored",
+    "tecnologia": "JAVA",
+    "cor": "#ED8B00",
+    "sobre": "Linguagem robusta orientada a objetos",
+    "resumo": "Java é uma linguagem de programação versátil e poderosa, amplamente utilizada no desenvolvimento corporativo, aplicações Android e sistemas de alta escala. Sua filosofia 'escreva uma vez, rode em qualquer lugar' garante portabilidade e segurança, sendo uma das tecnologias mais sólidas e confiáveis do mercado global."
+  },
+  {
+    "icon": "devicon-spring-plain colored",
+    "tecnologia": "SPRING BOOT",
+    "cor": "#6DB33F",
+    "sobre": "Framework Java para APIs modernas e seguras",
+    "resumo": "Spring Boot é uma ferramenta do ecossistema Spring que simplifica a criação de aplicações Java autônomas e de nível de produção. Ele elimina configurações complexas através da 'convenção sobre configuração', permitindo o desenvolvimento ágil de microserviços e APIs REST robustas, com suporte nativo a segurança e conexões de banco de dados."
+  },
+  {
+    "icon": "devicon-azuresqldatabase-plain colored",
+    "tecnologia": "SQL",
+    "cor": "#00758F",
+    "sobre": "Linguagem padrão para manipulação de dados",
+    "resumo": "SQL (Structured Query Language) é a linguagem fundamental para interagir com bancos de dados relacionais. Domino a criação de queries complexas, normalização de dados, relacionamentos e otimização de consultas para garantir que as aplicações processem informações de forma rápida e segura, seja em MySQL, PostgreSQL ou SQL Server."
+  },
+  {
     "icon": "devicon-nodejs-plain colored",
     "tecnologia": "NODE.JS",
     "cor": "#339933",
     "sobre": "Ambiente de execução para JavaScript no servidor",
-    "resumo": "Node.js é um ambiente de execução JavaScript construído sobre o motor V8 do Chrome, permitindo criar aplicações de back-end escaláveis e de alta performance. Ele utiliza um modelo de I/O assíncrono e orientado a eventos, ideal para aplicações em tempo real, APIs e microserviços. Node.js possui um ecossistema rico com o npm, tornando fácil integrar bibliotecas e frameworks, e é amplamente adotado em startups e grandes empresas."
+    "resumo": "Node.js é um ambiente de execução JavaScript construído sobre o motor V8 do Chrome, permitindo criar aplicações de back-end escaláveis e de alta performance. Ele utiliza um modelo de I/O assíncrono e orientado a eventos, ideal para aplicações em tempo real, APIs e microserviços. Node.js possui um ecossistema rico com o npm, tornando fácil integrar bibliotecas e frameworks."
   },
   {
     "icon": "devicon-mysql-plain colored",
     "tecnologia": "MYSQL",
     "cor": "#4479A1",
     "sobre": "Banco de dados relacional para armazenar informações",
-    "resumo": "MySQL é um sistema de gerenciamento de banco de dados relacional (SGBD) de código aberto, muito utilizado em aplicações web para armazenar, consultar e gerenciar grandes volumes de dados de forma eficiente e segura. Ele suporta transações, integridade referencial, replicação, backup e escalabilidade. O MySQL é compatível com diversas linguagens de programação e integra-se facilmente a frameworks populares, sendo uma escolha confiável para projetos de todos os portes."
+    "resumo": "MySQL é um sistema de gerenciamento de banco de dados relacional (SGBD) de código aberto, muito utilizado em aplicações web para armazenar, consultar e gerenciar grandes volumes de dados de forma eficiente e segura. Ele suporta transações, integridade referencial, replicação, backup e escalabilidade."
   },
   {
     "icon": "devicon-express-original colored",
     "tecnologia": "EXPRESS.JS",
     "cor": "#000000",
     "sobre": "Framework minimalista para Node.js",
-    "resumo": "Express.js é um framework web para Node.js que simplifica o desenvolvimento de aplicações e APIs. Ele fornece ferramentas robustas para roteamento, middlewares, gerenciamento de requisições e respostas, tornando o desenvolvimento rápido e organizado. Express é altamente flexível, compatível com diversos bancos de dados e facilmente extensível, sendo um dos frameworks mais populares para desenvolvimento backend em JavaScript."
+    "resumo": "Express.js é um framework web para Node.js que simplifica o desenvolvimento de aplicações e APIs. Ele fornece ferramentas robustas para roteamento, middlewares, gerenciamento de requisições e respostas, tornando o desenvolvimento rápido e organizado. Express é altamente flexível e extensível."
   },
   {
     "icon": "devicon-postgresql-plain colored",
     "tecnologia": "POSTGRESQL",
     "cor": "#336791",
     "sobre": "Banco de dados relacional avançado e open-source",
-    "resumo": "PostgreSQL é um sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua robustez, confiabilidade e conformidade com padrões SQL. Ele suporta consultas complexas, integridade referencial, transações, replicação e extensões avançadas. É altamente escalável e compatível com diversas linguagens de programação, sendo ideal para aplicações críticas, sistemas corporativos e projetos que exigem consistência e performance."
+    "resumo": "PostgreSQL é um sistema de gerenciamento de banco de dados relacional de código aberto, conhecido por sua robustez, confiabilidade e conformidade com padrões SQL. Ele suporta consultas complexas e extensões avançadas, sendo ideal para aplicações críticas e sistemas que exigem consistência."
   }
 ]

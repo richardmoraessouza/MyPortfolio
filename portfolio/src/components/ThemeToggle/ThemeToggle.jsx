@@ -1,6 +1,6 @@
-import { useTheme } from '../../contexts/ThemeContext';
-import { useLanguage } from '../../contexts/LanguageContext';
-import { translations } from '../../translations/translations';
+import { useTheme } from '../../hooks/ThemeContext';
+import { useLanguage } from '../../hooks/LanguageContext';
+import { translations } from '../../hooks/translations';
 import styles from './ThemeToggle.module.css';
 
 const ThemeToggle = () => {

@@ -1,163 +1,187 @@
 @import "../../styles/animations.css";
+.titulo {
+
+  text-align: center;
+  margin-top: 40px;
+}
 
 .sobre_mim {
   color: var(--text-color);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin: 80px 0px 50px 0px;
   gap: 20px;
-  max-height: 910px;
+  position: relative;
   overflow: hidden;
-  .linkImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   img {
-    width: 50%;
-    height: auto;
-   }
-  }
-
-}
-@media (max-width: 1025px) {
-  .sobre_mim {
-    max-height: 1130px;
-  }
 }
 
-
-.textoSobreMim p {
-  padding-top: 10px;
-  font-size: clamp(0.6rem, 3vw, 1rem);
-
-
-}
-
-.curriculo {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 0.875rem 1.75rem;
-  border-radius: 12px;
-  cursor: pointer;
+.chatBot {
   position: relative;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 8px;
-  font-weight: 700;
-  font-size: 1rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+  width: 100%;
+  z-index: 10;
+}
+
+.containerPerguntas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  height: 300px;
+  overflow-y: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none
+}
+
+.btnPerguntas {
+  background-color: #ccc;
+  color: black;
   border: none;
-  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+  width: 80%;
+  padding: 10px 16px;
+  margin: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
 }
 
-.curriculo:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(99, 102, 241, 0.4);
-  background: linear-gradient(135deg, #818cf8 0%, #f472b6 100%);
+.btnPerguntas:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-.tituloTexto {
-  display: inline-block;
-  text-align: center;
-  background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-size: clamp(1.8rem, 4vw, 3.2rem);
-  font-family: "Orbitron", "Poppins", sans-serif;
-  font-weight: 800;
-  position: relative;
-  border-radius: 15px;
-  z-index: 0;
-  padding: 15px 25px;
-  margin: 20px 0;
-  animation: titleEntrance 1.2s ease-out forwards;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.btnPerguntas:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
-.tituloTexto:hover {
-  transform: translateY(-3px);
+.btnPerguntas:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.2);
 }
 
-.tituloTexto i {
-  margin-right: 12px;
-  color: #ec4899;
-  animation: bounce 2s ease-in-out infinite;
+
+.chatForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-@keyframes titleEntrance {
-  0% {
+
+.containerEnviar {
+  width: auto;
+  position: relative; 
+}
+
+.inputIA {
+  padding: 10px;
+  padding-right: 50px; 
+  border-radius: 20px;
+  border: 1px solid #888;
+  outline: none;
+  width: 250px;
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputIA:focus {
+  border-color: #222;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+
+
+.inputIA::placeholder {
+  color: #666;
+}
+
+.btnEnviar {
+  background-color: #222;
+  border: none;
+  color: #fff; /* Garante que o 'currentColor' do SVG seja branco */
+  border-radius: 50%;
+  position: absolute;
+  right: 5px; /* Ajustado para não colar na borda */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px; /* Tamanho fixo ideal */
+  height: 35px; /* Tamanho fixo ideal */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0; 
+  transition: all 0.2s ease;
+}
+
+.btnEnviar svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.btnEnviar:hover {
+  background-color: #000;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.btnEnviar:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnEnviar:hover {
+  background-color: #333;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.btnEnviar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+@keyframes surgir {
+  from {
     opacity: 0;
-    transform: translateY(30px) scale(0.8);
-    filter: blur(5px);
-  }
-  50% {
-    opacity: 0.7;
     transform: translateY(10px) scale(0.95);
-    filter: blur(2px);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0) scale(1);
-    filter: blur(0);
   }
 }
 
-@keyframes glowingBorder {
-  0%, 100% {
-    background-position: 0% 50%;
-    opacity: 0.8;
-  }
-  25% {
-    background-position: 100% 50%;
-    opacity: 1;
-  }
-  50% {
-    background-position: 100% 100%;
-    opacity: 0.9;
-  }
-  75% {
-    background-position: 0% 100%;
-    opacity: 1;
-  }
-}
 
-@keyframes starTwinkle {
-  0%, 100% {
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
-  }
-  25% {
-    transform: scale(1.1) rotate(5deg);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.2) rotate(0deg);
-    opacity: 1;
-  }
-  75% {
-    transform: scale(1.1) rotate(-5deg);
-    opacity: 0.8;
-  }
-}
-
-@media (max-width: 800px) {
+@media (min-width: 568px) {
   .sobre_mim {
-    grid-template-columns: 1fr;
-
-    .linkImg {
-      grid-column: 1;
-      grid-row: 2;
-    }
-
-    .textoSobreMim {
-      grid-column: 1;
-      grid-row: 1;
-    }
-    .containerTitulo {
-     display: flex;
-     justify-content: center;
-    }
+    flex-flow: row nowrap;
+    gap: 40px;
   }
+
+  .containerPerguntas {
+    width: 100%;
+    
+  }
+
+  .perguntas_respostas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+
+}
 }

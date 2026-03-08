@@ -1,5 +1,5 @@
-import { useLanguage } from "../../contexts/LanguageContext";
-import { translations } from "../../translations/translations";
+import { useLanguage } from "../../hooks/LanguageContext";
+import { translations } from "../../hooks/translations";
 import styles from "./Tecnologias.module.css";
 
 function Tecnologias({ front, back, git }) {
@@ -21,11 +21,10 @@ function Tecnologias({ front, back, git }) {
             {front.map((item, index) => {
               const techTranslation = getTechnologyTranslation(item.titulo, 'frontend');
               return (
-                <div className={styles.tecnologia} key={index}>
+                <article className={styles.tecnologia} key={index} style={{ '--tech-color': item.cor }}>
                   <i className={`${styles.icon} ${item.icon}`}></i>
                   <h3 style={{ color: item.cor }}>{techTranslation.title}</h3>
-                 
-                </div>
+                </article>
               );
             })}
           </section>
@@ -37,10 +36,10 @@ function Tecnologias({ front, back, git }) {
             {back.map((item, index) => {
               const techTranslation = getTechnologyTranslation(item.tecnologia, 'backend');
               return (
-                <div className={styles.tecnologia} key={index}>
+                <article className={styles.tecnologia} key={index} style={{ '--tech-color': item.cor }}>
                   <i className={`${styles.icon} ${item.icon}`}></i>
                   <h3 style={{ color: item.cor }}>{techTranslation.title}</h3>
-                </div>
+                </article>
               );
             })}
           </section>
@@ -54,10 +53,10 @@ function Tecnologias({ front, back, git }) {
           {git.map((item, index) => {
             const techTranslation = getTechnologyTranslation(item.tecnologia, 'tools');
             return (
-              <div className={`${styles.tecnologia}`} key={index}>
+              <article className={`${styles.tecnologia}`} key={index} style={{ '--tech-color': item.cor }}>
                 <i className={`${styles.icon} ${item.icon}`} ></i>
                 <h3 style={{color: item.cor }}>{techTranslation.title}</h3>
-              </div>
+              </article>
             );
           })}
           </section>

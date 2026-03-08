@@ -2,12 +2,12 @@
   display: flex;
   flex-flow: column nowrap;
   position: relative;
-  z-index: 1;
+  z-index: 999;
   height: auto;
   color: #ffffff;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 ul {
@@ -76,7 +76,7 @@ nav {
   top: 0;
   backdrop-filter: blur(10px);
   left: 0;
-  z-index: 999;
+  z-index: 99999;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,0 +1,82 @@
+.starsContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; 
+    z-index: -1;
+    
+    /* Variáveis padrão (Modo Escuro) */
+    --star-color: #ffffff;
+    --star-shadow: rgba(255, 255, 255, 0.8);
+    --meteor-glow: rgba(255, 255, 255, 0.4);
+}
+
+.starsContainer.lightMode {
+    --star-color: #000000;
+    --star-shadow: rgba(0, 0, 0, 0.3); /* Sombra mais sutil para o preto */
+    --meteor-glow: rgba(0, 0, 0, 0.2);
+}
+
+.starParticle {
+    position: absolute;
+    background-color: var(--star-color);
+    border-radius: 50%;
+    box-shadow: 0 0 3px var(--star-shadow);
+    animation: pulse infinite ease-in-out;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease; /* Transição suave */
+}
+
+.meteor {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: linear-gradient(to right, var(--star-color), transparent);
+    border-radius: 50%;
+    box-shadow: 0 0 15px 2px var(--meteor-glow);
+    opacity: 0;
+    animation: shootingStar infinite linear;
+    transform-origin: 0 0;
+    transition: background 0.5s ease;
+}
+
+.meteor::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(to right, var(--star-color), transparent);
+    transform: translateX(-100%) translateY(1px);
+    transition: background 0.5s ease;
+}
+
+@keyframes shootingStar {
+    0% {
+        transform: rotate(215deg) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        transform: rotate(215deg) translateX(-500px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(215deg) translateX(-500px);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+}

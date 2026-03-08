@@ -15,7 +15,6 @@ export const LanguageProvider = ({ children }) => {
   const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
-    // Only access localStorage after component mounts (client-side)
     const savedLanguage = localStorage.getItem('language');
     const initialLanguage = savedLanguage || 'pt';
     

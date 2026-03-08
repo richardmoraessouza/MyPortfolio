@@ -7,18 +7,29 @@ export const translations = {
     technologies: "Tecnologias",
     projects: "Projetos",
     contact: "Contato",
+    
+    // Sobre mim
+    sobre_mim: "Sou Desenvolvedor Full Stack com foco em React, Node.js e TypeScript. Tenho experiência prática na criação de aplicações escaláveis com Express, SQL e Docker, sempre priorizando performance e SEO. Como freelancer, desenvolvi projetos completos, do design ao deploy, alcançando métricas máximas de 100/100 no Lighthouse. Meu objetivo é usar a tecnologia para gerar impacto real, entregando interfaces modernas e sistemas robustos que realmente resolvam problemas.",
+    perguntar: "Perguntar algo...",
 
-    aboutMe: "Sobre mim",
-    aboutMeText1:
-      "Sou desenvolvedor full stack, apaixonado por criar experiências digitais envolventes. Busco constantemente aprimorar minhas habilidades e aprender novas tecnologias.",
-    aboutMeText2:
-      "Desenvolvi um site institucional sob demanda de um cliente, com o objetivo de apresentar os serviços de estética automotiva e atrair novos clientes. O projeto foi desenvolvido utilizando HTML, CSS e JavaScript, sendo totalmente responsivo e otimizado para SEO, com estrutura de código modular e reutilizável.",
-    aboutMeText3:
-      "Tenho experiência em projetos utilizando HTML, CSS, JSON, Bootstrap, TypeScript JavaScript e React. Também possuo conhecimentos em backend com Node.js, Express.js, MySQL e PostgreSQL.",
-    curriculum: "Currículo",
+    questions: {
+      tech: { id: 1, text: "Quais tecnologias você domina?" },
+      freelance: { id: 5, text: "Fale sobre seu projeto freelance." },
+      pride: { id: 2, text: "Fale sobre um projeto que você se orgulha." },
+      hiring: { id: 4, text: "Por que eu deveria te contratar para o meu time?" },
+      whoIs: { id: 3, text: "Quem é o Richard?" },
+      favoriteLang: { id: 6, text: "Qual linguagem de programação você mais gosta e por quê?" },
+      learningExpectation: { id: 8, text: "O que você espera aprender aqui na empresa?" },
+      currentStudy: { id: 9, text: "Que tecnologia você está aprendendo atualmente?" },
+      start: { id: 10, text: "Como você começou na programação?" },
+      strengths: { id: 11, text: "Quais são seus pontos fortes e fracos?" },
+      challenge: { id: 7, text: "Qual foi o maior desafio que você enfrentou programando?" },
+      future: { id: 12, text: "Onde você se vê daqui a 5 anos?" },
+      ia: { id: 13, text: "Como você utiliza a Inteligência Artificial no seu fluxo de desenvolvimento?" }
+    },
 
-    frontend: "Frontend",
-    backend: "Backend",
+    frontend: "Front-end",
+    backend: "Back-end",
     tools: "Ferramentas",
     aboutTechnology: "Sobre Tecnologia",
 
@@ -33,6 +44,8 @@ export const translations = {
     toggleTheme: "Alternar tema",
     toggleLanguage: "Alternar idioma",
 
+
+    // projetos
     serginhoEstetiCar: {
       title: "SerginhoEstetiCar",
       description:
@@ -94,6 +107,11 @@ export const translations = {
       description:
         "PersonIA é uma plataforma web voltada para a criação e interação com personagens virtuais personalizados. O usuário pode definir aparência, personalidade, história e até regras específicas de comportamento, criando personagens únicos e coerentes. Além disso, a plataforma oferece um sistema de chat que permite conversar diretamente com cada personagem, proporcionando uma experiência imersiva, dinâmica e totalmente personalizada. O projeto integra frontend em React e TypeScript com uma API própria em Node.js, Express e PostgreSQL, garantindo desempenho, organização e expansão futura.",
       apiUrl: "https://api-personia.onrender.com"
+    },
+    portfolioBackend: {
+      title: "IA Portfolio - Backend Inteligente",
+      description:
+        "O 'cérebro' do portfólio, um sistema de chat inteligente robusto construído com Java 21 e Spring Boot 4. A aplicação utiliza a API do Google Gemini para responder perguntas sobre minha trajetória profissional, integrada a um banco de dados PostgreSQL. Implementa uma arquitetura context-aware que busca dados reais no banco para alimentar a IA, evitando alucinações e garantindo respostas precisas e baseadas em fatos. Conta com API REST completa, suporte a Docker e um prompt de sistema altamente otimizado para interações profissionais."
     }
   },
 
@@ -103,22 +121,34 @@ export const translations = {
 
   en: {
     home: "Home",
-    about: "About",
+    about: "About me",
     technologies: "Technologies",
     projects: "Projects",
     contact: "Contact",
 
-    aboutMe: "About Me",
-    aboutMeText1:
-      "I am a full-stack developer, passionate about creating engaging digital experiences. I constantly seek to improve my skills and learn new technologies.",
-    aboutMeText2:
-      "I developed an institutional website on demand for a client, aiming to showcase automotive aesthetic services and attract new customers. The project was built using HTML, CSS, and JavaScript, fully responsive and SEO-optimized, with a modular and reusable code structure.",
-    aboutMeText3:
-      "I have experience in projects using HTML, CSS, JSON, Bootstrap, TypeScript, JavaScript, and React. I also have knowledge in backend development with Node.js, Express.js, MySQL, and PostgreSQL.",
-    curriculum: "Resume",
+    // Sobre mim
 
-    frontend: "Frontend",
-    backend: "Backend",
+    perguntar: "Ask something",
+    sobre_mim: "I am a Full Stack Developer focusing on React, Node.js, and TypeScript. I have practical experience creating scalable applications with Express, SQL, and Docker, always prioritizing performance and SEO. As a freelancer, I have developed complete projects from design to deploy, achieving 100/100 Lighthouse metrics. My goal is to use technology to create real impact, delivering modern interfaces and robust systems that truly solve problems.",
+
+    questions: {
+      tech: { id:1, text: "What technologies do you master?" },
+      freelance: { id: 5, text: "Tell me about your freelance projects." },
+      pride: { id: 2, text: "Tell me about a project you are proud of." },
+      hiring: { id: 4, text: "Why should I hire you for my team?" },
+      whoIs: { id: 3, text: "Who is Richard?" },
+      favoriteLang: { id: 6, text: "Which programming language do you like the most and why?" },
+      learningExpectation: { id: 8, text: "What do you expect to learn here at the company?" },
+      currentStudy: { id: 9, text: "What technology are you currently learning?" },
+      start: { id: 10, text: "How did you start in programming?" },
+      strengths: { id: 11, text: "What are your strengths and weaknesses?" },
+      challenge: { id: 7, text: "What was the biggest challenge you faced while programming?" },
+      future: { id: 12, text: "Where do you see yourself in 5 years?" },
+      ia: { id: 13, text: "How do you use Artificial Intelligence in your development flow?" }
+    },
+
+    frontend: "Front-end",
+    backend: "Back-end",
     tools: "Tools",
     aboutTechnology: "About Technology",
 
@@ -133,6 +163,7 @@ export const translations = {
     toggleTheme: "Toggle theme",
     toggleLanguage: "Toggle language",
 
+     // projetos
     serginhoEstetiCar: {
       title: "SerginhoEstetiCar",
       description:
@@ -194,6 +225,14 @@ export const translations = {
       description:
         "PersonIA is a web platform designed for creating and interacting with personalized virtual characters. Users can define appearance, personality, history and even custom behavior rules, forming unique and coherent characters. The platform also includes a chat system that allows direct interaction with each character, providing an immersive and dynamic experience. Built with React and TypeScript, integrated with a custom Node.js, Express and PostgreSQL API for performance and scalability.",
       apiUrl: "https://api-personia.onrender.com"
+    },
+    portfolioBackend: {
+      title: "IA Portfolio - Intelligent Backend",
+      description:
+        "This is the 'brain' of the portfolio, a robust intelligent chat system built with Java 21 and Spring Boot 4. The application uses the Google Gemini API to answer questions about my professional experience, integrated with a PostgreSQL database. It implements a context-aware architecture that retrieves relevant data from the DB to feed the AI, preventing hallucinations and ensuring precise, data-driven responses. It features a complete REST API, Docker support, and a highly optimized system prompt for professional interactions."
     }
   }
 };
+
+
+

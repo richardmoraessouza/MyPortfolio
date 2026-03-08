@@ -1,5 +1,5 @@
-import { useLanguage } from "../../contexts/LanguageContext";
-import { translations } from "../../translations/translations";
+import { useLanguage } from "../../hooks/LanguageContext";
+import { translations } from "../../hooks/translations";
 import styles from "./Footer.module.css";
 
 function Footer() {

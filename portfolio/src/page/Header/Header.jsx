@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { useLanguage } from "../../contexts/LanguageContext";
-import { translations } from "../../translations/translations";
+import { useLanguage } from "../../hooks/LanguageContext";
+import { translations } from "../../hooks/translations";
 import ThemeToggle from "../../components/ThemeToggle/ThemeToggle";
 import LanguageToggle from "../../components/LanguageToggle/LanguageToggle";
 import styles from "./Header.module.css";
@@ -80,7 +80,7 @@ function Header() {
         <section className={styles.comeco}>
           <div>
             <h1 className="m-1">{nome}</h1>
-            <p>&lt;Desenvolvedor Front-end/&gt;</p>
+            <p>&lt;Desenvolvedor Full Stack/&gt;</p>
           </div>
           <div className={styles.redes_socias}>
             <button className={`${styles.btn} ${styles.linkedin}`}>
@@ -114,14 +114,14 @@ function Header() {
           </div>
         </section>
       </div>
-      <video
+      {/* <video
         src="/video/bolinhasV2.mp4"
         autoPlay
         className={styles.video}
         muted
         loop
         playsInline
-      ></video> 
+      ></video>  */}
     </header>
   );
 }

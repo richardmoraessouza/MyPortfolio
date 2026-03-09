@@ -5,6 +5,11 @@ const MouseTrail = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
+
+    if (window.innerWidth < 600) {
+      return;
+    }
+
     const c = canvasRef.current;
     const ctx = c.getContext('2d');
 

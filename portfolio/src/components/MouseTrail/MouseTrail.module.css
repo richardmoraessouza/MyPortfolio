@@ -14,7 +14,7 @@
   outline: none !important;
 }
 
-/* Garantir que o canvas cubra toda a tela */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -22,7 +22,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Melhorar performance do canvas */
 canvas {
   will-change: transform;
   transform: translateZ(0);

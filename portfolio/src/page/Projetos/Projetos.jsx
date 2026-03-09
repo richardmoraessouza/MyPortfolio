@@ -14,19 +14,19 @@ function Projetos({ projeto }) {
       .replace(/\s+/g, "");
 
     switch (projectKey) {
-      case "serginhoesteticar":   return t.serginhoEstetiCar;
-      case "calculadora":         return t.calculator;
-      case "quiz":                return t.quiz;
-      case "projetoweb1":         return t.projectWeb1;
-      case "timerinterativo":     return t.timer;
-      case "projetoweb2":         return t.projectWeb2;
-      case "youtubeclone":        return t.youtubeClone;
-      case "mariojump":           return t.MarioJump;
-      case "githubfinder":        return t.githubFinder;
-      case "instagramclone":      return t.instagramClone;
-      case "shoppinglife":        return t.shoppingLife;
-      case "personia":            return t.PersonIA;
-      case "chatparaportfolio":   return t.portfolioBackend;
+      case "serginhoesteticar":  return t.serginhoEstetiCar;
+      case "calculadora":        return t.calculator;
+      case "quiz":               return t.quiz;
+      case "projetoweb1":        return t.projectWeb1;
+      case "timerinterativo":    return t.timer;
+      case "projetoweb2":        return t.projectWeb2;
+      case "youtubeclone":       return t.youtubeClone;
+      case "mariojump":          return t.MarioJump;
+      case "githubfinder":       return t.githubFinder;
+      case "instagramclone":     return t.instagramClone;
+      case "shoppinglife":       return t.shoppingLife;
+      case "personia":           return t.PersonIA;
+      case "chatparaportfolio":  return t.portfolioBackend;
       default:
         return { title: projectTitle, description: "Description not found" };
     }
@@ -39,17 +39,22 @@ function Projetos({ projeto }) {
         const num = String(index + 1).padStart(2, "0");
 
         return (
-          <div className={styles.containerProjetos} key={index}>
+          <article className={styles.containerProjetos} key={index}>
 
-            {/* número */}
-            <span className={styles.numProjeto}>{num}</span>
+            {/* coordenada estelar */}
+            <span className={styles.numProjeto}>OBJ-{num}</span>
 
-            {/* imagem */}
+            {/* viewport da nave */}
             <div className={styles.img_projeto}>
-              <img src={`/image/${proj.imagem}`} alt={proj.alt} />
+              <img
+                src={`/image/${proj.imagem}`}
+                alt={proj.alt}
+                loading="lazy"
+                decoding="async"
+              />
             </div>
 
-            {/* conteúdo */}
+            {/* painel de dados */}
             <div className={styles.sobre_projeto}>
               <h3>{projectTranslation.title}</h3>
               <p>{projectTranslation.description}</p>
@@ -61,16 +66,26 @@ function Projetos({ projeto }) {
               </div>
 
               <div className={styles.links}>
-                <a href={proj.site} className={styles.site} target="_blank" rel="noreferrer">
+                <a
+                  href={proj.site}
+                  className={styles.site}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   ↗ {t.viewProject}
                 </a>
-                <a href={proj.repositorio} className={styles.repositorio} target="_blank" rel="noreferrer">
+                <a
+                  href={proj.repositorio}
+                  className={styles.repositorio}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   &lt;{t.viewRepository}/&gt;
                 </a>
               </div>
             </div>
 
-          </div>
+          </article>
         );
       })}
     </section>

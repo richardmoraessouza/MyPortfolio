@@ -303,7 +303,6 @@
   100% { background-position: 0% 50%; }
 }
 
-/* ── foto / órbita ── */
 /* ══════════════════════════════════════
    PORTAL / BURACO NEGRO
 ══════════════════════════════════════ */
@@ -584,6 +583,23 @@
   .redes_socias { justify-content: flex-start; }
 
   .orbita { width: 380px; height: 380px; }
+}
+
+/* ══════════════════════════════
+   OTIMIZAÇÕES MOBILE
+══════════════════════════════ */
+@media (max-width: 768px) {
+  .navegacao {
+    transition: background 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .navLink {
+    transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+  }
+
+  .navLink::after {
+    transition: transform 0.2s ease;
+  }
 }
 
 @media (max-width: 550px) {

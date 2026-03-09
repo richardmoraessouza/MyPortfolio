@@ -152,3 +152,25 @@
   70%  { transform: rotate(215deg) translateX(calc(var(--ml, 80px) * -5));  opacity: 0; }
   100% { transform: rotate(215deg) translateX(calc(var(--ml, 80px) * -5));  opacity: 0; }
 }
+
+/* ══════════════════════════════
+   OTIMIZAÇÕES MOBILE
+══════════════════════════════ */
+@media (max-width: 768px) {
+  .star {
+    will-change: opacity;
+    transition: background-color 0.5s ease;
+  }
+
+  .starGlow {
+    box-shadow:
+      0 0 3px  1px var(--sgc, rgba(255,255,255,0.5)),
+      0 0 8px  2px var(--sgc, rgba(255,255,255,0.3));
+  }
+
+  @keyframes twinkle {
+    0%   { opacity: var(--bo, 0.4); }
+    50%  { opacity: min(calc(var(--bo, 0.4) * 1.8), 1); }
+    100% { opacity: var(--bo, 0.4); }
+  }
+}

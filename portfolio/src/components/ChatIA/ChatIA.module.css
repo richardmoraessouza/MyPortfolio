@@ -116,7 +116,7 @@
   50%     { r:3; }
 }
 
-/* luzes peito */
+
 .chestLight { animation: chestSeq 1.8s ease-in-out infinite; }
 @keyframes chestSeq {
   0%,100% { opacity:0.3; r:2;   }
@@ -124,7 +124,6 @@
 }
 
 /* ══ BOCA ══ */
-/* idle: barrinhas em baixo reluzem */
 .mouthBar {
   animation: barIdle 2s ease-in-out infinite;
 }

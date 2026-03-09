@@ -299,6 +299,32 @@
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* ══════════════════════════════
+   OTIMIZAÇÕES MOBILE
+══════════════════════════════ */
+@media (max-width: 768px) {
+  .inputIA {
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  }
+
+  .btnEnviar {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .btnEnviar:hover {
+    transform: translateY(-50%) scale(1.08);
+    box-shadow: 0 4px 16px color-mix(in srgb, var(--accent-color, #6c63ff) 50%, transparent);
+  }
+
+  .btnPergunta {
+    transition:
+      transform    0.15s ease,
+      background   0.15s ease,
+      border-color 0.15s ease,
+      box-shadow   0.15s ease;
+  }
+}
+
+/* ══════════════════════════════
    RESPONSIVE
 ══════════════════════════════ */
 @media (min-width: 680px) {

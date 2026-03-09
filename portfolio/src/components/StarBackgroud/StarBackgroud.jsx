@@ -1,81 +1,112 @@
-import React, { useState, useEffect } from 'react';
+
+import React, { useState, useEffect, useRef } from 'react';
 import styles from './StarBackgroud.module.css';
-import { useTheme } from '../../hooks/ThemeContext'; // Importe o tema aqui
+import { useTheme } from '../../hooks/ThemeContext';
 
 export const StarBackground = () => {
-    const { isDark } = useTheme();
-    const [stars, setStars] = useState([]);
-    const [meteors, setMeteors] = useState([]);
+  const { isDark } = useTheme();
+  const [stars, setStars] = useState([]);
+  const [activeMeteors, setActiveMeteors] = useState([]);
+  const meteorTimer = useRef(null);
+  const meteorId    = useRef(0);
 
-    useEffect(() => {
-        const generateStars = () => {
-            const numberOfStars = Math.floor((window.innerWidth * window.innerHeight) / 10000);
-            const newStars = [];
-            for (let i = 0; i < numberOfStars; i++) {
-                newStars.push({
-                    id: i,
-                    size: Math.random() * 2 + 1,
-                    x: Math.random() * 100,
-                    y: Math.random() * 100,
-                    opacity: Math.random() * 0.5 + 0.3,
-                    duration: Math.random() * 3 + 2,
-                });
-            }
-            setStars(newStars);
-        };
+  useEffect(() => {
+    const generate = () => {
+      const count = Math.floor((window.innerWidth * window.innerHeight) / 6500);
+      const newStars = Array.from({ length: count }, (_, i) => {
+        const roll = Math.random();
+        let size, baseOpacity, twinkleDuration, glow;
 
-        const generateMeteors = () => {
-    const numberOfMeteors = 6;
-    const newMeteors = [];
-    for (let i = 0; i < numberOfMeteors; i++) {
-        newMeteors.push({
-            id: i,
-            x: 30 + Math.random() * 40, 
-            y: 10 + Math.random() * 40, 
-            delay: Math.random() * 10,
-            duration: Math.random() * 2 + 2,
-        });
-    }
-    setMeteors(newMeteors);
-};
+        if (roll < 0.55) {
+          size = Math.random() * 0.7 + 0.2; baseOpacity = Math.random() * 0.25 + 0.08;
+          twinkleDuration = Math.random() * 6 + 5; glow = false;
+        } else if (roll < 0.88) {
+          size = Math.random() * 1.1 + 0.7; baseOpacity = Math.random() * 0.35 + 0.28;
+          twinkleDuration = Math.random() * 4 + 2.5; glow = false;
+        } else {
+          size = Math.random() * 1.6 + 1.4; baseOpacity = Math.random() * 0.25 + 0.65;
+          twinkleDuration = Math.random() * 2.5 + 1.2; glow = true;
+        }
 
-        generateStars();
-        generateMeteors();
+        const t = Math.random();
+        let color, glowColor, lightColor, lightGlow;
+        if      (t < 0.55) { color='#ffffff'; glowColor='rgba(255,255,255,0.6)';  lightColor='#6366f1'; lightGlow='rgba(99,102,241,0.25)';  }
+        else if (t < 0.68) { color='#fff5e4'; glowColor='rgba(255,220,160,0.5)';  lightColor='#8b5cf6'; lightGlow='rgba(139,92,246,0.25)';  }
+        else if (t < 0.78) { color='#ddeeff'; glowColor='rgba(160,200,255,0.5)';  lightColor='#6366f1'; lightGlow='rgba(99,102,241,0.2)';   }
+        else if (t < 0.86) { color='#ffccaa'; glowColor='rgba(255,180,100,0.5)';  lightColor='#ec4899'; lightGlow='rgba(236,72,153,0.25)';  }
+        else if (t < 0.93) { color='#6366f1'; glowColor='rgba(99,102,241,0.7)';   lightColor='#6366f1'; lightGlow='rgba(99,102,241,0.45)';  }
+        else               { color='#ec4899'; glowColor='rgba(236,72,153,0.7)';   lightColor='#ec4899'; lightGlow='rgba(236,72,153,0.45)';  }
 
-        window.addEventListener('resize', generateStars);
-        return () => window.removeEventListener('resize', generateStars);
-    }, []);
+        return { id:i, size, x:Math.random()*100, y:Math.random()*100, baseOpacity,
+                 color, glowColor, lightColor, lightGlow, glow, twinkleDuration,
+                 twinkleDelay: Math.random() * 8 };
+      });
+      setStars(newStars);
+    };
+    generate();
+    window.addEventListener('resize', generate);
+    return () => window.removeEventListener('resize', generate);
+  }, []);
 
-    return (
-        /* Adicionamos uma classe condicional baseada no tema */
-        <div className={`${styles.starsContainer} ${isDark ? '' : styles.lightMode}`}>
-            {stars.map(star => (
-                <div
-                    key={`star-${star.id}`}
-                    className={styles.starParticle}
-                    style={{
-                        width: `${star.size}px`,
-                        height: `${star.size}px`,
-                        left: `${star.x}%`,
-                        top: `${star.y}%`,
-                        opacity: star.opacity, // Corrigido de opanpcity
-                        animationDuration: `${star.duration}s`,
-                    }}
-                />
-            ))}
+  useEffect(() => {
+    const spawnMeteor = () => {
+      const id = meteorId.current++;
+      const big = Math.random() < 0.2;
+      const meteor = {
+        id, big,
+        x:        6  + Math.random() * 68,
+        y:        1  + Math.random() * 32,
+        duration: big ? Math.random() * 0.7 + 0.5 : Math.random() * 0.9 + 0.5,
+        length:   big ? 150 + Math.random() * 90   : 55  + Math.random() * 90,
+        colored:  Math.random() < 0.35,
+      };
+      setActiveMeteors(prev => [...prev, meteor]);
+      setTimeout(() => setActiveMeteors(prev => prev.filter(m => m.id !== id)),
+        (meteor.duration + 0.8) * 1000);
+    };
 
-            {meteors.map(meteor => (
-                <div
-                    key={`meteor-${meteor.id}`}
-                    className={styles.meteor}
-                    style={{
-                        left: `${meteor.x}%`,
-                        top: `${meteor.y}%`,
-                        animationDelay: `${meteor.delay}s`,
-                        animationDuration: `${meteor.duration}s`,
-                    }}
-                />
-            ))}
-        </div>
-    );
+    const schedule = () => {
+      const delay = Math.random() * 1600 + 600;
+      meteorTimer.current = setTimeout(() => {
+        const burst = Math.random() < 0.25 ? 3 : Math.random() < 0.45 ? 2 : 1;
+        for (let i = 0; i < burst; i++)
+          setTimeout(spawnMeteor, i * (150 + Math.random() * 200));
+        schedule();
+      }, delay);
+    };
+
+    schedule();
+    return () => clearTimeout(meteorTimer.current);
+  }, []);
+
+  return (
+    <div className={`${styles.starsContainer} ${isDark ? '' : styles.lightMode}`}>
+      {stars.map(star => (
+        <div
+          key={`star-${star.id}`}
+          className={`${styles.star} ${star.glow ? styles.starGlow : ''}`}
+          style={{
+            width:`${star.size}px`, height:`${star.size}px`,
+            left:`${star.x}%`, top:`${star.y}%`,
+            '--sc':  star.color,   '--sgc': star.glowColor,
+            '--lc':  star.lightColor, '--lgc': star.lightGlow,
+            '--bo':  star.baseOpacity,
+            animationDuration:`${star.twinkleDuration}s`,
+            animationDelay:`${star.twinkleDelay}s`,
+          }}
+        />
+      ))}
+      {activeMeteors.map(meteor => (
+        <div
+          key={`meteor-${meteor.id}`}
+          className={`${styles.meteor} ${meteor.colored ? styles.meteorColored:''} ${meteor.big ? styles.meteorBig:''}`}
+          style={{
+            left:`${meteor.x}%`, top:`${meteor.y}%`,
+            '--ml':`${meteor.length}px`,
+            animationDuration:`${meteor.duration}s`,
+          }}
+        />
+      ))}
+    </div>
+  );
 };

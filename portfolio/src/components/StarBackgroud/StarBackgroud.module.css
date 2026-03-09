@@ -1,82 +1,154 @@
 .starsContainer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none; 
-    z-index: -1;
-    
-    /* Variáveis padrão (Modo Escuro) */
-    --star-color: #ffffff;
-    --star-shadow: rgba(255, 255, 255, 0.8);
-    --meteor-glow: rgba(255, 255, 255, 0.4);
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
 }
 
-.starsContainer.lightMode {
-    --star-color: #000000;
-    --star-shadow: rgba(0, 0, 0, 0.3); /* Sombra mais sutil para o preto */
-    --meteor-glow: rgba(0, 0, 0, 0.2);
+/* ══════════════════════════════
+   ESTRELA — MODO ESCURO
+══════════════════════════════ */
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--sc, #fff);
+  opacity: var(--bo, 0.4);
+  animation: twinkle infinite ease-in-out;
+  will-change: opacity, transform;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 
-.starParticle {
-    position: absolute;
-    background-color: var(--star-color);
-    border-radius: 50%;
-    box-shadow: 0 0 3px var(--star-shadow);
-    animation: pulse infinite ease-in-out;
-    transition: background-color 0.5s ease, box-shadow 0.5s ease; /* Transição suave */
+.starGlow {
+  box-shadow:
+    0 0 3px  1px var(--sgc, rgba(255,255,255,0.5)),
+    0 0 8px  2px var(--sgc, rgba(255,255,255,0.3)),
+    0 0 14px 3px var(--sgc, rgba(255,255,255,0.15));
 }
 
+/* ══════════════════════════════
+   MODO CLARO — estrelas viram
+   bolinhas coloridas (indigo/rosa)
+   visíveis em fundo claro
+══════════════════════════════ */
+.lightMode .star {
+  background-color: var(--lc, #6366f1);
+  opacity: calc(var(--bo, 0.4) * 0.55);
+}
+
+.lightMode .starGlow {
+  box-shadow:
+    0 0 4px  2px var(--lgc, rgba(99,102,241,0.3)),
+    0 0 10px 3px var(--lgc, rgba(99,102,241,0.15));
+}
+
+/* ══════════════════════════════
+   TWINKLE
+══════════════════════════════ */
+@keyframes twinkle {
+  0%   { opacity: var(--bo, 0.4);                          transform: scale(1);    }
+  20%  { opacity: calc(var(--bo, 0.4) * 0.25);             transform: scale(0.75); }
+  50%  { opacity: min(calc(var(--bo, 0.4) * 2.2), 1);      transform: scale(1.35); }
+  80%  { opacity: calc(var(--bo, 0.4) * 0.6);              transform: scale(0.9);  }
+  100% { opacity: var(--bo, 0.4);                          transform: scale(1);    }
+}
+
+/* ══════════════════════════════
+   METEORO — MODO ESCURO
+══════════════════════════════ */
 .meteor {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: linear-gradient(to right, var(--star-color), transparent);
-    border-radius: 50%;
-    box-shadow: 0 0 15px 2px var(--meteor-glow);
-    opacity: 0;
-    animation: shootingStar infinite linear;
-    transform-origin: 0 0;
-    transition: background 0.5s ease;
+  position: absolute;
+  width: 2px; height: 2px;
+  border-radius: 50%;
+  opacity: 0;
+  background: #ffffff;
+  box-shadow: 0 0 6px 1px rgba(255,255,255,0.8), 0 0 16px 3px rgba(255,255,255,0.3);
+  animation: shoot linear forwards;
+  transform-origin: 0 0;
+  will-change: transform, opacity;
 }
 
 .meteor::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 1px;
-    background: linear-gradient(to right, var(--star-color), transparent);
-    transform: translateX(-100%) translateY(1px);
-    transition: background 0.5s ease;
+  content: '';
+  position: absolute;
+  top: 50%; right: 2px;
+  transform: translateY(-50%);
+  width: var(--ml, 80px); height: 1.5px;
+  background: linear-gradient(to left, rgba(255,255,255,0.9), rgba(255,255,255,0.4) 30%, transparent);
+  border-radius: 2px;
 }
 
-@keyframes shootingStar {
-    0% {
-        transform: rotate(215deg) translateX(0);
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    30% {
-        transform: rotate(215deg) translateX(-500px);
-        opacity: 0;
-    }
-    100% {
-        transform: rotate(215deg) translateX(-500px);
-        opacity: 0;
-    }
+.meteor::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 6px 2px rgba(255,255,255,0.8);
 }
 
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-        opacity: 0.3;
-    }
-    50% {
-        transform: scale(1.3);
-        opacity: 1;
-    }
+/* colorido roxo/rosa */
+.meteorColored {
+  background: #c084fc;
+  box-shadow: 0 0 8px 2px rgba(168,85,247,0.9), 0 0 20px 5px rgba(236,72,153,0.4);
+}
+.meteorColored::before {
+  background: linear-gradient(to left, rgba(192,132,252,1), rgba(236,72,153,0.6) 40%, transparent);
+}
+.meteorColored::after {
+  background: #e879f9;
+  box-shadow: 0 0 8px 3px rgba(232,121,249,0.9);
+}
+
+/* grande */
+.meteorBig {
+  width: 3px; height: 3px;
+  box-shadow: 0 0 10px 2px rgba(255,255,255,0.9), 0 0 30px 6px rgba(255,255,255,0.35), 0 0 60px 10px rgba(255,255,255,0.1);
+}
+.meteorBig::before { height: 2px; }
+.meteorBig::after  { width: 6px; height: 6px; }
+
+/* ══════════════════════════════
+   METEORO — MODO CLARO
+   trilha azul/roxo discreta
+══════════════════════════════ */
+.lightMode .meteor {
+  background: #6366f1;
+  box-shadow: 0 0 6px 1px rgba(99,102,241,0.7), 0 0 16px 3px rgba(99,102,241,0.25);
+}
+.lightMode .meteor::before {
+  background: linear-gradient(to left, rgba(99,102,241,0.85), rgba(139,92,246,0.4) 35%, transparent);
+}
+.lightMode .meteor::after {
+  background: #818cf8;
+  box-shadow: 0 0 6px 2px rgba(129,140,248,0.8);
+}
+
+.lightMode .meteorColored {
+  background: #ec4899;
+  box-shadow: 0 0 8px 2px rgba(236,72,153,0.8), 0 0 20px 5px rgba(168,85,247,0.3);
+}
+.lightMode .meteorColored::before {
+  background: linear-gradient(to left, rgba(236,72,153,0.9), rgba(168,85,247,0.5) 40%, transparent);
+}
+.lightMode .meteorColored::after {
+  background: #f472b6;
+  box-shadow: 0 0 8px 3px rgba(244,114,182,0.8);
+}
+
+.lightMode .meteorBig {
+  box-shadow: 0 0 10px 2px rgba(99,102,241,0.8), 0 0 30px 6px rgba(99,102,241,0.3), 0 0 60px 10px rgba(99,102,241,0.1);
+}
+
+/* ══════════════════════════════
+   ANIMAÇÃO METEORO
+══════════════════════════════ */
+@keyframes shoot {
+  0%   { transform: rotate(215deg) translateX(0);                           opacity: 0; }
+  5%   { opacity: 1; }
+  40%  { opacity: 0.6; }
+  70%  { transform: rotate(215deg) translateX(calc(var(--ml, 80px) * -5));  opacity: 0; }
+  100% { transform: rotate(215deg) translateX(calc(var(--ml, 80px) * -5));  opacity: 0; }
 }

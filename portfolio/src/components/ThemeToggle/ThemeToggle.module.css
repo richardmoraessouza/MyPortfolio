@@ -1,24 +1,47 @@
 .themeToggle {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
-  border: 1px solid var(--border-color);
-  font-size: 1.3rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
   cursor: pointer;
-  padding: 0.7rem;
-  border-radius: 12px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
 }
 
 .themeToggle:hover {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(236, 72, 153, 0.2));
-  transform: scale(1.15) rotate(20deg);
-  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.themeToggle:focus {
-  outline: 2px solid var(--accent-color);
-  outline-offset: 2px;
-} 
+.themeToggle:hover .iconWrapper {
+  transform: rotate(15deg);
+}
+
+.themeToggle:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .themeToggle {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+

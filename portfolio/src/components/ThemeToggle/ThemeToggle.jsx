@@ -15,11 +15,13 @@ const ThemeToggle = () => {
       aria-label={t.toggleTheme}
       title={t.toggleTheme}
     >
-      {isDark ? (
-        <i className="bi bi-sun-fill"></i>
-      ) : (
-        <i className="bi bi-moon-fill"></i>
-      )}
+      <span className={styles.iconWrapper}>
+        {isDark ? (
+          <i className="bi bi-sun-fill"></i>
+        ) : (
+          <i className="bi bi-moon-fill"></i>
+        )}
+      </span>
     </button>
   );
 };

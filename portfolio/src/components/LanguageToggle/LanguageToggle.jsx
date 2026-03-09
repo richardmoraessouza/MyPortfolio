@@ -7,6 +7,7 @@ const LanguageToggle = () => {
   const { language, toggleLanguage } = useLanguage();
   const { isDark } = useTheme();
   const t = translations[language];
+  
   return (
     <button
       onClick={toggleLanguage}
@@ -14,7 +15,9 @@ const LanguageToggle = () => {
       aria-label={t.toggleLanguage}
       title={t.toggleLanguage}
     >
-      {language === 'pt' ? 'EN' : 'PT'}
+      <span className={styles.textWrapper}>
+        {language === 'pt' ? 'EN' : 'PT'}
+      </span>
     </button>
   );
 };

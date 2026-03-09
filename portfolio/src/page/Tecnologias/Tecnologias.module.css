@@ -4,36 +4,45 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  align-items: center;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.5px;
-  align-items: center;
   font-size: 1rem;
   overflow: hidden;
   padding: 2rem 0;
   border-radius: 12px;
   margin: 2rem 0;
-  
 }
 
 h2 {
-  margin: 30px 0px;
+  margin: 2rem 0 1.6rem;
   color: var(--text-color);
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.25em;
+  font-size: 0.7rem;
   position: relative;
-  
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--accent-color), transparent);
-    border-radius: 2px;
-  }
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+h2::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  box-shadow: 0 0 8px var(--accent-color), 0 0 20px var(--accent-color);
+  flex-shrink: 0;
+}
+
+h2::after {
+  content: '';
+  flex: 1;
+  min-width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.10), transparent);
 }
 
 .area {
@@ -42,80 +51,135 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 .containerTecnologias {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.9rem;
   width: 90%;
   max-width: 800px;
 }
 
+/* ── CARD ── */
 .tecnologia {
   width: 100%;
-  height: 200px;
-  border-radius: 12px;
+  height: 140px;
+  border-radius: 16px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  gap: 0.55rem;
   z-index: 0;
+  cursor: default;
+  overflow: hidden;
+  isolation: isolate;
+
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   box-shadow: var(--shadow);
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-    border-color: var(--tech-color);
-  }
 
-  .icon {
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-  }
-
-  h3 {
-    margin: 0;
-    padding-bottom: 3px;
-    font-size: clamp(0.8rem, 2vw, 1.5rem);
-    color: var(--text-color);
-    text-align: center;
-    font-weight: 600;
-  }
+  transition:
+    transform    0.38s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow   0.35s ease,
+    border-color 0.35s ease,
+    background   0.35s ease;
 }
 
+/* bottom glow */
 .tecnologia::after {
-  content: "";
-  height: 100%;
-  width: 100%;
+  content: '';
   position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: var(--card-bg);
-  z-index: -1;
-  border-radius: 12px;
-  border: 2px solid var(--card-border);
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    ellipse 85% 50% at 50% 120%,
+    color-mix(in srgb, var(--tech-color, var(--accent-color)) 22%, transparent),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  pointer-events: none;
 }
 
+/* top shimmer line */
 .tecnologia::before {
-  content: "";
+  content: '';
   position: absolute;
-  top: -2px;
-  left: -2px;
-  z-index: -1;
-  background-size: 600%;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  filter: blur(2px);
-  border-radius: 12px;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--tech-color, var(--accent-color)) 75%, white 25%),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  pointer-events: none;
 }
 
+.tecnologia:hover {
+  transform: translateY(-8px) scale(1.03);
+  background: rgba(255, 255, 255, 0.042);
+  border-color: color-mix(in srgb, var(--tech-color, var(--accent-color)) 55%, transparent);
+  box-shadow:
+    0 7px 20px color-mix(in srgb, var(--tech-color, var(--accent-color)) 28%, transparent),
+    0 4px 14px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+.tecnologia:hover::after  { opacity: 1; }
+.tecnologia:hover::before { opacity: 1; }
+
+/* ── ICON ── */
+.icon {
+  position: relative;
+  z-index: 2;
+  font-size: 2.4rem;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0;
+  color: var(--tech-color, var(--accent-color));
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--tech-color, var(--accent-color)) 40%, transparent));
+  transition:
+    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    filter    0.35s ease;
+}
+
+.tecnologia:hover .icon {
+  transform: scale(1.22) translateY(-3px);
+  filter: drop-shadow(0 0 18px color-mix(in srgb, var(--tech-color, var(--accent-color)) 90%, transparent));
+}
+
+/* ── NAME ── */
+.tecnologia h3 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding-bottom: 3px;
+  font-size: clamp(0.72rem, 1.8vw, 0.9rem);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--tech-color, var(--text-color));
+  opacity: 0.78;
+  transition: opacity 0.3s ease;
+}
+
+.tecnologia:hover h3 { opacity: 1; }
+
+/* ── TOOLS SECTION ── */
 .containerGit {
   display: flex;
   justify-content: center;
@@ -124,6 +188,25 @@ h2 {
   padding: 1rem;
 }
 
+/* ── ENTRANCE ANIMATION ── */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.containerTecnologias .tecnologia {
+  animation: fadeSlideUp 0.5s ease both;
+}
+.containerTecnologias .tecnologia:nth-child(1) { animation-delay: 0.04s }
+.containerTecnologias .tecnologia:nth-child(2) { animation-delay: 0.09s }
+.containerTecnologias .tecnologia:nth-child(3) { animation-delay: 0.14s }
+.containerTecnologias .tecnologia:nth-child(4) { animation-delay: 0.19s }
+.containerTecnologias .tecnologia:nth-child(5) { animation-delay: 0.24s }
+.containerTecnologias .tecnologia:nth-child(6) { animation-delay: 0.29s }
+.containerTecnologias .tecnologia:nth-child(7) { animation-delay: 0.34s }
+.containerTecnologias .tecnologia:nth-child(8) { animation-delay: 0.39s }
+
+/* ── RESPONSIVE ── */
 @media (min-width: 600px) {
   .tecnologias {
     flex-flow: row nowrap;
@@ -131,23 +214,23 @@ h2 {
     gap: 2rem;
   }
 
-  .area {
-    width: 50%;
-  }
+  .area { width: 50%; }
 
   .containerTecnologias {
     width: 100%;
     max-width: none;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 
-  .tecnologias h3 {
-    padding-left: 10px;
-  }
+  .tecnologias h3 { padding-left: 10px; }
 }
 
 @media (max-width: 768px) {
   .containerTecnologias {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
   }
+
+  .tecnologia { height: 120px; }
+  .icon { font-size: 2rem; }
 }

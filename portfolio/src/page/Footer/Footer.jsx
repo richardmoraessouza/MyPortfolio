@@ -2,77 +2,87 @@ import { useLanguage } from "../../hooks/LanguageContext";
 import { translations } from "../../hooks/translations";
 import styles from "./Footer.module.css";
 
+const sociais = [
+  {
+    href:  "https://wa.me/47999326217",
+    title: "WhatsApp",
+    src:   "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+    alt:   "WhatsApp",
+    color: "#25d366",
+  },
+  {
+    href:  "https://github.com/richardmoraessouza",
+    title: "GitHub",
+    src:   "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+    alt:   "GitHub",
+    color: "#e0e0e0",
+    invert: true,
+  },
+  {
+    href:  "https://www.linkedin.com/in/richard-moraes-souza/",
+    title: "LinkedIn",
+    src:   "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
+    alt:   "LinkedIn",
+    color: "#0077b5",
+  },
+  {
+    href:  "https://mail.google.com/mail/?view=cm&fs=1&to=richardmoraessouza2006@gmail.com",
+    title: "Gmail",
+    src:   "/image/Gmail.png",
+    alt:   "Gmail",
+    color: "#ea4335",
+  },
+];
+
 function Footer() {
   const { language } = useLanguage();
   const t = translations[language];
 
   return (
-    
-    <section id="contatos" className={styles.redes_socias}>
-      <ul
-        className={`align-items-center justify-content-center d-inline-flex gap-4`}
-      >
-        <li>
-          <a
-            href="https://wa.me/47999326217"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="WhatsApp"
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-              alt="WhatsApp"
-              width="32"
-              className={styles.app_social}
-            />{" "}
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/richardmoraessouza"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="GitHub"
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
-              alt="GitHub"
-              width="32"
-              className={styles.app_social}
-            />{" "}
-          </a>
-        </li>
+    <footer id="contatos" className={styles.footer}>
 
-        <li>
-          <a
-            href="https://www.linkedin.com/in/richard-moraes-souza/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="LinkedIn"
-            className={styles.app_social}
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-              alt="LinkedIn"
-              width="32"
-              className={styles.app_social}
-            />
-            {""}
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=richardmoraessouza2006@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Gmail"
-          >
-            <img src="/image/Gmail.png" alt="Gmail"  className={styles.app_social}/>
-          </a>
-        </li>
-      </ul>
-      <p>{t.footerText}</p>
-    </section>
+      {/* linha decorativa */}
+      <div className={styles.divider} />
+
+      <div className={styles.inner}>
+
+        {/* logo / assinatura */}
+        <div className={styles.brand}>
+          <span className={styles.brandDot} />
+          <span className={styles.brandName}>Richard Moraes</span>
+        </div>
+
+        {/* ícones sociais */}
+        <ul className={styles.sociais}>
+          {sociais.map(({ href, title, src, alt, color, invert }) => (
+            <li key={title}>
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={title}
+                className={styles.socialLink}
+                style={{ '--hover-color': color }}
+              >
+                <span className={styles.iconWrap}>
+                  <img
+                    src={src}
+                    alt={alt}
+                    width="22"
+                    className={invert ? styles.invertImg : ""}
+                  />
+                </span>
+                <span className={styles.socialLabel}>{title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        {/* copyright */}
+        <p className={styles.copy}>{t.footerText}</p>
+
+      </div>
+    </footer>
   );
 }
 

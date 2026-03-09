@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"; 
+import { useState } from "react";
 import { useLanguage } from "../../hooks/LanguageContext";
 import { translations } from "../../hooks/translations";
 import styles from "./Sobre_mim.module.css";
@@ -15,62 +15,49 @@ function Sobre_mim() {
   const [carregando, setCarregando] = useState(false);
   const [animateRobot, setAnimateRobot] = useState(false);
   const [sobre, setSobre] = useState(false);
-  const [respostaRapida, setRespostaRapida] = useState("");
 
-  // função para perguntas rápidas
-    const perguntaRapida = async (id) => {
-      setCarregando(true);
-      try {
-        const res = await axios.get(`https://portf-lio-api.onrender.com/perguntas/pergunta-rapida/${id}`);
-        const resposta = language === 'en' ? res.data.resposta_english : res.data.resposta;
-
-        if (res.data && resposta) {
-          setRespostaIA(resposta);
-          setSobre(true); 
-          setAnimateRobot(true);
-          
-          setTimeout(() => setAnimateRobot(false), 3000);
-        }
-
-      } catch (error) {
-        console.error("Erro:", error);
-        const mensagemErro = language === 'en' 
-          ? "Sorry, I couldn't find that answer in my database." 
-          : "Desculpe, não consegui encontrar essa resposta no meu banco de dados.";
-        setRespostaIA(mensagemErro);
+  const perguntaRapida = async (id) => {
+    setCarregando(true);
+    try {
+      const res = await axios.get(`https://portf-lio-api.onrender.com/perguntas/pergunta-rapida/${id}`);
+      const resposta = language === "en" ? res.data.resposta_english : res.data.resposta;
+      if (res.data && resposta) {
+        setRespostaIA(resposta);
         setSobre(true);
-      } finally {
-        setCarregando(false);
+        setAnimateRobot(true);
+        setTimeout(() => setAnimateRobot(false), 3000);
       }
-    };
+    } catch (error) {
+      const msg = language === "en"
+        ? "Sorry, I couldn't find that answer."
+        : "Desculpe, não encontrei essa resposta.";
+      setRespostaIA(msg);
+      setSobre(true);
+    } finally {
+      setCarregando(false);
+    }
+  };
 
-  // Função para o formulário de texto livre
   const handleEnviarMensagem = async (e) => {
     e.preventDefault();
     if (!mensagem.trim()) return;
     realizarChamadaApi(mensagem);
-    setMensagem(""); 
+    setMensagem("");
     setSobre(true);
   };
 
-  // Função centralizada de API para evitar repetição
   const realizarChamadaApi = async (texto) => {
     setCarregando(true);
     setAnimateRobot(true);
     try {
-        const res = await axios.post("https://portf-lio-api.onrender.com/perguntas/chat", { 
-          mensagem: texto 
+      const res = await axios.post("https://portf-lio-api.onrender.com/perguntas/chat", {
+        mensagem: texto,
       });
-
-      // Seleciona a resposta correta baseado no idioma
-      const resposta = language === 'en' ? res.data.resposta_english : res.data.resposta;
+      const resposta = language === "en" ? res.data.resposta_english : res.data.resposta;
       setRespostaIA(resposta);
-    } catch (error) {
-      console.error("Erro:", error);
-      const mensagemErro = language === 'en' 
-        ? "Oops, I had a problem connecting." 
-        : "Ops, tive um problema para me conectar.";
-      setRespostaIA(mensagemErro);
+    } catch {
+      const msg = language === "en" ? "Oops, connection error." : "Ops, erro de conexão.";
+      setRespostaIA(msg);
     } finally {
       setCarregando(false);
       setAnimateRobot(false);
@@ -78,60 +65,79 @@ function Sobre_mim() {
   };
 
   return (
-    <div>
-      <h2 className={styles.titulo}>{t.about}</h2>
+    <section id="sobre_mim" className={styles.secao}>
 
-      <section id="sobre_mim" className={`${styles.sobre_mim} align-items-center justify-content-center`}>
-      
-        <section className={styles.chatBot}>
-          <ChatIA animate={animateRobot} respostaIA={respostaIA} sobre={sobre} respota={respostaRapida} />
-        </section>
-        <section className={styles.perguntas_respostas}>
+      {/* ── HEADER DA SEÇÃO ── */}
+      <div className={styles.secaoHeader}>
+        <span className={styles.secaoTag}>
+          <span className={styles.tagDot} />
+          {language === "en" ? "About me" : "Sobre mim"}
+        </span>
+        <p className={styles.subtitulo}>
+          {language === "en"
+            ? "Ask me anything — I'm powered by AI"
+            : "Me pergunte qualquer coisa — sou movido por IA"}
+        </p>
+      </div>
+
+      {/* ── CARD CENTRAL ── */}
+      <div className={styles.card}>
+
+        {/* coluna esquerda: chatbot */}
+        <div className={styles.colChat}>
+          <div className={styles.chatBot}>
+            <ChatIA animate={animateRobot} respostaIA={respostaIA} sobre={sobre} />
+          </div>
+        </div>
+
+        {/* divisor */}
+        <div className={styles.divisor} />
+
+        {/* coluna direita: perguntas + input */}
+        <div className={styles.colPerguntas}>
+
+          <p className={styles.labelPerguntas}>
+            {language === "en" ? "Quick questions" : "Perguntas rápidas"}
+          </p>
+
           <div className={styles.containerPerguntas}>
             {perguntasDinamicas.map((pergunta, index) => (
               <button
-                className={styles.btnPerguntas}
+                className={styles.btnPergunta}
                 key={pergunta.id || index}
                 disabled={carregando}
                 onClick={() => perguntaRapida(pergunta.id)}
               >
+                <span className={styles.btnPerguntaIcon}>?</span>
                 {pergunta.text}
               </button>
             ))}
-      
           </div>
+
           <form onSubmit={handleEnviarMensagem} className={styles.chatForm}>
-            <div className={styles.containerEnviar}>
+            <div className={styles.inputWrapper}>
               <input
                 type="text"
                 value={mensagem}
                 onChange={(e) => setMensagem(e.target.value)}
-                placeholder={t.perguntar}
+                placeholder={t.perguntar || (language === "en" ? "Ask something…" : "Pergunte algo…")}
                 className={styles.inputIA}
               />
-      
-                <button type="submit" disabled={carregando} className={styles.btnEnviar}>
-                  {carregando ? (
-                    <span className={styles.loader}></span>
-                  ) : (
-                    <>
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        width="20"
-                        height="20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
-                      </svg>
-                    </>
-                  )}
-                </button>
-              </div>
+              <button type="submit" disabled={carregando} className={styles.btnEnviar}>
+                {carregando ? (
+                  <span className={styles.loader} />
+                ) : (
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                  </svg>
+                )}
+              </button>
+            </div>
           </form>
-        </section>
-      </section>
-    </div>
+
+        </div>
+      </div>
+    </section>
   );
 }
 

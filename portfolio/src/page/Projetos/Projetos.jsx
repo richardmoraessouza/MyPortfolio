@@ -82,6 +82,28 @@ function Projetos({ projeto }) {
                 >
                   &lt;{t.viewRepository}/&gt;
                 </a>
+
+                {proj && (proj.api || proj.repositorioApi) && (
+                  <>
+                    <a
+                      href={proj.api}
+                      className={styles.api}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      &lt;{t.viewAPI}/&gt;
+                    </a>
+                    <a
+                      href={proj.repositorioApi}
+                      className={styles.repositorioApi}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      &lt;{t.viewRepositoryAPI}/&gt;
+                    </a>
+
+                  </>
+                )}
               </div>
             </div>
 

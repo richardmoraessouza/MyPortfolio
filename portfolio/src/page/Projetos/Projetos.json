@@ -13,7 +13,9 @@
     "titulo": "PersonIA",
     "tecnologias": ["devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-javascript-plain colored", "devicon-typescript-plain", "devicon-react-original colored", "devicon-tailwindcss-plain colored", "devicon-nodejs-plain colored", "devicon-postgresql-plain colored", "devicon-express-original colored" ],
     "site": "https://personia.netlify.app/",
-    "repositorio": "https://github.com/richardmoraessouza/PersonIA"
+    "repositorioApi": "https://github.com/richardmoraessouza/api-personia",
+    "repositorio": "https://github.com/richardmoraessouza/PersonIA",
+    "api": "https://api-personia.onrender.com"
   },
   {
     "imagem": "WhatsApp Image 2026-03-08 at 17.03.42.jpeg",
@@ -21,7 +23,9 @@
     "titulo": "Chat para portfólio",
     "tecnologias": ["devicon-java-plain colored", "devicon-spring-plain colored", "devicon-postgresql-plain colored"],
     "site": "https://richardmoraessouza.netlify.app ",
-    "repositorio": "https://github.com/richardmoraessouza/portf-lio-api"
+    "repositorioApi": "https://github.com/richardmoraessouza/portf-lio-api",
+    "repositorio": "https://github.com/richardmoraessouza/portf-lio-api",
+    "api": "https://portf-lio-api.onrender.com"
   },
   {
     "imagem": "shopping_life.jpeg",
@@ -29,7 +33,9 @@
     "titulo": "Shopping Life",
     "tecnologias": ["devicon-nodejs-plain colored", "devicon-postgresql-plain colored", "devicon-express-original colored", "devicon-html5-plain colored", "devicon-css3-plain colored", "devicon-react-original colored", "devicon-typescript-plain colored","devicon-bootstrap-plain colored","devicon-javascript-plain colored"],
     "site": "https://projectshoppinglife.netlify.app/",
-    "repositorio": "https://github.com/richardmoraessouza/shoppingLife"
+    "repositorioApi": "https://github.com/richardmoraessouza/Api-Shopping-Life",
+    "repositorio": "https://github.com/richardmoraessouza/shoppingLife",
+    "api": "https://api-shopping-life.onrender.com"
   },
   {
     "imagem": "Youtube Clone.jpg",

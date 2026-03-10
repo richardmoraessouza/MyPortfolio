@@ -36,6 +36,8 @@ export const translations = {
     projectsTitle: "Projetos",
     viewProject: "Ver projeto",
     viewRepository: "Ver repositório",
+    viewAPI: "Ver API",
+    viewRepositoryAPI: "Ver repositório da API",
 
     close: "Fechar",
 
@@ -155,6 +157,9 @@ export const translations = {
     projectsTitle: "Projects",
     viewProject: "View project",
     viewRepository: "View repository",
+    viewAPI: "View API",
+    viewRepositoryAPI: "View repository of API",
+
 
     close: "Close",
 

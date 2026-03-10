@@ -275,31 +275,17 @@
 .links a:hover { transform: translateY(-3px) scale(1.04); }
 
 /* Ver site */
-.site {
+.site, .repositorio, .repositorioApi, .api {
   background: rgba(255, 255, 255, 0.04);
   color: rgba(210, 215, 240, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.site:hover {
-  background: rgba(255, 255, 255, 0.09);
-  border-color: rgba(255, 255, 255, 0.25);
-  color: rgba(240, 243, 255, 0.95);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
-}
-
-/* Repositório */
-.repositorio {
-  background: rgba(255, 255, 255, 0.02);
-  color: rgba(180, 188, 220, 0.55);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.repositorio:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.18);
-  color: rgba(210, 218, 245, 0.9);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  &:hover {
+     background: rgba(255, 255, 255, 0.09);
+     border-color: rgba(255, 255, 255, 0.25);
+     color: rgba(240, 243, 255, 0.95);
+     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  }
 }
 
 /* ══════════════════════════════════════

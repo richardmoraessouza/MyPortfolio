@@ -9,10 +9,13 @@ export const StarBackground = () => {
   const [activeMeteors, setActiveMeteors] = useState([]);
   const meteorTimer = useRef(null);
   const meteorId    = useRef(0);
+  const isMobile = window.innerWidth < 768;
 
   useEffect(() => {
     const generate = () => {
-      const count = Math.floor((window.innerWidth * window.innerHeight) / 6500);
+      // Reduzir estrelas em mobile (mais que 3x menos)
+      const divisor = isMobile ? 18000 : 6500;
+      const count = Math.floor((window.innerWidth * window.innerHeight) / divisor);
       const newStars = Array.from({ length: count }, (_, i) => {
         const roll = Math.random();
         let size, baseOpacity, twinkleDuration, glow;
@@ -49,6 +52,9 @@ export const StarBackground = () => {
   }, []);
 
   useEffect(() => {
+    // Desabilitar meteoros em mobile
+    if (isMobile) return;
+    
     const spawnMeteor = () => {
       const id = meteorId.current++;
       const big = Math.random() < 0.2;

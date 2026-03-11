@@ -18,22 +18,20 @@ function Sobre_mim() {
 
   const perguntaRapida = async (id) => {
     setCarregando(true);
-    try {
-      const res = await axios.get(`https://portf-lio-api.onrender.com/perguntas/pergunta-rapida/${id}`);
-      const resposta = language === "en" ? res.data.resposta_english : res.data.resposta;
-      if (res.data && resposta) {
-        setRespostaIA(resposta);
+    const resposta = Object.values(t.responses).find((resp) => resp.id === id);
+    // setAnimateRobot(true);
+
+    if (resposta) {
+      setTimeout(() => {
+        setRespostaIA(resposta.text);
         setSobre(true);
-        setAnimateRobot(true);
-        setTimeout(() => setAnimateRobot(false), 3000);
-      }
-    } catch (error) {
-      const msg = language === "en"
-        ? "Sorry, I couldn't find that answer."
-        : "Desculpe, não encontrei essa resposta.";
-      setRespostaIA(msg);
+        setAnimateRobot(false);
+        setCarregando(false);
+      }, 2500)
+    } else {
+      setRespostaIA(language === "en" ? "Sorry, I don't have an answer for that." : "Desculpe, não tenho uma resposta para isso.");
       setSobre(true);
-    } finally {
+      setAnimateRobot(false);
       setCarregando(false);
     }
   };

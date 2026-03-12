@@ -19,7 +19,7 @@ function Sobre_mim() {
   const perguntaRapida = async (id) => {
     setCarregando(true);
     const resposta = Object.values(t.responses).find((resp) => resp.id === id);
-    // setAnimateRobot(true);
+    setAnimateRobot(true);
 
     if (resposta) {
       setTimeout(() => {

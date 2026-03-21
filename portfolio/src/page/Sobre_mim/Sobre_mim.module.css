@@ -249,7 +249,7 @@
   transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
-.inputIA::placeholder { color: rgba(255,255,255,0.28); }
+.inputIA::placeholder { color: var(--text-color); }
 
 .inputIA:focus {
   border-color: color-mix(in srgb, var(--accent-color, #6c63ff) 60%, transparent);

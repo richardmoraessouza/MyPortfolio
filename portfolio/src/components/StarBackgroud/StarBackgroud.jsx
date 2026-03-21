@@ -9,9 +9,9 @@ export const StarBackground = () => {
   const [activeMeteors, setActiveMeteors] = useState([]);
   const meteorTimer = useRef(null);
   const meteorId    = useRef(0);
-  const isMobile = window.innerWidth < 768;
 
   useEffect(() => {
+    const isMobile = window.innerWidth < 768;
     const generate = () => {
       // Reduzir estrelas em mobile (mais que 3x menos)
       const divisor = isMobile ? 18000 : 6500;
@@ -52,6 +52,7 @@ export const StarBackground = () => {
   }, []);
 
   useEffect(() => {
+    const isMobile = window.innerWidth < 768;
     // Desabilitar meteoros em mobile
     if (isMobile) return;
     

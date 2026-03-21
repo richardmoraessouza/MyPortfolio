@@ -178,7 +178,7 @@ const TypewriterText = ({ text, onStart, onEnd }) => {
       }
     }, 18);
     return () => { clearInterval(t); onEnd?.(); };
-  }, [text]);
+  }, [text, onStart, onEnd]);
 
   return <span>{displayed}<span className={styles.typeCursor}>|</span></span>;
 

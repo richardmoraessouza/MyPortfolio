@@ -102,7 +102,6 @@
 }
 
 .navLink:hover {
-  color: #fff;
   opacity: 1;
   transform: translateY(-2px);
   background: rgba(255,255,255,0.05);
@@ -223,18 +222,6 @@
 @keyframes blink {
   0%,100% { opacity: 1; }
   50%      { opacity: 0; }
-}
-
-/* subtítulo */
-.subtitulo {
-  font-family: "Orbitron", sans-serif;
-  font-size: clamp(0.8rem, 2.5vw, 1.1rem);
-  font-weight: 500;
-  color: var(--text-muted);
-  opacity: 0.55;
-  margin: 0;
-  animation: fadeUp 0.7s ease both;
-  animation-delay: 0.2s;
 }
 
 /* ── botões sociais ── */

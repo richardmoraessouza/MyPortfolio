@@ -80,12 +80,10 @@ function Header() {
         <section className={styles.comeco}>
           <span className={styles.badge}>
             <span className={styles.badgeDot} />
-            Full Stack Developer
+            &lt;Desenvolvedor Full Stack /&gt;
           </span>
 
           <h1>{nome}<span className={styles.cursor}>|</span></h1>
-
-          <p className={styles.subtitulo}>&lt;Desenvolvedor Full Stack /&gt;</p>
 
           <div className={styles.redes_socias}>
             <a

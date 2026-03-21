@@ -1,0 +1,273 @@
+/* ── Painel.module.css ─────────────────────────────────── */
+
+@keyframes twinkle   { from { opacity: 0.08 } to { opacity: 0.7 } }
+@keyframes blink     { 0%,100% { opacity: 1 } 50% { opacity: 0 } }
+@keyframes scanMove  { 0% { top: -10% } 100% { top: 110% } }
+@keyframes pulse     { 0%,100% { opacity: .4; transform: scale(1) } 50% { opacity: 1; transform: scale(1.15) } }
+@keyframes barGlow   { from { filter: brightness(.85) } to { filter: brightness(1.3) } }
+@keyframes fadeUp    { from { opacity: 0; transform: translateY(4px) } to { opacity: 1; transform: none } }
+
+/* ── Widget (fixed bottom-right) ──────────────────────── */
+.widget {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 195px;
+  font-family: 'Courier New', monospace;
+  z-index: 999;
+}
+
+@media (min-width: 768px) {
+  .widget {
+    width: 220px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* ── Card ──────────────────────────────────────────────── */
+.card {
+  position: relative;
+  background: rgba(3, 11, 9, 0.91);
+  border: 1px solid rgba(0,255,180,.16);
+  border-radius: 8px;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 24px rgba(0,255,180,.05), 0 6px 20px rgba(0,0,0,.55);
+}
+
+/* ── Scanlines ─────────────────────────────────────────── */
+.scanlines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent, transparent 2px,
+    rgba(0,255,180,.008) 2px, rgba(0,255,180,.008) 4px
+  );
+}
+
+.scanBar {
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: rgba(0,255,180,.22);
+  animation: scanMove 5s linear infinite;
+  z-index: 11;
+}
+
+/* ── Stars ─────────────────────────────────────────────── */
+.stars {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+}
+
+/* ── Header ────────────────────────────────────────────── */
+.header {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px 7px;
+  border-bottom: 1px solid rgba(0,255,180,.08);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #00ffb4;
+  box-shadow: 0 0 5px #00ffb4;
+  animation: pulse 2.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 8px;
+  letter-spacing: .16em;
+  color: #00ffb4;
+  text-transform: uppercase;
+  opacity: .85;
+}
+
+.clock {
+  font-size: 10px;
+  color: #00ffb4;
+  letter-spacing: .05em;
+  opacity: .8;
+}
+
+/* ── Body ──────────────────────────────────────────────── */
+.body {
+  position: relative;
+  z-index: 5;
+  padding: 9px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+/* ── Section block ─────────────────────────────────────── */
+.sectionLabel {
+  font-size: 7px;
+  letter-spacing: .15em;
+  color: rgba(0,255,180,.32);
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+
+.sectionMsg {
+  font-size: 9px;
+  color: #9bbfb0;
+  line-height: 1.6;
+  letter-spacing: .02em;
+  min-height: 34px;
+  margin: 0;
+  animation: fadeUp .3s ease forwards;
+}
+
+.cursor {
+  display: inline-block;
+  color: #00ffb4;
+  animation: blink 1s infinite;
+  margin-left: 1px;
+}
+
+/* ── Divider ───────────────────────────────────────────── */
+.divider {
+  height: 1px;
+  background: rgba(0,255,180,.06);
+}
+
+/* ── Resource bars ─────────────────────────────────────── */
+.resourceRow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 5px;
+}
+
+.resourceRow:last-child {
+  margin-bottom: 0;
+}
+
+.resourceLabel {
+  font-size: 7px;
+  letter-spacing: .08em;
+  color: rgba(0,255,180,.45);
+  width: 34px;
+  flex-shrink: 0;
+}
+
+.resourceTrack {
+  flex: 1;
+  height: 3px;
+  background: rgba(0,255,180,.06);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.resourceFill {
+  height: 100%;
+  border-radius: 2px;
+  animation: barGlow 2.5s ease-in-out infinite alternate;
+}
+
+.resourceVal {
+  font-size: 7px;
+  width: 22px;
+  text-align: right;
+  flex-shrink: 0;
+  opacity: .75;
+}
+
+/* ── Header right ──────────────────────────────────────── */
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Close button ──────────────────────────────────────── */
+.closeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(0,255,180,.35);
+  font-size: 9px;
+  line-height: 1;
+  padding: 0;
+  transition: color .2s;
+}
+
+.closeBtn:hover {
+  color: #ff4466;
+}
+
+/* ── Reopen button (shown when closed) ─────────────────── */
+.reopenBtn {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(3, 11, 9, 0.91);
+  border: 1px solid rgba(0,255,180,.16);
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  z-index: 999;
+  transition: border-color .2s;
+}
+
+.reopenBtn:hover {
+  border-color: rgba(0,255,180,.35);
+}
+
+.reopenLabel {
+  font-family: 'Courier New', monospace;
+  font-size: 8px;
+  letter-spacing: .16em;
+  color: #00ffb4;
+  opacity: .8;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .reopenBtn {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* ── Footer ────────────────────────────────────────────── */
+.footer {
+  position: relative;
+  z-index: 5;
+  padding: 5px 10px;
+  border-top: 1px solid rgba(0,255,180,.06);
+  display: flex;
+  justify-content: space-between;
+  font-size: 6px;
+  letter-spacing: .1em;
+  color: rgba(0,255,180,.18);
+}

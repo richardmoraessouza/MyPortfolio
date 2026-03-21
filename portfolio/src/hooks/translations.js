@@ -7,11 +7,20 @@ export const translations = {
     technologies: "Tecnologias",
     projects: "Projetos",
     contact: "Contato",
-    
-    // Sobre mim
+
+    // Section Painel
+     Section_messages: {
+      home: "Explorando o portfólio...",
+      sobre: "Sou Desenvolvedor Full Stack com foco em React, Node.js e TypeScript. Tenho experiência prática na criação de aplicações escaláveis com Express, SQL e Docker, sempre priorizando performance e SEO. Como freelancer, desenvolvi projetos completos, do design ao deploy, alcançando métricas máximas de 100/100 no Lighthouse. Meu objetivo é usar a tecnologia para gerar impacto real, entregando interfaces modernas e sistemas robustos que realmente resolvam problemas.",
+      skills: "Domino tecnologias modernas como Node.js, React e integração com IAs, além de possuir sólida experiência com Java e Spring Boot para o desenvolvimento de APIs robustas. Utilizo Docker para garantir ambientes escaláveis e escrevo código limpo com TypeScript.",
+      projetos: "Tenho um portfólio diversificado que inclui desde sites institucionais até plataformas complexas de IA. Cada projeto é uma oportunidade de aplicar minhas habilidades técnicas e criatividade para entregar soluções que realmente se destacam.",
+      contato: "Pronto para uma missão? Entre em contato e vamos construir algo incrível."
+     },
+
+    // perguntas sobre mim
     sobre_mim: "Sou Desenvolvedor Full Stack com foco em React, Node.js e TypeScript. Tenho experiência prática na criação de aplicações escaláveis com Express, SQL e Docker, sempre priorizando performance e SEO. Como freelancer, desenvolvi projetos completos, do design ao deploy, alcançando métricas máximas de 100/100 no Lighthouse. Meu objetivo é usar a tecnologia para gerar impacto real, entregando interfaces modernas e sistemas robustos que realmente resolvam problemas.",
     perguntar: "Perguntar algo...",
-    
+
     questions: {
       tech: { id: 1, text: "Quais tecnologias você domina?" },
       freelance: { id: 5, text: "Fale sobre seu projeto freelance." },
@@ -31,7 +40,7 @@ export const translations = {
     responses: {
       tech: { id: 1, text: "No Backend, minha especialidade é Node.js, onde desenvolvo APIs de alta performance utilizando Express e TypeScript, integrando bancos de dados como MySQL e PostgreSQL. Tenho vivência com Docker para containerização e também possuo conhecimentos em Java com Spring Boot. No Frontend, domino React, JavaScript (ES6+), Tailwind CSS e Bootstrap para a criação de interfaces modernas e responsivas." },
       freelance: { id: 5, text: "Como freelancer, desenvolvi projetos completos, do design ao deploy, alcançando métricas máximas de 100/100 no Lighthouse." },
-      pride: { id: 2, text: "O meu projeto de maior destaque é o PersonIA, uma plataforma web completa onde o usuário tem total controle criativo para moldar personas do zero. Para construir essa experiência Fullstack, utilizei Node.js com Express no Backend, gerenciando a persistência em um banco de dados PostgreSQL e autenticação segura com JWT. No Frontend, usei React 19 com TypeScript e Tailwind CSS para criar uma interface fluida e responsiva. O  \"cérebro\" do projeto é a integração com a API da Gemini, que permite conversas em tempo real com personagens personalizados. Além da IA, o sistema conta com uma camada social completa de seguidores, likes e favoritos, tudo orquestrado com boas práticas de componentização e hooks customizados." },
+      pride: { id: 2, text: "O meu projeto de maior destaque é o PersonIA, uma plataforma web completa onde o usuário tem total controle criativo para moldar personas do zero. Para construir essa experiência Fullstack, utilizei Node.js com Express no Backend, gerenciando a persistência em um banco de dados PostgreSQL e autenticação segura com JWT. No Frontend, usei React 19 com TypeScript e Tailwind CSS para criar uma interface fluida e responsiva. O \"cérebro\" do projeto é a integração com a API da Gemini, que permite conversas em tempo real com personagens personalizados. Além da IA, o sistema conta com uma camada social completa de seguidores, likes e favoritos, tudo orquestrado com boas práticas de componentização e hooks customizados." },
       hiring: { id: 4, text: "Você deve me contratar porque sou um desenvolvedor Fullstack focado em resultados e autonomia. Domino tecnologias modernas como Node.js, React e integração com IAs, além de possuir sólida experiência com Java e Spring Boot para o desenvolvimento de APIs robustas. Utilizo Docker para garantir ambientes escaláveis e escrevo código limpo com TypeScript. Tenho a capacidade de transformar requisitos complexos em soluções funcionais de ponta a ponta, sempre focando em performance, segurança e na melhor experiência para o usuário." },
       whoIs: { id: 3, text: "Sou Desenvolvedor Full Stack com foco em React, Node.js e TypeScript. Tenho experiência prática na criação de aplicações escaláveis com Express, SQL e Docker, sempre priorizando performance e SEO. Como freelancer, desenvolvi projetos completos, do design ao deploy, alcançando métricas máximas de 100/100 no Lighthouse. Meu objetivo é usar a tecnologia para gerar impacto real, entregando interfaces modernas e sistemas robustos que realmente resolvam problemas." },
       favoriteLang: { id: 6, text: "A linguagem que mais me fascina é o JavaScript. Foi através dela que descobri que não há limites para a criação: pude construir desde APIs robustas com Node.js até interfaces interativas e modelos 3D no Frontend com React. O JS me permitiu tirar ideias do papel e transformá-las em projetos incríveis, como sistemas que conversam via IA, algo que eu nunca imaginei que seria capaz de criar quando comecei. Essa versatilidade de ser \"fullstack\" com uma única linguagem, somada à evolução constante do ecossistema, é o que me motiva a evoluir como desenvolvedor todos os dias." },
@@ -56,87 +65,84 @@ export const translations = {
     viewRepositoryAPI: "Ver repositório da API",
 
     close: "Fechar",
-
     footerText: "Desenvolvido com ❤️ por Richard",
-
     toggleTheme: "Alternar tema",
     toggleLanguage: "Alternar idioma",
+    expandSub: "clique para expandir o portfólio completo",
+    expandButton: "OUTROS PROJETOS",
 
-
-    // projetos
+    // ── PROJETOS ──────────────────────────────────────────
     serginhoEstetiCar: {
       title: "SerginhoEstetiCar",
       description:
-        "Este projeto foi desenvolvido sob demanda para um cliente real, com o objetivo de criar um site institucional que apresentasse os serviços oferecidos pela estética automotiva Serginho estetiCar. A proposta foi entregar uma solução visualmente moderna, responsiva e funcional, ajudando a atrair novos clientes e fortalecer a presença online do negócio. O site exibe os principais serviços oferecidos, como lavagem detalhada, polimento e cristalização, além de contar com um formulário de agendamento que permite que os usuários entrem em contato de forma prática e direta."
+        "Site institucional desenvolvido para cliente real do setor de estética automotiva. Entregue do zero ao deploy com foco em conversão: seção de serviços clara, galeria de antes/depois e formulário de agendamento direto via WhatsApp. Alcançou nota 100/100 no Google Lighthouse em performance e SEO, aumentando a visibilidade orgânica do negócio."
     },
     calculator: {
       title: "Calculadora",
       description:
-        "Calculadora desenvolvida com HTML, CSS e JavaScript puro, focando na responsividade e experiência do usuário. Possui interface limpa e intuitiva com operações básicas e avançadas, design totalmente responsivo e feedback visual claro. O projeto demonstra habilidades em manipulação do DOM, eventos JavaScript e design responsivo."
+        "Calculadora responsiva com operações básicas e avançadas, desenvolvida em JavaScript puro sem dependências externas. Focada em boas práticas de manipulação de DOM, tratamento de edge cases e UX limpa."
     },
     quiz: {
-      title: "Quiz",
+      title: "Quiz Interativo",
       description:
-        "Este projeto é um quiz interativo desenvolvido com HTML, CSS, Bootstrap e JavaScript puro, com o objetivo de testar conhecimentos do usuário de forma simples e dinâmica. As perguntas são carregadas dinamicamente, e ao final, o usuário recebe uma pontuação com base nas respostas corretas."
+        "Quiz dinâmico com perguntas carregadas via JavaScript, pontuação em tempo real e feedback imediato ao usuário. Desenvolvido sem frameworks para demonstrar domínio de lógica pura, eventos e manipulação do DOM."
     },
     projectWeb1: {
-      title: "Projeto web 1",
+      title: "Projeto Web 1",
       description:
-        "Esse projeto foi um exercício de aprendizado, onde reproduzi o layout de um site já existente usando apenas HTML e CSS. O objetivo era entender melhor como organizar arquivos, trabalhar com estrutura de pastas e aplicar boas práticas de desenvolvimento front-end. Apesar de ser uma cópia, foi uma ótima oportunidade para treinar responsividade, atenção aos detalhes e reforçar meus conhecimentos em construção de páginas estáticas."
+        "Recriação fiel de um layout real usando apenas HTML e CSS — sem frameworks. Exercício de atenção a detalhes, semântica HTML e responsividade manual. Base para consolidar fundamentos sólidos de front-end."
     },
     timer: {
       title: "Timer Interativo",
       description:
-        "Criei este timer interativo inspirado em um desafio do Codecon. Ele é regressivo, permite pausar, resetar e ajustar o tempo em tempo real. Nos últimos segundos, a tela muda de cor e um som alerta o fim. Ideal para estudos, treinos ou outras tarefas. Um projeto prático que mostra minha habilidade em resolver problemas e entregar soluções funcionais."
+        "Timer regressivo com pause, reset e ajuste em tempo real — inspirado em um desafio do Codecon onde devs back-end não conseguiram implementar todas as features. Inclui alerta sonoro e mudança de cor nos segundos finais. Demonstra controle preciso de estado, eventos assíncronos e UX funcional."
     },
     projectWeb2: {
-      title: "Projeto web 2",
+      title: "Projeto Web 2",
       description:
-        "O 'Projeto web 2' foi desenvolvido como parte do meu processo de evolução no front-end. Diferente do primeiro, busquei aplicar técnicas mais avançadas de responsividade e organização de código, além de experimentar novas abordagens de layout. O foco foi aprimorar a estrutura dos arquivos, melhorar a semântica do HTML e explorar ainda mais o uso do CSS para criar uma interface moderno e funcional. Esse projeto reforçou minha capacidade de transformar ideias em páginas web bem estruturadas e visualmente agradáveis."
+        "Evolução direta do Projeto Web 1: layout mais complexo, CSS avançado, hierarquia visual aprimorada e melhor organização de componentes. Mostra progressão técnica consistente em construção de interfaces estáticas."
     },
     youtubeClone: {
-      title: "Youtube Clone",
+      title: "YouTube Clone",
       description:
-        "Clone funcional da interface do YouTube, desenvolvido com React, Bootstrap e Sass. O projeto replica o layout e a navegação da plataforma, proporcionando uma experiência de uso realista. Totalmente responsivo, conta com componentes reutilizáveis, gerenciamento de estado eficiente e segue as boas práticas do ecossistema React, garantindo escalabilidade, organização e fácil manutenção do código."
+        "Clone funcional da interface do YouTube construído com React, Bootstrap e Sass. Replica feed, barra lateral, player e responsividade da plataforma. Foco em componentização, reutilização e organização de estado — base sólida para projetos de maior escala."
     },
     MarioJump: {
       title: "Mario Jump",
       description:
-        "Jogo estilo endless runner inspirado no universo do Mario, onde o objetivo é pular obstáculos e alcançar a maior pontuação possível. Desenvolvido com HTML, CSS, TypeScript e React, o projeto inclui física simples de salto, detecção de colisão, sistemas de pontuação e aumento gradual de dificuldade. O layout é responsivo e otimizado para Web, com foco em performance e uma experiência fluida no desktop e mobile."
+        "Endless runner no estilo Mario com física de salto, detecção de colisão e dificuldade progressiva. Desenvolvido com React e TypeScript, roda direto no navegador sem instalação. Demonstra lógica de game loop, animações CSS e gerenciamento de estado em tempo real."
     },
     githubFinder: {
       title: "GitHub Finder",
       description:
-        "Aplicação desenvolvida em React e TypeScript que permite buscar usuários do GitHub através da sua API oficial. O projeto oferece uma interface moderna e responsiva para visualizar perfis públicos de desenvolvedores, exibindo informações como fotos do avatar, número de seguidores, repositórios públicos e estatísticas detalhadas. Implementa tratamento de erros, estados de loading e uma experiência fluida de busca, demonstrando conhecimentos em consumo de APIs REST, gerenciamento de estado e componentes funcionais."
+        "App React + TypeScript que consome a API pública do GitHub para busca de perfis em tempo real. Exibe avatar, seguidores, repositórios e estatísticas com loading states e tratamento de erros. Exemplo prático de consumo de API REST, tipagem forte e componentização."
     },
     instagramClone: {
       title: "Instagram Clone",
       description:
-        "Clone da interface do Instagram desenvolvido com React, HTML e CSS puro. O projeto replica o layout principal da rede social, incluindo o feed de posts, stories, barras de navegação e elementos visuais característicos da plataforma. Focado em responsividade e design pixel-perfect, demonstra habilidades em criação de interfaces modernas, organização de componentes React e aplicação de conhecimentos avançados em CSS para recriar com fidelidade um design complexo e reconhecido mundialmente."
+        "Réplica pixel-perfect da interface do Instagram com React e CSS puro. Reproduz feed, stories e navegação com fidelidade ao design original. Demonstra precisão técnica em UI e domínio de CSS avançado para interfaces de alta complexidade visual."
     },
     shoppingLife: {
       title: "Shopping Life",
       description:
-        "E-commerce desenvolvido com React, TypeScript e Styled Components. O projeto inclui funcionalidades essenciais como catálogo de produtos, carrinho de compras, filtros de busca e checkout. Utiliza integração com API própria desenvolvida em Node.js, Express e PostgreSQL hospedada no Render. A API fornece endpoints para autenticação, gerenciamento de produtos e pedidos. Sistema completo com frontend responsivo e backend robusto.",
-      apiUrl: "https://api-shopping-life.onrender.com/"
+        "E-commerce Full Stack com catálogo de produtos, carrinho, filtros e checkout. Front-end em React, TypeScript e Styled Components; back-end próprio em Node.js, Express e PostgreSQL com autenticação JWT e endpoints RESTful. Projeto completo que simula um fluxo real de compra do início ao fim."
     },
     PersonIA: {
       title: "PersonIA",
       description:
-        "PersonIA é uma plataforma web voltada para a criação e interação com personagens virtuais personalizados. O usuário pode definir aparência, personalidade, história e até regras específicas de comportamento, criando personagens únicos e coerentes. Além disso, a plataforma oferece um sistema de chat que permite conversar diretamente com cada personagem, proporcionando uma experiência imersiva, dinâmica e totalmente personalizada. O projeto integra frontend em React e TypeScript com uma API própria em Node.js, Express e PostgreSQL, garantindo desempenho, organização e expansão futura.",
+        "Plataforma Full Stack para criação e interação com personagens virtuais personalizados. O usuário define personalidade, aparência e regras de comportamento — e conversa com o personagem via chat alimentado pela API Gemini. Back-end em Node.js, Express e PostgreSQL com JWT; front-end em React 19, TypeScript e Tailwind. Inclui sistema social completo com seguidores, likes e favoritos.",
       apiUrl: "https://api-personia.onrender.com"
     },
     portfolioBackend: {
-      title: "IA Portfolio - Backend Inteligente",
+      title: "IA Portfolio — Backend Inteligente",
       description:
-        "O 'cérebro' do portfólio, um sistema de chat inteligente robusto construído com Java 21 e Spring Boot 4. A aplicação utiliza a API do Google Gemini para responder perguntas sobre minha trajetória profissional, integrada a um banco de dados PostgreSQL. Implementa uma arquitetura context-aware que busca dados reais no banco para alimentar a IA, evitando alucinações e garantindo respostas precisas e baseadas em fatos. Conta com API REST completa, suporte a Docker e um prompt de sistema altamente otimizado para interações profissionais."
+        "Motor de IA por trás do chat deste portfólio. Construído com Java 21 e Spring Boot, consome a API Gemini e busca dados reais no PostgreSQL para responder perguntas sobre minha trajetória sem alucinações. Arquitetura context-aware com API REST completa e suporte a Docker. Mostra capacidade de integrar IA em sistemas de produção de forma responsável e precisa."
     }
   },
 
-  // -------------------------------------------------------
+  // ─────────────────────────────────────────────────────
   // ENGLISH
-  // -------------------------------------------------------
-
+  // ─────────────────────────────────────────────────────
   en: {
     home: "Home",
     about: "About me",
@@ -144,13 +150,23 @@ export const translations = {
     projects: "Projects",
     contact: "Contact",
 
-    // Sobre mim
+    expandSub: "click to expand the portfolio",
+    expandButton: "OTHER PROJECTS",
 
+    section_messages: {
+      home: "Exploring the portfolio...",
+      sobre: "I'm a Full Stack Developer with a focus on React, Node.js, and TypeScript. I have hands-on experience creating scalable applications with Express, SQL, and Docker, always prioritizing performance and SEO. As a freelancer, I've developed complete projects from design to deploy, achieving perfect 100/100 Lighthouse metrics. My goal is to use technology to generate real impact, delivering modern interfaces and robust systems that truly solve problems.",
+      skills: "I'm proficient in modern technologies like Node.js, React, and AI integration, as well as having solid experience with Java and Spring Boot for developing robust APIs. I use Docker to ensure scalable environments and write clean code with TypeScript.",
+      projetos: "I have a diverse portfolio that includes everything from institutional websites to complex AI platforms. Each project is an opportunity to apply my technical skills and creativity to deliver solutions that truly stand out.",
+      contato: "Ready for a mission? Get in touch and let's build something amazing."
+     },
+
+    // perguntas sobre mim
     perguntar: "Ask something",
     sobre_mim: "I am a Full Stack Developer focusing on React, Node.js, and TypeScript. I have practical experience creating scalable applications with Express, SQL, and Docker, always prioritizing performance and SEO. As a freelancer, I have developed complete projects from design to deploy, achieving 100/100 Lighthouse metrics. My goal is to use technology to create real impact, delivering modern interfaces and robust systems that truly solve problems.",
 
     questions: {
-      tech: { id:1, text: "What technologies do you master?" },
+      tech: { id: 1, text: "What technologies do you master?" },
       freelance: { id: 5, text: "Tell me about your freelance projects." },
       pride: { id: 2, text: "Tell me about a project you are proud of." },
       hiring: { id: 4, text: "Why should I hire you for my team?" },
@@ -165,23 +181,21 @@ export const translations = {
       ia: { id: 13, text: "How do you use Artificial Intelligence in your development flow?" }
     },
 
-
     responses: {
       tech: { id: 1, text: "On the Backend, my specialty is Node.js, where I develop high-performance APIs using Express and TypeScript, integrating databases like MySQL and PostgreSQL. I have experience with Docker for containerization and also have knowledge in Java with Spring Boot. On the Frontend, I master React, JavaScript (ES6+), Tailwind CSS, and Bootstrap to create modern and responsive interfaces." },
-      freelance: { id: 5, text: "Como freelancer, desenvolvi projetos completos, do design ao deploy, alcançando métricas máximas de 100/100 no Lighthouse." },
-      pride: { id: 2, text: "My most prominent project is PersonIA, a complete web platform where the user has total creative control to shape personas from scratch. To build this Fullstack experience, I used Node.js with Express on the Backend, managing persistence in a PostgreSQL database and secure authentication with JWT. On the Frontend, I used React 19 with TypeScript and Tailwind CSS to create a fluid and responsive interface. The \"brain\" of the project is the integration with the OpenAI API (GPT-4o-mini), which allows real-time conversations with customized characters. In addition to the AI, the system has a complete social layer of followers, likes, and favorites, all orchestrated with componentization best practices and custom hooks." },
+      freelance: { id: 5, text: "As a freelancer, I developed complete projects from design to deploy, achieving perfect 100/100 Lighthouse scores." },
+      pride: { id: 2, text: "My most prominent project is PersonIA, a complete web platform where the user has total creative control to shape personas from scratch. To build this Fullstack experience, I used Node.js with Express on the Backend, managing persistence in a PostgreSQL database and secure authentication with JWT. On the Frontend, I used React 19 with TypeScript and Tailwind CSS to create a fluid and responsive interface. The \"brain\" of the project is the integration with the Gemini API, which allows real-time conversations with customized characters. In addition to the AI, the system has a complete social layer of followers, likes, and favorites, all orchestrated with componentization best practices and custom hooks." },
       hiring: { id: 4, text: "You should hire me because I am a Fullstack developer focused on results and autonomy. I master modern technologies such as Node.js, React, and AI integration, as well as having solid experience with Java and Spring Boot for developing robust APIs. I use Docker to ensure scalable environments and write clean code with TypeScript. I have the ability to transform complex requirements into end-to-end functional solutions, always focusing on performance, security, and the best user experience." },
       whoIs: { id: 3, text: "I am a Full Stack Developer focused on React, Node.js, and TypeScript. I have practical experience in creating scalable applications with Express, SQL and Docker, always prioritizing performance and SEO. As a freelancer, I have developed complete projects from design to deploy, achieving maximum 100/100 metrics on Lighthouse. My goal is to use technology to generate real impact, delivering modern interfaces and robust systems that truly solve problems." },
       favoriteLang: { id: 6, text: "The language that fascinates me the most is JavaScript. It was through it that I discovered there are no limits to creation: I could build everything from robust APIs with Node.js to interactive interfaces and 3D models on the Frontend with React. JS allowed me to take ideas off paper and transform them into incredible projects, like systems that talk via AI, something I never imagined I would be capable of creating when I started. This versatility of being \"fullstack\" with a single language, combined with the constant evolution of the ecosystem, is what motivates me to evolve as a developer every day." },
       learningExpectation: { id: 8, text: "My expectation is to evolve my technical skills in real production and high-scale environments. Although I have proficiency in stacks like Node.js and React, I want to learn how the team handles complex microservices architectures, automated testing culture, and continuous integration (CI/CD) at scale. Additionally, I seek to further develop my soft skills by collaborating with experienced professionals and understanding how technology can be optimized to solve the company's specific business challenges." },
       currentStudy: { id: 9, text: "Today my total focus is on Java and Docker. I am deepening my knowledge in the Spring Boot ecosystem to create even more robust APIs and studying Docker to master containers and infrastructure. The idea is to combine the agility I already have with Node.js with the solidity of Java, ensuring that my projects are professional and easy to scale." },
-      starty: { id: 10, text: "It all started when I saw a programming video on YouTube that really caught my attention. I decided to start Gustavo Guanabara’s Python course, and that was when it clicked: I realized I loved creating logic and seeing things come to life. What was once curiosity became a passion, and I soon moved to the JavaScript ecosystem, where I started developing complete projects like the ones you see here today." },
+      starty: { id: 10, text: "It all started when I saw a programming video on YouTube that really caught my attention. I decided to start Gustavo Guanabara's Python course, and that was when it clicked: I realized I loved creating logic and seeing things come to life. What was once curiosity became a passion, and I soon moved to the JavaScript ecosystem, where I started developing complete projects like the ones you see here today." },
       strengths: { id: 11, text: "My greatest strength is proactivity and ease of learning; when a new challenge or technology arises that the project requires, I dive into studies until I master it and deliver the solution. As a point to improve, I am sometimes a bit of a perfectionist with the code and end up spending too much time on UI details. To balance this, I am focusing on agile methodologies to deliver value quickly without compromising quality." },
       challenge: { id: 7, text: "My biggest challenge was the integration of PersonIA. I had to learn how to handle the AI API response time to avoid freezing the user experience on the Frontend and, at the same time, create Backend logic to control message limits for anonymous users. Solving this \"conversation\" between technologies, ensuring the chat was fluid and the database secure, was a great lesson in architecture and performance." },
       future: { id: 12, text: "In 5 years, I see myself as a Senior Full Stack developer or Tech Lead, mastering complex architectures and leading projects that use AI natively. My goal is to have consolidated my experience in large production ecosystems, contributing not only with high-quality code but also mentoring new developers and helping define technological strategies that bring innovation and scale to the business." },
-      ia: { id: 13, text: "I see AI as an acceleration tool. I use Cursor AI and GitHub Copilot for refactoring and writing tests, but always with a critical eye on the generated logic. Additionally, I implement AI in my projects, such as PersonIA, where I connected the OpenAI API to create interactive chat experiences and customized characters." },
+      ia: { id: 13, text: "I see AI as an acceleration tool. I use Cursor AI and GitHub Copilot for refactoring and writing tests, but always with a critical eye on the generated logic. Additionally, I implement AI in my projects, such as PersonIA, where I connected the Gemini API to create interactive chat experiences and customized characters." },
     },
-
 
     frontend: "Front-end",
     backend: "Back-end",
@@ -194,84 +208,77 @@ export const translations = {
     viewAPI: "View API",
     viewRepositoryAPI: "View repository of API",
 
-
     close: "Close",
-
     footerText: "Developed with ❤️ by Richard",
-
     toggleTheme: "Toggle theme",
     toggleLanguage: "Toggle language",
 
-     // projetos
+    // ── PROJETOS ──────────────────────────────────────────
     serginhoEstetiCar: {
       title: "SerginhoEstetiCar",
       description:
-        "This project was developed on demand for a real client, with the goal of creating an institutional website that would present the services offered by Serginho estetiCar automotive detailing. The proposal was to deliver a visually modern, responsive and functional solution, helping to attract new customers and strengthen the business's online presence. The website displays the main services offered, such as detailed washing, polishing and crystallization, in addition to having a booking form that allows users to get in touch in a practical and direct way."
+        "Institutional website built for a real client in the automotive detailing industry. Delivered end-to-end with a conversion focus: clear services section, before/after gallery and a direct WhatsApp booking form. Achieved a perfect 100/100 on Google Lighthouse for performance and SEO, boosting the business's organic visibility."
     },
     calculator: {
       title: "Calculator",
       description:
-        "Calculator developed with pure HTML, CSS and JavaScript, focusing on responsiveness and user experience. It has a clean and intuitive interface with basic and advanced operations, fully responsive design and clear visual feedback. The project demonstrates skills in DOM manipulation, JavaScript events and responsive design."
+        "Responsive calculator with basic and advanced operations built in vanilla JavaScript — no external dependencies. Focused on DOM manipulation best practices, edge case handling and clean UX."
     },
     quiz: {
-      title: "Quiz",
+      title: "Interactive Quiz",
       description:
-        "This project is an interactive quiz developed with HTML, CSS, Bootstrap and pure JavaScript, with the goal of testing user knowledge in a simple and dynamic way. Questions are loaded dynamically, and at the end, the user receives a score based on correct answers."
+        "Dynamic quiz with JavaScript-loaded questions, real-time scoring and instant user feedback. Built without frameworks to demonstrate mastery of pure logic, events and DOM manipulation."
     },
     projectWeb1: {
-      title: "Web project 1",
+      title: "Web Project 1",
       description:
-        "This project was a learning exercise, where I reproduced the layout of an existing website using only HTML and CSS. The goal was to better understand how to organize files, work with folder structure and apply good front-end development practices. Although it was a copy, it was a great opportunity to train responsiveness, attention to detail and reinforce my knowledge in building static pages."
+        "Faithful recreation of a real layout using only HTML and CSS — no frameworks. Exercise in attention to detail, HTML semantics and manual responsiveness. Foundation for building strong front-end fundamentals."
     },
     timer: {
       title: "Interactive Timer",
       description:
-        "In this project, I took the idea of a simple and light timer, but I went beyond the basics. I saw a video on Codecon where 3 back-end devs and 1 front-end dev were trying to make a timer, but they couldn't implement everything properly — so I decided to redo it my way and make it work 100%. The result was a countdown timer that counts time backwards, you can pause, reset and even change the time while it's running. In the last seconds, the screen background changes color to warn that it's ending, and it even plays a sound at the end. Besides working well, it's easy to use and helps in various situations like studying, exercising or any activity that needs a timer."
+        "Countdown timer with pause, reset and real-time adjustments — inspired by a Codecon challenge where back-end devs couldn't implement all the features. Includes sound alert and color change in the final seconds. Demonstrates precise state control, async events and functional UX."
     },
     projectWeb2: {
-      title: "Web project 2",
+      title: "Web Project 2",
       description:
-        "The 'Web project 2' was developed as part of my evolution process in front-end. Unlike the first one, I applied more advanced responsiveness techniques and code organization, in addition to experimenting with new layout approaches. The focus was to improve file structure, enhance HTML semantics and explore CSS further to create a modern and functional interface. This project reinforced my ability to transform ideas into well-structured and visually appealing web pages."
+        "Direct evolution of Web Project 1: more complex layout, advanced CSS, improved visual hierarchy and better component organization. Shows consistent technical growth in building static interfaces."
     },
     youtubeClone: {
-      title: "Youtube Clone",
+      title: "YouTube Clone",
       description:
-        "Fully functional YouTube interface clone, built with React, Bootstrap, and Sass. The project replicates the platform’s layout and navigation, delivering a realistic user experience. Fully responsive, it features reusable components, efficient state management and follows React best practices, ensuring scalability and clean architecture."
+        "Functional YouTube interface clone built with React, Bootstrap and Sass. Replicates the feed, sidebar, player and platform responsiveness. Focus on componentization, reusability and state organization — solid base for larger-scale projects."
     },
     MarioJump: {
       title: "Mario Jump",
       description:
-        "Endless runner-style game inspired by the Mario universe, where the goal is to jump over obstacles and achieve the highest possible score. Built with HTML, CSS, TypeScript and React, it includes simple jump physics, collision detection, scoring system and progressive difficulty. Fully responsive and optimized for web, ensuring smooth performance across devices."
+        "Mario-style endless runner with jump physics, collision detection and progressive difficulty. Built with React and TypeScript, runs directly in the browser with no install. Demonstrates game loop logic, CSS animations and real-time state management."
     },
     githubFinder: {
       title: "GitHub Finder",
       description:
-        "Application developed with React and TypeScript that allows searching GitHub users through the official API. The interface is modern and responsive, showing detailed public profile data like avatars, followers, public repositories and statistics. Features loading states, error handling and a smooth search experience."
+        "React + TypeScript app consuming the GitHub public API for real-time profile search. Displays avatar, followers, repositories and stats with loading states and error handling. Practical example of REST API consumption, strong typing and componentization."
     },
     instagramClone: {
       title: "Instagram Clone",
       description:
-        "Instagram interface clone developed using React, HTML and CSS. It faithfully reproduces the feed, stories, navigation bars and characteristic visual elements. Focused on responsiveness and pixel-perfect accuracy, demonstrating strong UI/UX and component architecture skills."
+        "Pixel-perfect Instagram interface replica built with React and pure CSS. Reproduces feed, stories and navigation with fidelity to the original design. Demonstrates technical precision in UI and mastery of advanced CSS for visually complex interfaces."
     },
     shoppingLife: {
       title: "Shopping Life",
       description:
-        "E-commerce developed with React, TypeScript, and Styled Components. Includes essential features like product catalog, shopping cart, search filters and checkout. Integrated with a custom Node.js, Express and PostgreSQL API hosted on Render. The API handles user authentication, product management and order processing.",
-      apiUrl: "https://api-shopping-life.onrender.com/"
+        "Full Stack e-commerce with product catalog, cart, filters and checkout. Front-end in React, TypeScript and Styled Components; custom back-end in Node.js, Express and PostgreSQL with JWT authentication and RESTful endpoints. Complete project simulating a real purchase flow from start to finish."
     },
     PersonIA: {
       title: "PersonIA",
       description:
-        "PersonIA is a web platform designed for creating and interacting with personalized virtual characters. Users can define appearance, personality, history and even custom behavior rules, forming unique and coherent characters. The platform also includes a chat system that allows direct interaction with each character, providing an immersive and dynamic experience. Built with React and TypeScript, integrated with a custom Node.js, Express and PostgreSQL API for performance and scalability.",
+        "Full Stack platform for creating and interacting with custom virtual characters. Users define personality, appearance and behavior rules — then chat with the character via a Gemini API-powered interface. Back-end in Node.js, Express and PostgreSQL with JWT; front-end in React 19, TypeScript and Tailwind. Includes a complete social layer with followers, likes and favorites.",
       apiUrl: "https://api-personia.onrender.com"
     },
     portfolioBackend: {
-      title: "IA Portfolio - Intelligent Backend",
+      title: "IA Portfolio — Intelligent Backend",
       description:
-        "This is the 'brain' of the portfolio, a robust intelligent chat system built with Java 21 and Spring Boot 4. The application uses the Google Gemini API to answer questions about my professional experience, integrated with a PostgreSQL database. It implements a context-aware architecture that retrieves relevant data from the DB to feed the AI, preventing hallucinations and ensuring precise, data-driven responses. It features a complete REST API, Docker support, and a highly optimized system prompt for professional interactions."
+        "The AI engine behind this portfolio's chat. Built with Java 21 and Spring Boot, it consumes the Gemini API and queries real data from PostgreSQL to answer questions about my background without hallucinations. Context-aware architecture with a complete REST API and Docker support. Demonstrates the ability to integrate AI into production systems responsibly and accurately."
     }
   }
 };
-
-
-

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import styles from "./ChatIA.module.css";
 import { translations } from "../../hooks/translations";
 import { useLanguage } from "../../hooks/LanguageContext";
@@ -195,6 +195,14 @@ function ChatIA({ animate, respostaIA, sobre }) {
     if (balaoRef.current && respostaIA) balaoRef.current.scrollTop = 0;
   }, [respostaIA]);
 
+  const handleTalkingStart = useCallback(() => {
+    setTalking(true);
+  }, []);
+
+  const handleTalkingEnd = useCallback(() => {
+    setTalking(false);
+  }, []);
+
   return (
     <div className={styles.chatContainer}>
       <div className={styles.balloon} ref={balaoRef}>
@@ -203,8 +211,8 @@ function ChatIA({ animate, respostaIA, sobre }) {
         ) : sobre && respostaIA ? (
           <TypewriterText
             text={respostaIA}
-            onStart={() => setTalking(true)}
-            onEnd={() => setTalking(false)}
+            onStart={handleTalkingStart}
+            onEnd={handleTalkingEnd}
           />
         ) : (
           <div className={styles.idleMessage}>

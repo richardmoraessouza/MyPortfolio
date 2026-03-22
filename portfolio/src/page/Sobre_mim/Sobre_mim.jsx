@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useLanguage } from "../../hooks/LanguageContext";
 import { translations } from "../../hooks/translations";
 import styles from "./Sobre_mim.module.css";
@@ -15,19 +15,37 @@ function Sobre_mim() {
   const [carregando, setCarregando] = useState(false);
   const [animateRobot, setAnimateRobot] = useState(false);
   const [sobre, setSobre] = useState(false);
+  const timeoutRef = useRef(null);
+
+  // Limpar timeout ao desmontar
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
 
   const perguntaRapida = async (id) => {
+    // Se já está carregando, não fazer nada
+    if (carregando) return;
+
+    // Limpar qualquer timeout anterior
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+
+    // Resetar estados
     setCarregando(true);
-    const resposta = Object.values(t.responses).find((resp) => resp.id === id);
+    setRespostaIA("");
+    setSobre(false);
     setAnimateRobot(true);
 
+    const resposta = Object.values(t.responses).find((resp) => resp.id === id);
+
     if (resposta) {
-      setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
         setRespostaIA(resposta.text);
         setSobre(true);
         setAnimateRobot(false);
         setCarregando(false);
-      }, 2500)
+      }, 2500);
     } else {
       setRespostaIA(language === "en" ? "Sorry, I don't have an answer for that." : "Desculpe, não tenho uma resposta para isso.");
       setSobre(true);
@@ -39,14 +57,22 @@ function Sobre_mim() {
   const handleEnviarMensagem = async (e) => {
     e.preventDefault();
     if (!mensagem.trim()) return;
+    if (carregando) return; // Evitar múltiplos envios simultâneos
+    
     realizarChamadaApi(mensagem);
     setMensagem("");
     setSobre(true);
   };
 
   const realizarChamadaApi = async (texto) => {
+    // Limpar qualquer timeout anterior
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+
+    // Resetar a resposta anterior antes de fazer nova requisição
+    setRespostaIA("");
     setCarregando(true);
     setAnimateRobot(true);
+    
     try {
       const res = await axios.post("https://portf-lio-api.onrender.com/perguntas/chat", {
         mensagem: texto,

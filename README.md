@@ -10,7 +10,7 @@
 **Portfólio Moderno & Responsivo** | React + Vite + JavaScript  
 Design Profissional • Multi-idioma (PT/EN) • Deploy Automático
 
-[🌐 Ver ao Vivo](https://richardmoraessouza.github.io/Portfólio) • [💻 GitHub](https://github.com/richardmoraessouza) • [📧 Contato](#-links-importantes)
+[🌐 Ver ao Vivo](https://richardmoraessouza.netlify.app/) • [💻 GitHub](https://github.com/richardmoraessouza) • [📧 Contato](#-links-importantes)
 
 </div>
 
@@ -236,7 +236,7 @@ Otimizado para todos os tamanhos de tela:
 
 ---
 
-## 🔗 Links Importantes
+## 🔗 Links Importante
 
 <div align="center">
 

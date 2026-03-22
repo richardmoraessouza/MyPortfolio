@@ -10,7 +10,7 @@ export const translations = {
 
     // Section Painel
     Section_messages: {
-      home: "[ OPERADOR: RICHARD ] Dev Full Stack. Node.js · React · Java · TypeScript. Sistemas online e prontos para missão.",
+      home: "[ OPERADOR: RICHARD ] Dev Full Stack. Node.js · React · Java ·  Spring Boot · TypeScript. Sistemas online e prontos para missão.",
       sobre:   "[ BIO SCAN ] Operador identificado. Dev Full Stack — React, Node.js, TypeScript. Missões concluídas: do design ao deploy, 100/100 Lighthouse. Status: pronto para embarcar.",
       skills:   "[ ARMAMENTO TÉCNICO ] Node.js · React · Tailwind CSS · SQL · TypeScript · Java · Spring Boot · Docker · PostgreSQL. Sistema de integração com IA: ATIVO.",
       projetos: "[ BANCO DE MISSÕES ] Portfólio carregado. Projetos registrados — de sites institucionais a plataformas Full Stack com IA. Selecione um setor para inspecionar.",
@@ -154,7 +154,7 @@ export const translations = {
     expandButton: "OTHER PROJECTS",
 
     section_messages: {
-      home: "[ OPERATOR: RICHARD ] Full Stack Dev. Node.js · React · Java · TypeScript. Systems online and ready for mission.",
+      home: "[ OPERATOR: RICHARD ] Full Stack Dev. Node.js · React · Java · Spring Boot · TypeScript. Systems online and ready for mission.",
       sobre:    "[ BIO SCAN ] Operator identified. Full Stack Dev — React, Node.js, TypeScript. Missions completed: design to deploy, 100/100 Lighthouse. Status: ready to board.",
       skills:   "[ TECHNICAL ARSENAL ] Node.js · React · Tailwind CSS · SQL · TypeScript · Java · Spring Boot · Docker · PostgreSQL. AI integration system: ACTIVE.",
       projetos: "[ MISSION DATABASE ] Portfolio loaded. Projects on record — from institutional sites to Full Stack AI platforms. Select a sector to inspect.",

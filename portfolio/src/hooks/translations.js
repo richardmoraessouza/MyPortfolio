@@ -9,13 +9,13 @@ export const translations = {
     contact: "Contato",
 
     // Section Painel
-     Section_messages: {
-      home: "Explorando o portfólio...",
-      sobre: "Sou Desenvolvedor Full Stack com foco em React, Node.js e TypeScript. Tenho experiência prática na criação de aplicações escaláveis com Express, SQL e Docker, sempre priorizando performance e SEO. Como freelancer, desenvolvi projetos completos, do design ao deploy, alcançando métricas máximas de 100/100 no Lighthouse. Meu objetivo é usar a tecnologia para gerar impacto real, entregando interfaces modernas e sistemas robustos que realmente resolvam problemas.",
-      skills: "Domino tecnologias modernas como Node.js, React e integração com IAs, além de possuir sólida experiência com Java e Spring Boot para o desenvolvimento de APIs robustas. Utilizo Docker para garantir ambientes escaláveis e escrevo código limpo com TypeScript.",
-      projetos: "Tenho um portfólio diversificado que inclui desde sites institucionais até plataformas complexas de IA. Cada projeto é uma oportunidade de aplicar minhas habilidades técnicas e criatividade para entregar soluções que realmente se destacam.",
-      contato: "Pronto para uma missão? Entre em contato e vamos construir algo incrível."
-     },
+    Section_messages: {
+      home: "[ OPERADOR: RICHARD ] Dev Full Stack. Node.js · React · Java · TypeScript. Sistemas online e prontos para missão.",
+      sobre:   "[ BIO SCAN ] Operador identificado. Dev Full Stack — React, Node.js, TypeScript. Missões concluídas: do design ao deploy, 100/100 Lighthouse. Status: pronto para embarcar.",
+      skills:   "[ ARMAMENTO TÉCNICO ] Node.js · React · Tailwind CSS · SQL · TypeScript · Java · Spring Boot · Docker · PostgreSQL. Sistema de integração com IA: ATIVO.",
+      projetos: "[ BANCO DE MISSÕES ] Portfólio carregado. Projetos registrados — de sites institucionais a plataformas Full Stack com IA. Selecione um setor para inspecionar.",
+      contato:  "[ CANAL ABERTO ] Frequência disponível. Transmita sua mensagem — o operador responderá assim que possível.",
+    },
 
     // perguntas sobre mim
     sobre_mim: "Sou Desenvolvedor Full Stack com foco em React, Node.js e TypeScript. Tenho experiência prática na criação de aplicações escaláveis com Express, SQL e Docker, sempre priorizando performance e SEO. Como freelancer, desenvolvi projetos completos, do design ao deploy, alcançando métricas máximas de 100/100 no Lighthouse. Meu objetivo é usar a tecnologia para gerar impacto real, entregando interfaces modernas e sistemas robustos que realmente resolvam problemas.",
@@ -154,12 +154,12 @@ export const translations = {
     expandButton: "OTHER PROJECTS",
 
     section_messages: {
-      home: "Exploring the portfolio...",
-      sobre: "I'm a Full Stack Developer with a focus on React, Node.js, and TypeScript. I have hands-on experience creating scalable applications with Express, SQL, and Docker, always prioritizing performance and SEO. As a freelancer, I've developed complete projects from design to deploy, achieving perfect 100/100 Lighthouse metrics. My goal is to use technology to generate real impact, delivering modern interfaces and robust systems that truly solve problems.",
-      skills: "I'm proficient in modern technologies like Node.js, React, and AI integration, as well as having solid experience with Java and Spring Boot for developing robust APIs. I use Docker to ensure scalable environments and write clean code with TypeScript.",
-      projetos: "I have a diverse portfolio that includes everything from institutional websites to complex AI platforms. Each project is an opportunity to apply my technical skills and creativity to deliver solutions that truly stand out.",
-      contato: "Ready for a mission? Get in touch and let's build something amazing."
-     },
+      home: "[ OPERATOR: RICHARD ] Full Stack Dev. Node.js · React · Java · TypeScript. Systems online and ready for mission.",
+      sobre:    "[ BIO SCAN ] Operator identified. Full Stack Dev — React, Node.js, TypeScript. Missions completed: design to deploy, 100/100 Lighthouse. Status: ready to board.",
+      skills:   "[ TECHNICAL ARSENAL ] Node.js · React · Tailwind CSS · SQL · TypeScript · Java · Spring Boot · Docker · PostgreSQL. AI integration system: ACTIVE.",
+      projetos: "[ MISSION DATABASE ] Portfolio loaded. Projects on record — from institutional sites to Full Stack AI platforms. Select a sector to inspect.",
+      contato:  "[ CHANNEL OPEN ] Frequency available. Transmit your message — the operator will respond as soon as possible.",
+    },
 
     // perguntas sobre mim
     perguntar: "Ask something",

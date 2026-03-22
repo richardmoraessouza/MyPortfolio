@@ -19,9 +19,13 @@
 
 @media (min-width: 768px) {
   .widget {
-    width: 220px;
+    width: 300px;
     bottom: 20px;
     right: 20px;
+  }
+
+  .widget p {
+    font-size: 10px;
   }
 }
 

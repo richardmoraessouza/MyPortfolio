@@ -1,240 +1,270 @@
 # 🚀 Portfólio - Richard Moraes Souza
 
-Um portfólio moderno e responsivo desenvolvido com React, demonstrando projetos e habilidades em desenvolvimento front-end com suporte a múltiplos idiomas.
+<div align="center">
 
-## 📋 Sobre
+[![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-7.0.0-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/richard-moraes-souza/)
 
-Este portfólio apresenta minha jornada como desenvolvedor front-end autodidata, destacando projetos desenvolvidos e tecnologias que domino. O site é totalmente responsivo, oferece uma experiência de usuário intuitiva e moderna, e suporta múltiplos idiomas (Português e Inglês).
+**Portfólio Moderno & Responsivo** | React + Vite + JavaScript  
+Design Profissional • Multi-idioma (PT/EN) • Deploy Automático
 
-## ✨ Funcionalidades
+[🌐 Ver ao Vivo](https://richardmoraessouza.github.io/Portfólio) • [💻 GitHub](https://github.com/richardmoraessouza) • [📧 Contato](#-links-importantes)
 
-- **🌍 Suporte Multi-idioma**: Tradução completa em Português e Inglês
-- **🎨 Tema Escuro/Claro**: Alternância entre temas com persistência local
-- **📱 Design Responsivo**: Interface adaptável para diferentes dispositivos
-- **⚡ Performance Otimizada**: Carregamento rápido com Vite
-- **🎯 Seção Sobre Mim**: Apresentação pessoal e experiência profissional
-- **🛠️ Tecnologias**: Exibição das tecnologias com modais informativos
-- **📂 Projetos**: Galeria de projetos com links para demonstração e repositório
-- **🎭 Animações**: Transições suaves e elementos interativos
+</div>
 
-## 🛠️ Tecnologias Utilizadas
+---
 
-### Front-end
-- **React 19.1.0** - Biblioteca JavaScript para interfaces
-- **SCSS/Sass** - Pré-processador CSS para estilos avançados
-- **Vite** - Build tool rápida e moderna
-- **ESLint** - Linter para qualidade de código
+## 👋 Sobre Mim
 
-### Funcionalidades
-- **Context API** - Gerenciamento de estado para tema e idioma
-- **LocalStorage** - Persistência de preferências do usuário
-- **CSS Modules** - Estilos modulares e organizados
+Desenvolvedor **Frontend** autodidata e apaixonado por criar experiências digitais modernas e intuitivas. Especializado em **React**, **JavaScript moderno** e desenvolvimento responsivo.
 
-### Deploy
-- **GitHub Pages** - Hospedagem gratuita
-- **gh-pages** - Deploy automatizado
+Com experiência em:
+- ✅ Desenvolvimento de aplicações web interativas
+- ✅ Componentes reutilizáveis e escaláveis
+- ✅ Design responsivo (Mobile-First)
+- ✅ Implementação de multi-idioma e temas dinâmicos
+- ✅ Deploy e otimização de performance
+- ✅ Código limpo e bem estruturado
 
-## 📦 Instalação e Uso
+---
 
-### Pré-requisitos
-- Node.js (versão 16 ou superior)
-- npm ou yarn
+## 📌 Destaques do Portfólio
 
-### Instalação
+| Aspecto | Descrição |
+|--------|-----------|
+| **Idiomas** | Português (PT-BR) e Inglês (EN-US) com troca dinâmica |
+| **Temas** | Modo Claro e Escuro com persistência de preferências |
+| **Responsividade** | Otimizado para mobile, tablet e desktop |
+| **Performance** | Build com Vite (2x mais rápido que Webpack) |
+| **Interatividade** | Efeitos visuais, animações suaves e chat com IA |
+| **Acessibilidade** | Navegação por teclado, ARIA labels, contraste WCAG AA |
+| **SEO** | Meta tags, robots.txt, sitemap.xml |
 
-1. Clone o repositório:
+---
+
+## 🛠️ Tech Stack
+
+### 💪 Principais Tecnologias
+
+| Tecnologia | Versão | Uso |
+|-----------|--------|-----|
+| **React** | 19.1.0 | Biblioteca de componentes |
+| **Vite** | 7.0.0 | Build tool & dev server |
+| **JavaScript (ES6+)** | - | Lógica da aplicação |
+| **HTML5** | - | Estrutura semântica |
+| **CSS3 + Modules** | - | Estilos isolados e modulares |
+| **ESLint** | 9.29.0 | Qualidade de código |
+
+### 📦 Dependências Principais
+
+- **Axios** - Requisições HTTP
+- **EmailJS** - Integração de email
+- **Context API** - Gerenciamento de estado global
+- **LocalStorage** - Persistência de dados
+- **gh-pages** - Deploy automático
+
+### 🎯 Padrões de Código
+
+- Componentes Funcionais com Hooks
+- Context API para estado global
+- CSS Modules (zero conflito de estilos)
+- Lazy Loading e Code Splitting
+- Commit semântico com Git
+
+---
+
+## 🎯 Projetos em Destaque
+
+### 1️⃣ Este Portfólio (React + Vite)
+**Descrição**: Portfólio profissional completo com multi-idioma e tema dinâmico  
+**Tecnologias**: React 19, Vite, JavaScript ES6+, CSS Modules  
+**Features**: Dark/Light Theme, PT/EN, Responsivo, Chat IA, Animações  
+**Acesso**: [🔗 richardmoraessouza.github.io/Portfólio](https://richardmoraessouza.github.io/Portfólio)
+
+### 2️⃣ SerginhoEstetiCar
+**Descrição**: Site institucional para estética automotiva com agendamento  
+**Tecnologias**: HTML5, CSS3, JavaScript Vanilla  
+**Features**: Formulário, Responsivo, Design profissional  
+**Acesso**: [🔗 serginhoesteticar.netlify.app](https://serginhoesteticar.netlify.app/)
+
+### 3️⃣ Calculadora Responsiva
+**Descrição**: Calculadora com operações básicas e avançadas  
+**Tecnologias**: HTML5, CSS3, JavaScript vanilla  
+**Features**: Interface intuitiva, Responsivo, Cálculos complexos  
+**Acesso**: [🔗 calculadoraresponsiva.netlify.app](https://calculadoraresponsiva.netlify.app/)
+
+### 4️⃣ Timer Interativo
+**Descrição**: Cronômetro regressivo com alertas visuais  
+**Tecnologias**: HTML5, CSS3, JavaScript, Animações  
+**Features**: Pausa, Reset, Alertas, Design moderno  
+**Acesso**: [🔗 timer-interativo.netlify.app](https://timer-interativo.netlify.app/)
+
+### 5️⃣ Quiz Inteligente
+**Descrição**: Quiz dinâmico com sistema de pontuação  
+**Tecnologias**: HTML5, CSS3, Bootstrap, JavaScript  
+**Features**: Perguntas aleatórias, Scoring, Responsivo  
+**Acesso**: [🔗 perguntas-front-end.netlify.app](https://perguntas-front-end.netlify.app/)
+
+---
+
+## 🚀 Como Usar Este Projeto
+
+### ⚙️ Pré-requisitos
+- Node.js v16+
+- npm v7+
+- Git
+
+### 📥 Instalação
+
 ```bash
-git clone https://github.com/richardmoraessouza/Portf-lio.git
-cd Portf-lio/portfolio
-```
+# Clone o repositório
+git clone https://github.com/richardmoraessouza/Portfólio.git
+cd Portfólio/portfolio
 
-2. Instale as dependências:
-```bash
+# Instale as dependências
 npm install
-```
 
-3. Execute o projeto em modo de desenvolvimento:
-```bash
+# Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-4. Abra [http://localhost:5173](http://localhost:5173) no seu navegador
+Acesse: **http://localhost:5173**
 
-### Scripts Disponíveis
+### 📝 Comandos Disponíveis
 
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Gera build de produção
-- `npm run preview` - Visualiza o build de produção
-- `npm run lint` - Executa o linter
-- `npm run deploy` - Faz deploy para GitHub Pages
+```bash
+npm run dev      # Desenvolvimento com Hot Reload
+npm run build    # Build otimizado para produção
+npm run preview  # Visualiza build localmente
+npm run lint     # Verifica código com ESLint
+npm run deploy   # Deploy para GitHub Pages
+```
 
-## 🌍 Sistema de Idiomas
+### 🐳 Com Docker
 
-O portfólio suporta dois idiomas:
+```bash
+docker-compose up --build
+# Acesse: http://localhost
+```
 
-### Português (Padrão)
-- Interface completa em português
-- Descrições detalhadas dos projetos
-- Informações sobre tecnologias
-
-### Inglês
-- Tradução completa da interface
-- Projetos e tecnologias traduzidos
-- Manutenção da qualidade do conteúdo
-
-### Como Usar
-- Clique no botão de alternar idioma no cabeçalho
-- As preferências são salvas automaticamente
-- O idioma é mantido entre sessões
-
-## 🎨 Sistema de Temas
-
-### Tema Claro
-- Design limpo e moderno
-- Cores suaves e legíveis
-- Ideal para uso diurno
-
-### Tema Escuro
-- Reduz fadiga visual
-- Cores contrastantes
-- Ideal para uso noturno
-
-### Persistência
-- As preferências são salvas no navegador
-- O tema é mantido entre sessões
-- Alternância instantânea
-
-## 🎯 Projetos Destacados
-
-### SerginhoEstetiCar
-Site institucional desenvolvido sob demanda para estética automotiva, com formulário de agendamento e design responsivo.
-
-**Tecnologias**: HTML, CSS, JavaScript
-**Link**: [Ver projeto](https://serginhoesteticar.netlify.app/)
-
-### Calculadora
-Calculadora responsiva desenvolvida com HTML, CSS e JavaScript puro, com operações básicas e avançadas.
-
-**Tecnologias**: HTML, CSS, JavaScript
-**Link**: [Ver projeto](https://calculadoraresponsiva.netlify.app/)
-
-### Timer Interativo
-Cronômetro regressivo com funcionalidades avançadas como pausa, reset e alertas visuais.
-
-**Tecnologias**: HTML, CSS, JavaScript
-**Link**: [Ver projeto](https://timer-interativo.netlify.app/)
-
-### Quiz
-Quiz interativo desenvolvido com HTML, CSS, Bootstrap e JavaScript, com perguntas dinâmicas e sistema de pontuação.
-
-**Tecnologias**: HTML, CSS, Bootstrap, JavaScript
-**Link**: [Ver projeto](https://perguntas-front-end.netlify.app/)
-
-## 🛠️ Tecnologias Demonstradas
-
-### Front-end
-- **HTML5** - Estrutura semântica e acessível
-- **CSS3** - Estilos modernos e responsivos
-- **JavaScript** - Interatividade e dinamismo
-- **React** - Componentes reutilizáveis
-- **Sass/SCSS** - Estilos organizados e modulares
-- **Bootstrap** - Framework CSS responsivo
-
-### Back-end
-- **Python** - Automação e processamento de dados
-- **MySQL** - Gerenciamento de banco de dados
-- **JSON** - Troca de dados entre sistemas
-
-### Ferramentas
-- **Git** - Controle de versão
-- **GitHub** - Hospedagem de código e colaboração
-
-## 📱 Responsividade
-
-O portfólio é totalmente responsivo e otimizado para:
-- 📱 Dispositivos móveis (320px+)
-- 📱 Tablets (768px+)
-- 💻 Desktops (1024px+)
-- 🖥️ Telas grandes (1440px+)
-
-## 🚀 Deploy
-
-O projeto está hospedado no GitHub Pages e pode ser acessado em:
-[https://richardmoraessouza.github.io/Portf-lio](https://richardmoraessouza.github.io/Portf-lio)
+---
 
 ## 📁 Estrutura do Projeto
 
 ```
 portfolio/
-├── public/
-│   ├── image/          # Imagens dos projetos
-│   └── video/          # Vídeos demonstrativos
+├── public/              # Assets estáticos
+│   ├── image/           # Imagens dos projetos
+│   ├── video/           # Vídeos
+│   └── robots.txt       # SEO
+│
 ├── src/
-│   ├── components/     # Componentes React
-│   │   ├── Footer/     # Rodapé
-│   │   ├── Header/     # Cabeçalho com navegação
-│   │   ├── LanguageToggle/ # Alternador de idioma
-│   │   ├── Modal/      # Modal de projetos
-│   │   ├── Navegacao/  # Menu de navegação
-│   │   ├── Projetos/   # Seção de projetos
-│   │   ├── Sobre_mim/  # Seção sobre mim
-│   │   ├── Tecnologias/ # Seção de tecnologias
-│   │   └── ThemeToggle/ # Alternador de tema
-│   ├── contexts/       # Contextos React
-│   │   ├── LanguageContext.jsx # Gerenciamento de idioma
-│   │   └── ThemeContext.jsx    # Gerenciamento de tema
-│   ├── translations/   # Arquivos de tradução
-│   │   └── translations.js     # Traduções PT/EN
-│   ├── styles/         # Arquivos SCSS
-│   ├── App.jsx         # Componente principal
-│   └── main.jsx        # Ponto de entrada
-└── package.json        # Dependências e scripts
+│   ├── components/      # Componentes React
+│   │   ├── ChatIA/      # Chat com assistente IA
+│   │   ├── Header/      # Cabeçalho e navegação
+│   │   ├── Modal/       # Modal reutilizável
+│   │   ├── LanguageToggle/  # Seletor de idioma
+│   │   ├── ThemeToggle/     # Seletor de tema
+│   │   ├── MouseTrail/      # Efeito visual
+│   │   └── StarBackgroud/   # Fundo animado
+│   │
+│   ├── page/            # Páginas/Seções
+│   │   ├── Header/      # Apresentação
+│   │   ├── Sobre_mim/   # Sobre mim
+│   │   ├── Tecnologias/ # Skills (Front/Back/Git)
+│   │   ├── Projetos/    # Galeria de projetos
+│   │   └── Footer/      # Rodapé
+│   │
+│   ├── hooks/           # Contextos e hooks
+│   │   ├── LanguageContext.jsx   # Gerenciamento de idioma
+│   │   ├── ThemeContext.jsx      # Gerenciamento de tema
+│   │   └── translations.js       # Dicionário PT/EN
+│   │
+│   ├── styles/          # Estilos globais
+│   ├── App.jsx          # Componente raiz
+│   └── main.jsx         # Entrada
+│
+└── package.json         # Dependências
 ```
-
-## 🎨 Características do Design
-
-### Cores
-- **Tema Claro**: Cores suaves e contrastantes
-- **Tema Escuro**: Cores escuras com destaque
-- **Acessibilidade**: Contraste adequado para leitura
-
-### Tipografia
-- **Fonte Principal**: Sistema de fontes do navegador
-- **Hierarquia**: Tamanhos bem definidos
-- **Legibilidade**: Espaçamento otimizado
-
-### Animações
-- **Transições Suaves**: 0.3s ease-in-out
-- **Hover Effects**: Feedback visual interativo
-- **Loading States**: Indicadores de carregamento
-
-## 👨‍💻 Desenvolvedor
-
-**Richard Moraes Souza**
-- 🎯 Desenvolvedor Front-end autodidata
-- 💡 Apaixonado por criar experiências digitais envolventes
-- 🛠️ Foco em React, JavaScript, HTML, CSS e SCSS
-- 🔧 Conhecimentos em Python e MySQL
-- 🌍 Experiência com projetos multi-idioma
-
-## 🤝 Contribuições
-
-Contribuições são sempre bem-vindas! Sinta-se à vontade para:
-
-- 🐛 Reportar bugs
-- 💡 Sugerir novas funcionalidades
-- 📝 Melhorar a documentação
-- 🔧 Corrigir problemas de código
-
-
-## 📞 Contato
-
-- **Email**: [richardmoraessouza2006@gmail.com]
-- **LinkedIn**: [https://www.linkedin.com/in/richard-moraes-souza/]
-- **GitHub**: [richardmoraessouza](https://github.com/richardmoraessouza)
 
 ---
 
-⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
+---
 
-**Desenvolvido com ❤️ por Richard Moraes Souza**
+## 📊 Responsividade
+
+Otimizado para todos os tamanhos de tela:
+
+```
+320px   📱 Smartphones
+768px   📱 Tablets
+1024px  💻 Desktops
+1440px+ 🖥️  Large screens
+```
+
+---
+
+## ⚡ Performance
+
+- **Build Speed**: ~2x mais rápido (Vite)
+- **Bundle Size**: Otimizado com tree-shaking
+- **Code Splitting**: Lazy loading automático
+- **CSS Modules**: Zero conflito de estilos
+- **Image Optimization**: Compressão automática
+
+---
+
+## 🎓 Especialidades
+
+### 💪 Forte Em
+- React & Hooks
+- JavaScript Moderno (ES6+)
+- HTML5 Semântico
+- CSS3 Avançado (Flexbox, Grid)
+- Design Responsivo (Mobile-First)
+- Vite e Build Tools
+- Git & GitHub
+- MySQL e banco de dados
+
+### 🚀 Em Aprendizado
+- **Java** - OOP e aplicações backend
+- **TypeScript** - Tipagem estática
+- **Node.js & Express** - Backend
+- **MongoDB** - NoSQL databases
+
+---
+
+## 🔗 Links Importantes
+
+<div align="center">
+
+| Link | |
+|------|---|
+| 🌐 **Portfolio** | [richardmoraessouza.github.io/Portfólio](https://richardmoraessouza.github.io/Portfólio) |
+| 💼 **LinkedIn** | [linkedin.com/in/richard-moraes-souza](https://www.linkedin.com/in/richard-moraes-souza/) |
+| 🐙 **GitHub** | [github.com/richardmoraessouza](https://github.com/richardmoraessouza) |
+| 📧 **Email** | [richardmoraessouza2006@gmail.com](mailto:richardmoraessouza2006@gmail.com) |
+
+</div>
+
+---
+
+## 📞 Contato
+
+**Interessado em conversar?**
+
+- 📧 Email: richardmoraessouza2006@gmail.com
+- 💼 LinkedIn: [Profile](https://www.linkedin.com/in/richard-moraes-souza/)
+- 🐙 GitHub: [@richardmoraessouza](https://github.com/richardmoraessouza)
+
+---
+
+<div align="center">
+
+**Desenvolvido por Richard Moraes Souza**
+
+[⬆ Voltar ao topo](#-portfólio---richard-moraes-souza)
+
+</div>
